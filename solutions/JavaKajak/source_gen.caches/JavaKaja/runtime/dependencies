@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dependenciesRoot>
+  <dependency className="JavaKaja.runtime.Cell" file="Cell.java">
+    <classNode dependClassName="JavaKaja.runtime.Direction" />
+    <classNode dependClassName="JavaKaja.runtime.Vehicle" />
+    <classNode dependClassName="java.awt.Color" />
+    <classNode dependClassName="java.util.ArrayList" />
+    <classNode dependClassName="java.util.Arrays" />
+    <classNode dependClassName="java.util.List" />
+  </dependency>
+  <dependency className="JavaKaja.runtime.Direction" file="Direction.java" />
+  <dependency className="JavaKaja.runtime.IntersectionCell" file="IntersectionCell.java">
+    <classNode dependClassName="JavaKaja.runtime.Direction" />
+    <classNode dependClassName="JavaKaja.runtime.Vehicle" />
+    <classNode dependClassName="java.lang.Override" />
+    <classNode extendsClassName="JavaKaja.runtime.Cell" />
+  </dependency>
+  <dependency className="JavaKaja.runtime.KajaFrame" file="KajaFrame.java">
+    <classNode dependClassName="JavaKaja.runtime.Cell" />
+    <classNode dependClassName="JavaKaja.runtime.Direction" />
+    <classNode dependClassName="JavaKaja.runtime.Position" />
+    <classNode dependClassName="JavaKaja.runtime.RoadCell" />
+    <classNode dependClassName="JavaKaja.runtime.Vehicle" />
+    <classNode dependClassName="JavaKaja.runtime.VisualCell" />
+    <classNode dependClassName="JavaKaja.runtime.WallCell" />
+    <classNode dependClassName="java.awt.BorderLayout" />
+    <classNode dependClassName="java.awt.Color" />
+    <classNode dependClassName="java.awt.Dimension" />
+    <classNode dependClassName="java.awt.Font" />
+    <classNode dependClassName="java.awt.GridLayout" />
+    <classNode dependClassName="java.lang.ClassLoader" />
+    <classNode dependClassName="java.lang.Exception" />
+    <classNode dependClassName="java.lang.InterruptedException" />
+    <classNode dependClassName="java.lang.Override" />
+    <classNode dependClassName="java.lang.Runnable" />
+    <classNode dependClassName="java.lang.RuntimeException" />
+    <classNode dependClassName="java.lang.String" />
+    <classNode dependClassName="java.lang.Thread" />
+    <classNode dependClassName="java.util.ArrayList" />
+    <classNode dependClassName="java.util.Iterator" />
+    <classNode dependClassName="java.util.List" />
+    <classNode dependClassName="javax.swing.Icon" />
+    <classNode dependClassName="javax.swing.ImageIcon" />
+    <classNode dependClassName="javax.swing.JFrame" />
+    <classNode dependClassName="javax.swing.JOptionPane" />
+    <classNode dependClassName="javax.swing.JPanel" />
+    <classNode dependClassName="javax.swing.SwingUtilities" />
+    <classNode dependClassName="javax.swing.UIManager" />
+    <classNode dependClassName="javax.swing.UnsupportedLookAndFeelException" />
+    <classNode dependClassName="javax.swing.plaf.metal.MetalLookAndFeel" />
+  </dependency>
+  <dependency className="JavaKaja.runtime.Orientation" file="Orientation.java" />
+  <dependency className="JavaKaja.runtime.Position" file="Position.java">
+    <classNode dependClassName="java.lang.Object" />
+    <classNode dependClassName="java.lang.Override" />
+  </dependency>
+  <dependency className="JavaKaja.runtime.RoadCell" file="RoadCell.java">
+    <classNode dependClassName="JavaKaja.runtime.Direction" />
+    <classNode dependClassName="JavaKaja.runtime.Vehicle" />
+    <classNode dependClassName="java.awt.Color" />
+    <classNode dependClassName="java.lang.Override" />
+    <classNode extendsClassName="JavaKaja.runtime.Cell" />
+  </dependency>
+  <dependency className="JavaKaja.runtime.Vehicle" file="Vehicle.java">
+    <classNode dependClassName="JavaKaja.runtime.Cell" />
+    <classNode dependClassName="JavaKaja.runtime.Direction" />
+    <classNode dependClassName="JavaKaja.runtime.Position" />
+    <classNode dependClassName="java.lang.Object" />
+    <classNode dependClassName="java.lang.Override" />
+    <classNode dependClassName="java.lang.RuntimeException" />
+  </dependency>
+  <dependency className="JavaKaja.runtime.VisualCell" file="VisualCell.java">
+    <classNode dependClassName="java.awt.BorderLayout" />
+    <classNode dependClassName="java.lang.String" />
+    <classNode dependClassName="javax.swing.Icon" />
+    <classNode dependClassName="javax.swing.JLabel" />
+    <classNode dependClassName="javax.swing.border.LineBorder" />
+    <classNode extendsClassName="javax.swing.JPanel" />
+  </dependency>
+  <dependency className="JavaKaja.runtime.WallCell" file="WallCell.java">
+    <classNode dependClassName="JavaKaja.runtime.Direction" />
+    <classNode dependClassName="JavaKaja.runtime.Vehicle" />
+    <classNode dependClassName="java.awt.Color" />
+    <classNode dependClassName="java.lang.Override" />
+    <classNode dependClassName="java.lang.RuntimeException" />
+    <classNode extendsClassName="JavaKaja.runtime.Cell" />
+  </dependency>
+</dependenciesRoot>
+

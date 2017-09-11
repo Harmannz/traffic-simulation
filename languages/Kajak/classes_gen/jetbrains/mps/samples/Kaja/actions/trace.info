@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<debug-info version="2">
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1082485599095:jetbrains.mps.baseLanguage.structure.BlockStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123155:jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123159:jetbrains.mps.baseLanguage.structure.IfStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123165:jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242864:jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+  <root>
+    <file name="ActionAspectDescriptorImpl.java">
+      <unit at="13,0,36,0" name="jetbrains.mps.samples.Kaja.actions.ActionAspectDescriptorImpl" />
+    </file>
+    <file name="QueriesGenerated.java">
+      <unit at="6,0,8,0" name="jetbrains.mps.samples.Kaja.actions.QueriesGenerated" />
+    </file>
+  </root>
+  <root nodeRef="r:e775c65a-7441-44b3-a86c-5e79d49d5193(jetbrains.mps.samples.Kaja.actions)/7721946591176406055">
+    <file name="IfAndWhile.java">
+      <node id="7721946591176439836" at="15,7,16,42" concept="4" />
+      <node id="7721946591176440651" at="17,192,18,352" concept="1" />
+      <node id="7721946591176512548" at="18,352,19,348" concept="1" />
+      <node id="7721946591176515853" at="26,7,27,39" concept="4" />
+      <node id="7721946591176515858" at="28,195,29,349" concept="1" />
+      <node id="7721946591176515866" at="29,349,30,345" concept="1" />
+      <node id="7721946591176439836" at="16,42,20,9" concept="2" />
+      <node id="7721946591176515853" at="27,39,31,9" concept="2" />
+      <node id="7721946591176439836" at="14,91,21,7" concept="0" />
+      <node id="7721946591176515853" at="25,91,32,7" concept="0" />
+      <node id="7721946591176420157" at="14,0,23,0" concept="3" trace="setup#(Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SModel;)V" />
+      <node id="7721946591176515850" at="25,0,34,0" concept="3" trace="setup#(Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SModel;)V" />
+      <scope id="7721946591176439840" at="17,192,19,348" />
+      <scope id="7721946591176515857" at="28,195,30,345" />
+      <scope id="7721946591176439836" at="15,7,20,9">
+        <var name="whileCmd" id="7721946591176439836" />
+      </scope>
+      <scope id="7721946591176515853" at="26,7,31,9">
+        <var name="ifCmd" id="7721946591176515853" />
+      </scope>
+      <scope id="7721946591176420157" at="14,91,21,7" />
+      <scope id="7721946591176515850" at="25,91,32,7" />
+      <scope id="7721946591176420157" at="14,0,23,0">
+        <var name="enclosingNode" id="7721946591176420157" />
+        <var name="model" id="7721946591176420157" />
+        <var name="newNode" id="7721946591176420157" />
+        <var name="sampleNode" id="7721946591176420157" />
+      </scope>
+      <scope id="7721946591176515850" at="25,0,34,0">
+        <var name="enclosingNode" id="7721946591176515850" />
+        <var name="model" id="7721946591176515850" />
+        <var name="newNode" id="7721946591176515850" />
+        <var name="sampleNode" id="7721946591176515850" />
+      </scope>
+      <unit id="7721946591176420157" at="13,0,24,0" name="jetbrains.mps.samples.Kaja.actions.IfAndWhile$NodeFactory_7721946591176420157" />
+      <unit id="7721946591176515850" at="24,0,35,0" name="jetbrains.mps.samples.Kaja.actions.IfAndWhile$NodeFactory_7721946591176515850" />
+      <unit id="7721946591176406055" at="12,0,36,0" name="jetbrains.mps.samples.Kaja.actions.IfAndWhile" />
+    </file>
+  </root>
+</debug-info>
+
