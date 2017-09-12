@@ -27,6 +27,20 @@ public class Test extends KajaFrame {
 
       }
     }
+    // check if starting position is allowed. 
+    // check if destination position is allowed. 
+    // if so, then create vehicle and add vehicle to cell at starting position 
+    if (isAllowedRow(4) && isAllowedCol(5) && isAllowedRow(4) && isAllowedCol(12)) {
+      // check if vehicle is drivable here 
+      if (world[4][5].isDrivable(Direction.east)) {
+        // create a new vehicle 
+        Vehicle vehicle = new Vehicle(new Position(4, 5), new Position(4, 12), Direction.east, Direction.east);
+
+        addVehicle(4, 5, vehicle);
+        // place vehcile in this starting position 
+
+      }
+    }
     int steps = 0;
     while (steps < 20) {
       tick();
