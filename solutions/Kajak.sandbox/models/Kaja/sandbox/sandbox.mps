@@ -267,7 +267,7 @@
       </node>
       <node concept="2C1RJh" id="5D4EFtz2ky6" role="2C6hI7" />
       <node concept="SOX_U" id="5D4EFtyEMAY" role="2C6hI7">
-        <property role="SOX_T" value="10" />
+        <property role="SOX_T" value="20" />
       </node>
     </node>
   </node>

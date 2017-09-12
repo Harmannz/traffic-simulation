@@ -3080,7 +3080,7 @@
                                           <node concept="liA8E" id="2MeG3eCdBgk" role="2OqNvi">
                                             <ref role="37wK5l" to="z60i:~Frame.setTitle(java.lang.String):void" resolve="setTitle" />
                                             <node concept="Xl_RD" id="2MeG3eCdBgI" role="37wK5m">
-                                              <property role="Xl_RC" value="Robot Kaja - STOPPED" />
+                                              <property role="Xl_RC" value="Traffic Simulation - STOPPED" />
                                             </node>
                                           </node>
                                         </node>
@@ -3939,17 +3939,13 @@
       <property role="DiZV1" value="false" />
       <property role="2aFKle" value="false" />
       <node concept="3clFbS" id="1J3Do7d9bGN" role="3clF47">
-        <node concept="1X3_iC" id="5dozoUDGuQU" role="lGtFl">
-          <property role="3V$3am" value="statement" />
-          <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
-          <node concept="3clFbF" id="1J3Do7d9ccE" role="8Wnug">
-            <node concept="37vLTI" id="1J3Do7d9cwr" role="3clFbG">
-              <node concept="3clFbT" id="1J3Do7d9cCV" role="37vLTx">
-                <property role="3clFbU" value="true" />
-              </node>
-              <node concept="37vLTw" id="1J3Do7d9ccD" role="37vLTJ">
-                <ref role="3cqZAo" node="1J3Do7d9ayg" resolve="hasTicked" />
-              </node>
+        <node concept="3clFbF" id="1J3Do7d9ccE" role="3cqZAp">
+          <node concept="37vLTI" id="1J3Do7d9cwr" role="3clFbG">
+            <node concept="3clFbT" id="1J3Do7d9cCV" role="37vLTx">
+              <property role="3clFbU" value="true" />
+            </node>
+            <node concept="37vLTw" id="1J3Do7d9ccD" role="37vLTJ">
+              <ref role="3cqZAo" node="1J3Do7d9ayg" resolve="hasTicked" />
             </node>
           </node>
         </node>
@@ -3965,17 +3961,13 @@
       <property role="DiZV1" value="false" />
       <property role="2aFKle" value="false" />
       <node concept="3clFbS" id="1J3Do7d9dsF" role="3clF47">
-        <node concept="1X3_iC" id="5dozoUDGuRv" role="lGtFl">
-          <property role="3V$3am" value="statement" />
-          <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
-          <node concept="3clFbF" id="1J3Do7d9dTV" role="8Wnug">
-            <node concept="37vLTI" id="1J3Do7d9edM" role="3clFbG">
-              <node concept="3clFbT" id="1J3Do7d9emq" role="37vLTx">
-                <property role="3clFbU" value="false" />
-              </node>
-              <node concept="37vLTw" id="1J3Do7d9dTU" role="37vLTJ">
-                <ref role="3cqZAo" node="1J3Do7d9ayg" resolve="hasTicked" />
-              </node>
+        <node concept="3clFbF" id="1J3Do7d9dTV" role="3cqZAp">
+          <node concept="37vLTI" id="1J3Do7d9edM" role="3clFbG">
+            <node concept="3clFbT" id="1J3Do7d9emq" role="37vLTx">
+              <property role="3clFbU" value="false" />
+            </node>
+            <node concept="37vLTw" id="1J3Do7d9dTU" role="37vLTJ">
+              <ref role="3cqZAo" node="1J3Do7d9ayg" resolve="hasTicked" />
             </node>
           </node>
         </node>

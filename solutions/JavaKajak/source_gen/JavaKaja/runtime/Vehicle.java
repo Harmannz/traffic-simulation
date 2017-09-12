@@ -24,9 +24,11 @@ public class Vehicle {
   }
 
   public void setTicked() {
+    hasTicked = true;
   }
 
   public void unsetTicked() {
+    hasTicked = false;
   }
 
   public Position getCurrentPosition() {

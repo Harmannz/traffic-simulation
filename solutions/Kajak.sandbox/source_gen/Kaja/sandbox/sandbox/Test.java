@@ -28,8 +28,9 @@ public class Test extends KajaFrame {
       }
     }
     int steps = 0;
-    while (steps < 10) {
+    while (steps < 20) {
       tick();
+      steps++;
     }
     trace("Completed Simulation");
     stop();

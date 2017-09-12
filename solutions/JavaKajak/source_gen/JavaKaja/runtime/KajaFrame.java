@@ -332,7 +332,7 @@ public abstract class KajaFrame {
             @Override
             public void run() {
               if (isStopped) {
-                frame.setTitle("Robot Kaja - STOPPED");
+                frame.setTitle("Traffic Simulation - STOPPED");
               }
               currentVisual.setBackground(cellValue);
               currentVisual.setIcon(cellIcon);

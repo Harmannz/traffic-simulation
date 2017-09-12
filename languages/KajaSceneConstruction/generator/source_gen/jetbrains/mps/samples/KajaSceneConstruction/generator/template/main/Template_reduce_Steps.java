@@ -101,69 +101,68 @@ public class Template_reduce_Steps extends TemplateDeclarationBase {
                 tnode7.addChild(myAggregationLinks[3], tnode8);
                 // TODO validate child 
               }
+              {
+                final SNode tnode10 = environment.createOutputNode(myConcepts[6]);
+                try {
+                  TemplateContext context7 = context5.subContext();
+                  {
+                    final SNode tnode11 = environment.createOutputNode(myConcepts[8]);
+                    try {
+                      TemplateContext context8 = context7.subContext();
+                      {
+                        final SNode tnode12 = environment.createOutputNode(myConcepts[9]);
+                        try {
+                          environment.resolveInTemplateLater(tnode12, myAssociationLinks[1], templateNode_yok9ix_c0a0a1a1a1a1a1a2a1a1a1a2a2a4, "tpl/r:262b93f0-fe86-497c-93c5-efd684d05bc6/6504511466441377598", "steps", context8);
+                        } finally {
+                        }
+                        tnode11.addChild(myAggregationLinks[5], tnode12);
+                        // TODO validate child 
+                      }
+                    } finally {
+                    }
+                    tnode10.addChild(myAggregationLinks[4], tnode11);
+                    // TODO validate child 
+                  }
+                } finally {
+                }
+                tnode7.addChild(myAggregationLinks[3], tnode10);
+                // TODO validate child 
+              }
             } finally {
             }
-            tnode6.addChild(myAggregationLinks[5], tnode7);
+            tnode6.addChild(myAggregationLinks[6], tnode7);
             // TODO validate child 
           }
           {
-            final SNode tnode10 = environment.createOutputNode(myConcepts[8]);
+            final SNode tnode13 = environment.createOutputNode(myConcepts[10]);
             try {
-              TemplateContext context7 = context4.subContext();
+              TemplateContext context9 = context4.subContext();
               {
-                final SNode tnode11 = environment.createOutputNode(myConcepts[4]);
+                final SNode tnode14 = environment.createOutputNode(myConcepts[4]);
                 try {
-                  SNodeAccessUtil.setProperty(tnode11, myProperties[1], TemplateUtil.asString(QueriesGenerated.propertyMacro_GetPropertyValue_6504511466441384481(new PropertyMacroContext(context7, "0", propertyMacro_yok9ix_c0a0c0a0b0b0b0c0b0c0c0e))));
+                  SNodeAccessUtil.setProperty(tnode14, myProperties[1], TemplateUtil.asString(QueriesGenerated.propertyMacro_GetPropertyValue_6504511466441384481(new PropertyMacroContext(context9, "0", propertyMacro_yok9ix_c0a0c0a0b0b0b0c0b0c0c0e))));
                 } finally {
                 }
-                tnode10.addChild(myAggregationLinks[6], tnode11);
+                tnode13.addChild(myAggregationLinks[7], tnode14);
                 // TODO validate child 
               }
               {
-                final SNode tnode12 = environment.createOutputNode(myConcepts[9]);
+                final SNode tnode15 = environment.createOutputNode(myConcepts[9]);
                 try {
-                  environment.resolveInTemplateLater(tnode12, myAssociationLinks[1], templateNode_yok9ix_c0a0a1a2a1a2a1a2a2a4, "tpl/r:262b93f0-fe86-497c-93c5-efd684d05bc6/6504511466441377598", "steps", context7);
+                  environment.resolveInTemplateLater(tnode15, myAssociationLinks[1], templateNode_yok9ix_c0a0a1a2a1a2a1a2a2a4, "tpl/r:262b93f0-fe86-497c-93c5-efd684d05bc6/6504511466441377598", "steps", context9);
                 } finally {
                 }
-                tnode10.addChild(myAggregationLinks[7], tnode12);
+                tnode13.addChild(myAggregationLinks[8], tnode15);
                 // TODO validate child 
               }
             } finally {
             }
-            tnode6.addChild(myAggregationLinks[8], tnode10);
+            tnode6.addChild(myAggregationLinks[9], tnode13);
             // TODO validate child 
           }
         } finally {
         }
         tnode1.addChild(myAggregationLinks[3], tnode6);
-        // TODO validate child 
-      }
-      {
-        final SNode tnode13 = environment.createOutputNode(myConcepts[6]);
-        try {
-          TemplateContext context8 = context1.subContext();
-          {
-            final SNode tnode14 = environment.createOutputNode(myConcepts[7]);
-            try {
-              tnode14.setReference(myAssociationLinks[0], SReference.create(myAssociationLinks[0], tnode14, PersistenceFacade.getInstance().createModelReference("r:f5e9b11f-5073-4786-8ed1-a9e42307c3f8(JavaKaja.runtime)"), PersistenceFacade.getInstance().createNodeId("3210697320273763026")));
-              TemplateContext context9 = context8.subContext();
-              {
-                final SNode tnode15 = environment.createOutputNode(myConcepts[10]);
-                try {
-                  SNodeAccessUtil.setProperty(tnode15, myProperties[2], "Completed Simulation");
-                } finally {
-                }
-                tnode14.addChild(myAggregationLinks[9], tnode15);
-                // TODO validate child 
-              }
-            } finally {
-            }
-            tnode13.addChild(myAggregationLinks[4], tnode14);
-            // TODO validate child 
-          }
-        } finally {
-        }
-        tnode1.addChild(myAggregationLinks[3], tnode13);
         // TODO validate child 
       }
       {
@@ -173,7 +172,17 @@ public class Template_reduce_Steps extends TemplateDeclarationBase {
           {
             final SNode tnode17 = environment.createOutputNode(myConcepts[7]);
             try {
-              tnode17.setReference(myAssociationLinks[0], SReference.create(myAssociationLinks[0], tnode17, PersistenceFacade.getInstance().createModelReference("r:f5e9b11f-5073-4786-8ed1-a9e42307c3f8(JavaKaja.runtime)"), PersistenceFacade.getInstance().createNodeId("3210697320273683513")));
+              tnode17.setReference(myAssociationLinks[0], SReference.create(myAssociationLinks[0], tnode17, PersistenceFacade.getInstance().createModelReference("r:f5e9b11f-5073-4786-8ed1-a9e42307c3f8(JavaKaja.runtime)"), PersistenceFacade.getInstance().createNodeId("3210697320273763026")));
+              TemplateContext context11 = context10.subContext();
+              {
+                final SNode tnode18 = environment.createOutputNode(myConcepts[11]);
+                try {
+                  SNodeAccessUtil.setProperty(tnode18, myProperties[2], "Completed Simulation");
+                } finally {
+                }
+                tnode17.addChild(myAggregationLinks[10], tnode18);
+                // TODO validate child 
+              }
             } finally {
             }
             tnode16.addChild(myAggregationLinks[4], tnode17);
@@ -182,6 +191,24 @@ public class Template_reduce_Steps extends TemplateDeclarationBase {
         } finally {
         }
         tnode1.addChild(myAggregationLinks[3], tnode16);
+        // TODO validate child 
+      }
+      {
+        final SNode tnode19 = environment.createOutputNode(myConcepts[6]);
+        try {
+          TemplateContext context12 = context1.subContext();
+          {
+            final SNode tnode20 = environment.createOutputNode(myConcepts[7]);
+            try {
+              tnode20.setReference(myAssociationLinks[0], SReference.create(myAssociationLinks[0], tnode20, PersistenceFacade.getInstance().createModelReference("r:f5e9b11f-5073-4786-8ed1-a9e42307c3f8(JavaKaja.runtime)"), PersistenceFacade.getInstance().createNodeId("3210697320273683513")));
+            } finally {
+            }
+            tnode19.addChild(myAggregationLinks[4], tnode20);
+            // TODO validate child 
+          }
+        } finally {
+        }
+        tnode1.addChild(myAggregationLinks[3], tnode19);
         // TODO validate child 
       }
     } finally {
@@ -202,7 +229,7 @@ public class Template_reduce_Steps extends TemplateDeclarationBase {
   }
   @Override
   protected SConcept[] initConcepts() {
-    SConcept[] rv = new SConcept[11];
+    SConcept[] rv = new SConcept[12];
     rv[0] = MetaAdapterFactory.getConcept(MetaAdapterFactory.getLanguage(0xf3061a5392264cc5L, 0xa443f952ceaf5816L, "jetbrains.mps.baseLanguage"), 0xf8cc56b200L, "StatementList");
     rv[1] = MetaAdapterFactory.getConcept(MetaAdapterFactory.getLanguage(0xf3061a5392264cc5L, 0xa443f952ceaf5816L, "jetbrains.mps.baseLanguage"), 0xf8cc67c7f0L, "LocalVariableDeclarationStatement");
     rv[2] = MetaAdapterFactory.getConcept(MetaAdapterFactory.getLanguage(0xf3061a5392264cc5L, 0xa443f952ceaf5816L, "jetbrains.mps.baseLanguage"), 0xf8cc67c7efL, "LocalVariableDeclaration");
@@ -211,9 +238,10 @@ public class Template_reduce_Steps extends TemplateDeclarationBase {
     rv[5] = MetaAdapterFactory.getConcept(MetaAdapterFactory.getLanguage(0xf3061a5392264cc5L, 0xa443f952ceaf5816L, "jetbrains.mps.baseLanguage"), 0xfaa4bf0f2fL, "WhileStatement");
     rv[6] = MetaAdapterFactory.getConcept(MetaAdapterFactory.getLanguage(0xf3061a5392264cc5L, 0xa443f952ceaf5816L, "jetbrains.mps.baseLanguage"), 0xf8cc56b213L, "ExpressionStatement");
     rv[7] = MetaAdapterFactory.getConcept(MetaAdapterFactory.getLanguage(0xf3061a5392264cc5L, 0xa443f952ceaf5816L, "jetbrains.mps.baseLanguage"), 0x6c6b6a1e379f9404L, "LocalMethodCall");
-    rv[8] = MetaAdapterFactory.getConcept(MetaAdapterFactory.getLanguage(0xf3061a5392264cc5L, 0xa443f952ceaf5816L, "jetbrains.mps.baseLanguage"), 0xfbced3b82aL, "LessThanExpression");
+    rv[8] = MetaAdapterFactory.getConcept(MetaAdapterFactory.getLanguage(0xf3061a5392264cc5L, 0xa443f952ceaf5816L, "jetbrains.mps.baseLanguage"), 0x11adecdb4f0L, "PostfixIncrementExpression");
     rv[9] = MetaAdapterFactory.getConcept(MetaAdapterFactory.getLanguage(0xf3061a5392264cc5L, 0xa443f952ceaf5816L, "jetbrains.mps.baseLanguage"), 0xf8c77f1e98L, "VariableReference");
-    rv[10] = MetaAdapterFactory.getConcept(MetaAdapterFactory.getLanguage(0xf3061a5392264cc5L, 0xa443f952ceaf5816L, "jetbrains.mps.baseLanguage"), 0xf93d565d10L, "StringLiteral");
+    rv[10] = MetaAdapterFactory.getConcept(MetaAdapterFactory.getLanguage(0xf3061a5392264cc5L, 0xa443f952ceaf5816L, "jetbrains.mps.baseLanguage"), 0xfbced3b82aL, "LessThanExpression");
+    rv[11] = MetaAdapterFactory.getConcept(MetaAdapterFactory.getLanguage(0xf3061a5392264cc5L, 0xa443f952ceaf5816L, "jetbrains.mps.baseLanguage"), 0xf93d565d10L, "StringLiteral");
     return rv;
   }
   @Override
@@ -233,19 +261,21 @@ public class Template_reduce_Steps extends TemplateDeclarationBase {
   }
   @Override
   protected SContainmentLink[] initAggregationLinks() {
-    SContainmentLink[] rv = new SContainmentLink[10];
+    SContainmentLink[] rv = new SContainmentLink[11];
     rv[0] = MetaAdapterFactory.getContainmentLink(0xf3061a5392264cc5L, 0xa443f952ceaf5816L, 0x450368d90ce15bc3L, 0x4ed4d318133c80ceL, "type");
     rv[1] = MetaAdapterFactory.getContainmentLink(0xf3061a5392264cc5L, 0xa443f952ceaf5816L, 0xf8c37a7f6eL, 0xf8c37f506eL, "initializer");
     rv[2] = MetaAdapterFactory.getContainmentLink(0xf3061a5392264cc5L, 0xa443f952ceaf5816L, 0xf8cc67c7f0L, 0xf8cc67c7f1L, "localVariableDeclaration");
     rv[3] = MetaAdapterFactory.getContainmentLink(0xf3061a5392264cc5L, 0xa443f952ceaf5816L, 0xf8cc56b200L, 0xf8cc6bf961L, "statement");
     rv[4] = MetaAdapterFactory.getContainmentLink(0xf3061a5392264cc5L, 0xa443f952ceaf5816L, 0xf8cc56b213L, 0xf8cc56b214L, "expression");
-    rv[5] = MetaAdapterFactory.getContainmentLink(0xf3061a5392264cc5L, 0xa443f952ceaf5816L, 0x10cb1ac5adeL, 0x10cb1ada6e8L, "body");
-    rv[6] = MetaAdapterFactory.getContainmentLink(0xf3061a5392264cc5L, 0xa443f952ceaf5816L, 0xfbdeb6fecfL, 0xfbdeb7a11bL, "rightExpression");
-    rv[7] = MetaAdapterFactory.getContainmentLink(0xf3061a5392264cc5L, 0xa443f952ceaf5816L, 0xfbdeb6fecfL, 0xfbdeb7a11cL, "leftExpression");
-    rv[8] = MetaAdapterFactory.getContainmentLink(0xf3061a5392264cc5L, 0xa443f952ceaf5816L, 0xfaa4bf0f2fL, 0xfaa4bf0f30L, "condition");
-    rv[9] = MetaAdapterFactory.getContainmentLink(0xf3061a5392264cc5L, 0xa443f952ceaf5816L, 0x11857355952L, 0xf8c78301aeL, "actualArgument");
+    rv[5] = MetaAdapterFactory.getContainmentLink(0xf3061a5392264cc5L, 0xa443f952ceaf5816L, 0x120a4c1f269L, 0x120a4c433a6L, "expression");
+    rv[6] = MetaAdapterFactory.getContainmentLink(0xf3061a5392264cc5L, 0xa443f952ceaf5816L, 0x10cb1ac5adeL, 0x10cb1ada6e8L, "body");
+    rv[7] = MetaAdapterFactory.getContainmentLink(0xf3061a5392264cc5L, 0xa443f952ceaf5816L, 0xfbdeb6fecfL, 0xfbdeb7a11bL, "rightExpression");
+    rv[8] = MetaAdapterFactory.getContainmentLink(0xf3061a5392264cc5L, 0xa443f952ceaf5816L, 0xfbdeb6fecfL, 0xfbdeb7a11cL, "leftExpression");
+    rv[9] = MetaAdapterFactory.getContainmentLink(0xf3061a5392264cc5L, 0xa443f952ceaf5816L, 0xfaa4bf0f2fL, 0xfaa4bf0f30L, "condition");
+    rv[10] = MetaAdapterFactory.getContainmentLink(0xf3061a5392264cc5L, 0xa443f952ceaf5816L, 0x11857355952L, 0xf8c78301aeL, "actualArgument");
     return rv;
   }
+  private static SNodePointer templateNode_yok9ix_c0a0a1a1a1a1a1a2a1a1a1a2a2a4 = new SNodePointer("r:262b93f0-fe86-497c-93c5-efd684d05bc6(jetbrains.mps.samples.KajaSceneConstruction.generator.template.main@generator)", "8319658564158341131");
   private static SNodePointer propertyMacro_yok9ix_c0a0c0a0b0b0b0c0b0c0c0e = new SNodePointer("r:262b93f0-fe86-497c-93c5-efd684d05bc6(jetbrains.mps.samples.KajaSceneConstruction.generator.template.main@generator)", "6504511466441384480");
   private static SNodePointer templateNode_yok9ix_c0a0a1a2a1a2a1a2a2a4 = new SNodePointer("r:262b93f0-fe86-497c-93c5-efd684d05bc6(jetbrains.mps.samples.KajaSceneConstruction.generator.template.main@generator)", "6504511466441377806");
 }
