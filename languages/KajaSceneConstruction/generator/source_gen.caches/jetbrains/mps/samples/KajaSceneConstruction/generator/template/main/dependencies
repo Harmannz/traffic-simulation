@@ -15,9 +15,13 @@
     <classNode dependClassName="jetbrains.mps.samples.KajaSceneConstruction.generator.template.main.Template_reduce_BuildWall" />
     <classNode dependClassName="jetbrains.mps.samples.KajaSceneConstruction.generator.template.main.Template_reduce_DestroyWall" />
     <classNode dependClassName="jetbrains.mps.samples.KajaSceneConstruction.generator.template.main.Template_reduce_DropMark" />
+    <classNode dependClassName="jetbrains.mps.samples.KajaSceneConstruction.generator.template.main.Template_reduce_Green" />
     <classNode dependClassName="jetbrains.mps.samples.KajaSceneConstruction.generator.template.main.Template_reduce_PickMark" />
+    <classNode dependClassName="jetbrains.mps.samples.KajaSceneConstruction.generator.template.main.Template_reduce_Red" />
     <classNode dependClassName="jetbrains.mps.samples.KajaSceneConstruction.generator.template.main.Template_reduce_Steps" />
+    <classNode dependClassName="jetbrains.mps.samples.KajaSceneConstruction.generator.template.main.Template_reduce_TrafficLight" />
     <classNode dependClassName="jetbrains.mps.samples.KajaSceneConstruction.generator.template.main.Template_reduce_Vehicle" />
+    <classNode dependClassName="jetbrains.mps.samples.KajaSceneConstruction.generator.template.main.Template_reduce_Yellow" />
     <classNode dependClassName="jetbrains.mps.smodel.SNodePointer" />
     <classNode dependClassName="jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory" />
     <classNode dependClassName="org.jetbrains.annotations.NotNull" />
@@ -108,9 +112,13 @@
     <classNode dependClassName="jetbrains.mps.samples.KajaSceneConstruction.generator.template.main.Template_reduce_BuildWall" />
     <classNode dependClassName="jetbrains.mps.samples.KajaSceneConstruction.generator.template.main.Template_reduce_DestroyWall" />
     <classNode dependClassName="jetbrains.mps.samples.KajaSceneConstruction.generator.template.main.Template_reduce_DropMark" />
+    <classNode dependClassName="jetbrains.mps.samples.KajaSceneConstruction.generator.template.main.Template_reduce_Green" />
     <classNode dependClassName="jetbrains.mps.samples.KajaSceneConstruction.generator.template.main.Template_reduce_PickMark" />
+    <classNode dependClassName="jetbrains.mps.samples.KajaSceneConstruction.generator.template.main.Template_reduce_Red" />
     <classNode dependClassName="jetbrains.mps.samples.KajaSceneConstruction.generator.template.main.Template_reduce_Steps" />
+    <classNode dependClassName="jetbrains.mps.samples.KajaSceneConstruction.generator.template.main.Template_reduce_TrafficLight" />
     <classNode dependClassName="jetbrains.mps.samples.KajaSceneConstruction.generator.template.main.Template_reduce_Vehicle" />
+    <classNode dependClassName="jetbrains.mps.samples.KajaSceneConstruction.generator.template.main.Template_reduce_Yellow" />
     <classNode dependClassName="jetbrains.mps.smodel.SNodePointer" />
     <classNode dependClassName="org.jetbrains.mps.openapi.model.SModelReference" />
     <classNode dependClassName="org.jetbrains.mps.openapi.model.SNodeReference" />
@@ -218,6 +226,26 @@
     <classNode dependClassName="org.jetbrains.mps.openapi.persistence.PersistenceFacade" />
     <classNode extendsClassName="jetbrains.mps.generator.runtime.TemplateDeclarationBase" />
   </dependency>
+  <dependency className="jetbrains.mps.samples.KajaSceneConstruction.generator.template.main.Template_reduce_Green" file="Template_reduce_Green.java">
+    <classNode dependClassName="java.lang.Override" />
+    <classNode dependClassName="java.util.Collection" />
+    <classNode dependClassName="jetbrains.mps.generator.runtime.Generated" />
+    <classNode dependClassName="jetbrains.mps.generator.runtime.GenerationException" />
+    <classNode dependClassName="jetbrains.mps.generator.runtime.NodeWeaveFacility" />
+    <classNode dependClassName="jetbrains.mps.generator.runtime.TemplateContext" />
+    <classNode dependClassName="jetbrains.mps.generator.runtime.TemplateExecutionEnvironment" />
+    <classNode dependClassName="jetbrains.mps.generator.runtime.TemplateUtil" />
+    <classNode dependClassName="jetbrains.mps.smodel.SNodePointer" />
+    <classNode dependClassName="jetbrains.mps.smodel.SReference" />
+    <classNode dependClassName="jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory" />
+    <classNode dependClassName="org.jetbrains.annotations.NotNull" />
+    <classNode dependClassName="org.jetbrains.mps.openapi.language.SConcept" />
+    <classNode dependClassName="org.jetbrains.mps.openapi.language.SReferenceLink" />
+    <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
+    <classNode dependClassName="org.jetbrains.mps.openapi.model.SNodeReference" />
+    <classNode dependClassName="org.jetbrains.mps.openapi.persistence.PersistenceFacade" />
+    <classNode extendsClassName="jetbrains.mps.generator.runtime.TemplateDeclarationBase" />
+  </dependency>
   <dependency className="jetbrains.mps.samples.KajaSceneConstruction.generator.template.main.Template_reduce_PickMark" file="Template_reduce_PickMark.java">
     <classNode dependClassName="java.lang.Override" />
     <classNode dependClassName="java.util.Collection" />
@@ -243,6 +271,26 @@
     <classNode dependClassName="org.jetbrains.mps.openapi.persistence.PersistenceFacade" />
     <classNode extendsClassName="jetbrains.mps.generator.runtime.TemplateDeclarationBase" />
   </dependency>
+  <dependency className="jetbrains.mps.samples.KajaSceneConstruction.generator.template.main.Template_reduce_Red" file="Template_reduce_Red.java">
+    <classNode dependClassName="java.lang.Override" />
+    <classNode dependClassName="java.util.Collection" />
+    <classNode dependClassName="jetbrains.mps.generator.runtime.Generated" />
+    <classNode dependClassName="jetbrains.mps.generator.runtime.GenerationException" />
+    <classNode dependClassName="jetbrains.mps.generator.runtime.NodeWeaveFacility" />
+    <classNode dependClassName="jetbrains.mps.generator.runtime.TemplateContext" />
+    <classNode dependClassName="jetbrains.mps.generator.runtime.TemplateExecutionEnvironment" />
+    <classNode dependClassName="jetbrains.mps.generator.runtime.TemplateUtil" />
+    <classNode dependClassName="jetbrains.mps.smodel.SNodePointer" />
+    <classNode dependClassName="jetbrains.mps.smodel.SReference" />
+    <classNode dependClassName="jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory" />
+    <classNode dependClassName="org.jetbrains.annotations.NotNull" />
+    <classNode dependClassName="org.jetbrains.mps.openapi.language.SConcept" />
+    <classNode dependClassName="org.jetbrains.mps.openapi.language.SReferenceLink" />
+    <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
+    <classNode dependClassName="org.jetbrains.mps.openapi.model.SNodeReference" />
+    <classNode dependClassName="org.jetbrains.mps.openapi.persistence.PersistenceFacade" />
+    <classNode extendsClassName="jetbrains.mps.generator.runtime.TemplateDeclarationBase" />
+  </dependency>
   <dependency className="jetbrains.mps.samples.KajaSceneConstruction.generator.template.main.Template_reduce_Steps" file="Template_reduce_Steps.java">
     <classNode dependClassName="java.lang.Override" />
     <classNode dependClassName="java.util.Collection" />
@@ -253,6 +301,33 @@
     <classNode dependClassName="jetbrains.mps.generator.runtime.TemplateExecutionEnvironment" />
     <classNode dependClassName="jetbrains.mps.generator.runtime.TemplateUtil" />
     <classNode dependClassName="jetbrains.mps.generator.template.PropertyMacroContext" />
+    <classNode dependClassName="jetbrains.mps.samples.KajaSceneConstruction.generator.template.main.QueriesGenerated" />
+    <classNode dependClassName="jetbrains.mps.smodel.SNodePointer" />
+    <classNode dependClassName="jetbrains.mps.smodel.SReference" />
+    <classNode dependClassName="jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory" />
+    <classNode dependClassName="org.jetbrains.annotations.NotNull" />
+    <classNode dependClassName="org.jetbrains.mps.openapi.language.SConcept" />
+    <classNode dependClassName="org.jetbrains.mps.openapi.language.SContainmentLink" />
+    <classNode dependClassName="org.jetbrains.mps.openapi.language.SProperty" />
+    <classNode dependClassName="org.jetbrains.mps.openapi.language.SReferenceLink" />
+    <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
+    <classNode dependClassName="org.jetbrains.mps.openapi.model.SNodeAccessUtil" />
+    <classNode dependClassName="org.jetbrains.mps.openapi.model.SNodeReference" />
+    <classNode dependClassName="org.jetbrains.mps.openapi.persistence.PersistenceFacade" />
+    <classNode extendsClassName="jetbrains.mps.generator.runtime.TemplateDeclarationBase" />
+  </dependency>
+  <dependency className="jetbrains.mps.samples.KajaSceneConstruction.generator.template.main.Template_reduce_TrafficLight" file="Template_reduce_TrafficLight.java">
+    <classNode dependClassName="java.lang.Iterable" />
+    <classNode dependClassName="java.lang.Override" />
+    <classNode dependClassName="java.util.Collection" />
+    <classNode dependClassName="jetbrains.mps.generator.runtime.Generated" />
+    <classNode dependClassName="jetbrains.mps.generator.runtime.GenerationException" />
+    <classNode dependClassName="jetbrains.mps.generator.runtime.NodeWeaveFacility" />
+    <classNode dependClassName="jetbrains.mps.generator.runtime.TemplateContext" />
+    <classNode dependClassName="jetbrains.mps.generator.runtime.TemplateExecutionEnvironment" />
+    <classNode dependClassName="jetbrains.mps.generator.runtime.TemplateUtil" />
+    <classNode dependClassName="jetbrains.mps.generator.template.PropertyMacroContext" />
+    <classNode dependClassName="jetbrains.mps.generator.template.SourceSubstituteMacroNodesContext" />
     <classNode dependClassName="jetbrains.mps.samples.KajaSceneConstruction.generator.template.main.QueriesGenerated" />
     <classNode dependClassName="jetbrains.mps.smodel.SNodePointer" />
     <classNode dependClassName="jetbrains.mps.smodel.SReference" />
@@ -292,6 +367,26 @@
     <classNode dependClassName="org.jetbrains.mps.openapi.language.SReferenceLink" />
     <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
     <classNode dependClassName="org.jetbrains.mps.openapi.model.SNodeAccessUtil" />
+    <classNode dependClassName="org.jetbrains.mps.openapi.model.SNodeReference" />
+    <classNode dependClassName="org.jetbrains.mps.openapi.persistence.PersistenceFacade" />
+    <classNode extendsClassName="jetbrains.mps.generator.runtime.TemplateDeclarationBase" />
+  </dependency>
+  <dependency className="jetbrains.mps.samples.KajaSceneConstruction.generator.template.main.Template_reduce_Yellow" file="Template_reduce_Yellow.java">
+    <classNode dependClassName="java.lang.Override" />
+    <classNode dependClassName="java.util.Collection" />
+    <classNode dependClassName="jetbrains.mps.generator.runtime.Generated" />
+    <classNode dependClassName="jetbrains.mps.generator.runtime.GenerationException" />
+    <classNode dependClassName="jetbrains.mps.generator.runtime.NodeWeaveFacility" />
+    <classNode dependClassName="jetbrains.mps.generator.runtime.TemplateContext" />
+    <classNode dependClassName="jetbrains.mps.generator.runtime.TemplateExecutionEnvironment" />
+    <classNode dependClassName="jetbrains.mps.generator.runtime.TemplateUtil" />
+    <classNode dependClassName="jetbrains.mps.smodel.SNodePointer" />
+    <classNode dependClassName="jetbrains.mps.smodel.SReference" />
+    <classNode dependClassName="jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory" />
+    <classNode dependClassName="org.jetbrains.annotations.NotNull" />
+    <classNode dependClassName="org.jetbrains.mps.openapi.language.SConcept" />
+    <classNode dependClassName="org.jetbrains.mps.openapi.language.SReferenceLink" />
+    <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
     <classNode dependClassName="org.jetbrains.mps.openapi.model.SNodeReference" />
     <classNode dependClassName="org.jetbrains.mps.openapi.persistence.PersistenceFacade" />
     <classNode extendsClassName="jetbrains.mps.generator.runtime.TemplateDeclarationBase" />

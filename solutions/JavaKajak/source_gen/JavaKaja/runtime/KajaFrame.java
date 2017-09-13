@@ -15,7 +15,6 @@ import javax.swing.ImageIcon;
 import java.awt.Dimension;
 import java.awt.BorderLayout;
 import javax.swing.JOptionPane;
-import java.util.Iterator;
 import java.awt.Color;
 import javax.swing.SwingUtilities;
 import java.awt.Font;
@@ -30,6 +29,7 @@ public abstract class KajaFrame {
   protected final Cell[][] world = new Cell[HEIGHT][WIDTH];
   protected final VisualCell[][] visuals = new VisualCell[HEIGHT][WIDTH];
   private List<Vehicle> vehicles = new ArrayList<Vehicle>();
+  private List<TrafficLightCell> trafficLights = new ArrayList<TrafficLightCell>();
 
   private final JFrame frame = new JFrame("Traffic Simulator");
   private Icon karelIconNorth;
@@ -87,11 +87,16 @@ public abstract class KajaFrame {
 
   public void tick() {
     // For traffic light in traffic light. Tick traffic light 
-    Iterator<Vehicle> i = vehicles.iterator();
-    while (i.hasNext()) {
-      Vehicle vehicle = i.next();
-      moveVehicle(vehicle);
+    for (TrafficLightCell trafficLight : trafficLights) {
+      trafficLight.tick();
     }
+
+    for (Vehicle vehicle : vehicles) {
+      if (!(vehicle.hasReachedDestination())) {
+        moveVehicle(vehicle);
+      }
+    }
+
     for (Vehicle vehicle : vehicles) {
       vehicle.unsetTicked();
     }
@@ -146,7 +151,6 @@ public abstract class KajaFrame {
 
     Cell currentCell = getCurrentCell(vehicle.getCurrentPosition());
     if (vehicle.reachedDestination()) {
-      vehicles.remove(vehicle);
       currentCell.unsetVehicle();
       return;
     }
@@ -268,7 +272,6 @@ public abstract class KajaFrame {
       return;
     }
     world[row][col] = new WallCell();
-    updateUI();
   }
 
   protected void addRoad(int row, int col, Direction direction) {
@@ -280,13 +283,22 @@ public abstract class KajaFrame {
     } else {
       world[row][col] = new RoadCell(direction);
     }
-    updateUI();
   }
 
+  protected void addTrafficLight(int row, int col, TrafficLightCell trafficLight) {
+    if (stopped) {
+      return;
+    }
+    if (!(world[row][col] instanceof RoadCell)) {
+      throw new RuntimeException("Cannot place traffic light on non-road");
+    } else {
+      world[row][col] = trafficLight;
+      trafficLights.add(trafficLight);
+    }
+  }
   protected void addVehicle(int row, int col, Vehicle vehicle) {
     world[row][col].setVehicle(vehicle);
     this.vehicles.add(vehicle);
-    updateUI();
   }
 
   protected boolean isAllowedRow(int row) {

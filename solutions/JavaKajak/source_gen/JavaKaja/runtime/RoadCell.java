@@ -16,7 +16,6 @@ public class RoadCell extends Cell {
     this.vehicle = vehicle;
   }
 
-
   @Override
   public void addDirection(Direction direction) {
     this.directions.add(direction);

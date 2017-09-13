@@ -15,14 +15,18 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
   /*package*/ final ConceptDescriptor myConceptAbstractBuilderCommand = createDescriptorForAbstractBuilderCommand();
   /*package*/ final ConceptDescriptor myConceptAbstractRoad = createDescriptorForAbstractRoad();
   /*package*/ final ConceptDescriptor myConceptBuildWall = createDescriptorForBuildWall();
+  /*package*/ final ConceptDescriptor myConceptColour = createDescriptorForColour();
   /*package*/ final ConceptDescriptor myConceptDestroyWall = createDescriptorForDestroyWall();
   /*package*/ final ConceptDescriptor myConceptDirectionQueue = createDescriptorForDirectionQueue();
   /*package*/ final ConceptDescriptor myConceptDropMark = createDescriptorForDropMark();
+  /*package*/ final ConceptDescriptor myConceptGreen = createDescriptorForGreen();
   /*package*/ final ConceptDescriptor myConceptPickMark = createDescriptorForPickMark();
+  /*package*/ final ConceptDescriptor myConceptRed = createDescriptorForRed();
   /*package*/ final ConceptDescriptor myConceptRoad = createDescriptorForRoad();
   /*package*/ final ConceptDescriptor myConceptSteps = createDescriptorForSteps();
   /*package*/ final ConceptDescriptor myConceptTrafficLight = createDescriptorForTrafficLight();
   /*package*/ final ConceptDescriptor myConceptVehicle = createDescriptorForVehicle();
+  /*package*/ final ConceptDescriptor myConceptYellow = createDescriptorForYellow();
   private final LanguageConceptSwitch myConceptIndex;
 
   public StructureAspectDescriptor() {
@@ -31,7 +35,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
 
   @Override
   public Collection<ConceptDescriptor> getDescriptors() {
-    return Arrays.asList(myConceptAbstractBuilderCommand, myConceptAbstractRoad, myConceptBuildWall, myConceptDestroyWall, myConceptDirectionQueue, myConceptDropMark, myConceptPickMark, myConceptRoad, myConceptSteps, myConceptTrafficLight, myConceptVehicle);
+    return Arrays.asList(myConceptAbstractBuilderCommand, myConceptAbstractRoad, myConceptBuildWall, myConceptColour, myConceptDestroyWall, myConceptDirectionQueue, myConceptDropMark, myConceptGreen, myConceptPickMark, myConceptRed, myConceptRoad, myConceptSteps, myConceptTrafficLight, myConceptVehicle, myConceptYellow);
   }
 
   @Override
@@ -44,14 +48,20 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
         return myConceptAbstractRoad;
       case LanguageConceptSwitch.BuildWall:
         return myConceptBuildWall;
+      case LanguageConceptSwitch.Colour:
+        return myConceptColour;
       case LanguageConceptSwitch.DestroyWall:
         return myConceptDestroyWall;
       case LanguageConceptSwitch.DirectionQueue:
         return myConceptDirectionQueue;
       case LanguageConceptSwitch.DropMark:
         return myConceptDropMark;
+      case LanguageConceptSwitch.Green:
+        return myConceptGreen;
       case LanguageConceptSwitch.PickMark:
         return myConceptPickMark;
+      case LanguageConceptSwitch.Red:
+        return myConceptRed;
       case LanguageConceptSwitch.Road:
         return myConceptRoad;
       case LanguageConceptSwitch.Steps:
@@ -60,6 +70,8 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
         return myConceptTrafficLight;
       case LanguageConceptSwitch.Vehicle:
         return myConceptVehicle;
+      case LanguageConceptSwitch.Yellow:
+        return myConceptYellow;
       default:
         return null;
     }
@@ -81,6 +93,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
   private static ConceptDescriptor createDescriptorForAbstractRoad() {
     ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("jetbrains.mps.samples.KajaSceneConstruction", "AbstractRoad", 0xb56912a3674f4530L, 0xb0cf55261b526a1fL, 0x5faacf6e150bf47L);
     b.class_(false, true, false);
+    b.super_("jetbrains.mps.samples.KajaSceneConstruction.structure.AbstractBuilderCommand", 0xb56912a3674f4530L, 0xb0cf55261b526a1fL, 0x2c8eb033a834fe3fL);
     b.origin("r:ce42c9d0-9778-4b7f-ba63-609d51a475fd(jetbrains.mps.samples.KajaSceneConstruction.structure)/430846890709401415");
     return b.create();
   }
@@ -90,6 +103,12 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.super_("jetbrains.mps.samples.KajaSceneConstruction.structure.AbstractBuilderCommand", 0xb56912a3674f4530L, 0xb0cf55261b526a1fL, 0x2c8eb033a834fe3fL);
     b.origin("r:ce42c9d0-9778-4b7f-ba63-609d51a475fd(jetbrains.mps.samples.KajaSceneConstruction.structure)/3210697320273550864");
     b.alias("build wall");
+    return b.create();
+  }
+  private static ConceptDescriptor createDescriptorForColour() {
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("jetbrains.mps.samples.KajaSceneConstruction", "Colour", 0xb56912a3674f4530L, 0xb0cf55261b526a1fL, 0xb100b752e59505dL);
+    b.class_(false, true, false);
+    b.origin("r:ce42c9d0-9778-4b7f-ba63-609d51a475fd(jetbrains.mps.samples.KajaSceneConstruction.structure)/797149731961262173");
     return b.create();
   }
   private static ConceptDescriptor createDescriptorForDestroyWall() {
@@ -117,6 +136,14 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.alias("drop mark");
     return b.create();
   }
+  private static ConceptDescriptor createDescriptorForGreen() {
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("jetbrains.mps.samples.KajaSceneConstruction", "Green", 0xb56912a3674f4530L, 0xb0cf55261b526a1fL, 0xb100b752e595060L);
+    b.class_(false, false, false);
+    b.super_("jetbrains.mps.samples.KajaSceneConstruction.structure.Colour", 0xb56912a3674f4530L, 0xb0cf55261b526a1fL, 0xb100b752e59505dL);
+    b.origin("r:ce42c9d0-9778-4b7f-ba63-609d51a475fd(jetbrains.mps.samples.KajaSceneConstruction.structure)/797149731961262176");
+    b.alias("green");
+    return b.create();
+  }
   private static ConceptDescriptor createDescriptorForPickMark() {
     ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("jetbrains.mps.samples.KajaSceneConstruction", "PickMark", 0xb56912a3674f4530L, 0xb0cf55261b526a1fL, 0x2c8eb033a835165fL);
     b.class_(false, false, false);
@@ -125,10 +152,18 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.alias("pick mark");
     return b.create();
   }
+  private static ConceptDescriptor createDescriptorForRed() {
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("jetbrains.mps.samples.KajaSceneConstruction", "Red", 0xb56912a3674f4530L, 0xb0cf55261b526a1fL, 0xb100b752e59505fL);
+    b.class_(false, false, false);
+    b.super_("jetbrains.mps.samples.KajaSceneConstruction.structure.Colour", 0xb56912a3674f4530L, 0xb0cf55261b526a1fL, 0xb100b752e59505dL);
+    b.origin("r:ce42c9d0-9778-4b7f-ba63-609d51a475fd(jetbrains.mps.samples.KajaSceneConstruction.structure)/797149731961262175");
+    b.alias("red");
+    return b.create();
+  }
   private static ConceptDescriptor createDescriptorForRoad() {
     ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("jetbrains.mps.samples.KajaSceneConstruction", "Road", 0xb56912a3674f4530L, 0xb0cf55261b526a1fL, 0x5faacf6e150bf2bL);
     b.class_(false, false, false);
-    b.super_("jetbrains.mps.samples.KajaSceneConstruction.structure.AbstractBuilderCommand", 0xb56912a3674f4530L, 0xb0cf55261b526a1fL, 0x2c8eb033a834fe3fL);
+    b.super_("jetbrains.mps.samples.KajaSceneConstruction.structure.AbstractRoad", 0xb56912a3674f4530L, 0xb0cf55261b526a1fL, 0x5faacf6e150bf47L);
     b.origin("r:ce42c9d0-9778-4b7f-ba63-609d51a475fd(jetbrains.mps.samples.KajaSceneConstruction.structure)/430846890709401387");
     b.prop("length", 0x5faacf6e150bf73L, "430846890709401459");
     b.prop("orientation", 0x5faacf6e150bf75L, "430846890709401461");
@@ -148,7 +183,12 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
   private static ConceptDescriptor createDescriptorForTrafficLight() {
     ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("jetbrains.mps.samples.KajaSceneConstruction", "TrafficLight", 0xb56912a3674f4530L, 0xb0cf55261b526a1fL, 0x5faacf6e150bf7eL);
     b.class_(false, false, false);
+    b.super_("jetbrains.mps.samples.KajaSceneConstruction.structure.AbstractRoad", 0xb56912a3674f4530L, 0xb0cf55261b526a1fL, 0x5faacf6e150bf47L);
     b.origin("r:ce42c9d0-9778-4b7f-ba63-609d51a475fd(jetbrains.mps.samples.KajaSceneConstruction.structure)/430846890709401470");
+    b.prop("ticksToChange", 0xb100b752e96c163L, "797149731965288803");
+    b.aggregate("lightOrder", 0xb100b752e59501aL).target(0xb56912a3674f4530L, 0xb0cf55261b526a1fL, 0xb100b752e59505dL).optional(false).ordered(true).multiple(true).origin("797149731961262106").done();
+    b.aggregate("directions", 0xb100b752e96c168L).target(0x49a08c51fe543ccL, 0xbd998b46d641d7f5L, 0x2de971c785ed0d39L).optional(true).ordered(true).multiple(true).origin("797149731965288808").done();
+    b.alias("add traffic light");
     return b.create();
   }
   private static ConceptDescriptor createDescriptorForVehicle() {
@@ -163,6 +203,14 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.aggregate("directionQueue", 0x5a44aab7624eb3c5L).target(0x49a08c51fe543ccL, 0xbd998b46d641d7f5L, 0x2de971c785ed0d39L).optional(true).ordered(true).multiple(true).origin("6504511466434900933").done();
     b.aggregate("startingDirection", 0x5a44aab762ff42ebL).target(0x49a08c51fe543ccL, 0xbd998b46d641d7f5L, 0x2de971c785ed0d39L).optional(false).ordered(true).multiple(false).origin("6504511466446471915").done();
     b.alias("add vehicle");
+    return b.create();
+  }
+  private static ConceptDescriptor createDescriptorForYellow() {
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("jetbrains.mps.samples.KajaSceneConstruction", "Yellow", 0xb56912a3674f4530L, 0xb0cf55261b526a1fL, 0xb100b752e59505eL);
+    b.class_(false, false, false);
+    b.super_("jetbrains.mps.samples.KajaSceneConstruction.structure.Colour", 0xb56912a3674f4530L, 0xb0cf55261b526a1fL, 0xb100b752e59505dL);
+    b.origin("r:ce42c9d0-9778-4b7f-ba63-609d51a475fd(jetbrains.mps.samples.KajaSceneConstruction.structure)/797149731961262174");
+    b.alias("yellow");
     return b.create();
   }
 }

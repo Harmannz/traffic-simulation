@@ -23,7 +23,7 @@ public class Mapping_main extends MapConfigBase implements TemplateMappingConfig
   private final Collection<TemplateReductionRule> rules;
   public Mapping_main(@NotNull TemplateModel model) {
     super(new SNodePointer("r:262b93f0-fe86-497c-93c5-efd684d05bc6(jetbrains.mps.samples.KajaSceneConstruction.generator.template.main@generator)", "3210697320273563027"), "main", model, false);
-    rules = TemplateUtil.<TemplateReductionRule>asCollection(new Mapping_main.ReductionRule0(), new Mapping_main.ReductionRule1(), new Mapping_main.ReductionRule2(), new Mapping_main.ReductionRule3(), new Mapping_main.ReductionRule4(), new Mapping_main.ReductionRule5(), new Mapping_main.ReductionRule6());
+    rules = TemplateUtil.<TemplateReductionRule>asCollection(new Mapping_main.ReductionRule0(), new Mapping_main.ReductionRule1(), new Mapping_main.ReductionRule2(), new Mapping_main.ReductionRule3(), new Mapping_main.ReductionRule4(), new Mapping_main.ReductionRule5(), new Mapping_main.ReductionRule6(), new Mapping_main.ReductionRule7(), new Mapping_main.ReductionRule8(), new Mapping_main.ReductionRule9(), new Mapping_main.ReductionRule10());
   }
   @Override
   public Collection<TemplateReductionRule> getReductionRules() {
@@ -103,6 +103,50 @@ public class Mapping_main extends MapConfigBase implements TemplateMappingConfig
     public Collection<SNode> apply(@NotNull final TemplateContext context) throws GenerationException {
       final TemplateExecutionEnvironment environment = context.getEnvironment();
       Collection<SNode> tlist1 = new Template_reduce_Steps().apply(environment, context);
+      return tlist1;
+    }
+  }
+  public final class ReductionRule7 extends ReductionRuleBase {
+    public ReductionRule7() {
+      super(new SNodePointer("r:262b93f0-fe86-497c-93c5-efd684d05bc6(jetbrains.mps.samples.KajaSceneConstruction.generator.template.main@generator)", "797149731962106672"), MetaAdapterFactory.getConcept(0xb56912a3674f4530L, 0xb0cf55261b526a1fL, 0xb100b752e595060L, "jetbrains.mps.samples.KajaSceneConstruction.structure.Green"), false);
+    }
+    @Override
+    public Collection<SNode> apply(@NotNull final TemplateContext context) throws GenerationException {
+      final TemplateExecutionEnvironment environment = context.getEnvironment();
+      Collection<SNode> tlist1 = new Template_reduce_Green().apply(environment, context);
+      return tlist1;
+    }
+  }
+  public final class ReductionRule8 extends ReductionRuleBase {
+    public ReductionRule8() {
+      super(new SNodePointer("r:262b93f0-fe86-497c-93c5-efd684d05bc6(jetbrains.mps.samples.KajaSceneConstruction.generator.template.main@generator)", "797149731962110235"), MetaAdapterFactory.getConcept(0xb56912a3674f4530L, 0xb0cf55261b526a1fL, 0xb100b752e59505fL, "jetbrains.mps.samples.KajaSceneConstruction.structure.Red"), false);
+    }
+    @Override
+    public Collection<SNode> apply(@NotNull final TemplateContext context) throws GenerationException {
+      final TemplateExecutionEnvironment environment = context.getEnvironment();
+      Collection<SNode> tlist1 = new Template_reduce_Red().apply(environment, context);
+      return tlist1;
+    }
+  }
+  public final class ReductionRule9 extends ReductionRuleBase {
+    public ReductionRule9() {
+      super(new SNodePointer("r:262b93f0-fe86-497c-93c5-efd684d05bc6(jetbrains.mps.samples.KajaSceneConstruction.generator.template.main@generator)", "797149731962110375"), MetaAdapterFactory.getConcept(0xb56912a3674f4530L, 0xb0cf55261b526a1fL, 0xb100b752e59505eL, "jetbrains.mps.samples.KajaSceneConstruction.structure.Yellow"), false);
+    }
+    @Override
+    public Collection<SNode> apply(@NotNull final TemplateContext context) throws GenerationException {
+      final TemplateExecutionEnvironment environment = context.getEnvironment();
+      Collection<SNode> tlist1 = new Template_reduce_Yellow().apply(environment, context);
+      return tlist1;
+    }
+  }
+  public final class ReductionRule10 extends ReductionRuleBase {
+    public ReductionRule10() {
+      super(new SNodePointer("r:262b93f0-fe86-497c-93c5-efd684d05bc6(jetbrains.mps.samples.KajaSceneConstruction.generator.template.main@generator)", "797149731965313491"), MetaAdapterFactory.getConcept(0xb56912a3674f4530L, 0xb0cf55261b526a1fL, 0x5faacf6e150bf7eL, "jetbrains.mps.samples.KajaSceneConstruction.structure.TrafficLight"), false);
+    }
+    @Override
+    public Collection<SNode> apply(@NotNull final TemplateContext context) throws GenerationException {
+      final TemplateExecutionEnvironment environment = context.getEnvironment();
+      Collection<SNode> tlist1 = new Template_reduce_TrafficLight().apply(environment, context);
       return tlist1;
     }
   }

@@ -29,8 +29,10 @@
       <concept id="3308300503039683649" name="jetbrains.mps.samples.Kaja.structure.Heading" flags="ng" index="2C15Q6">
         <child id="3308300503039683650" name="direction" index="2C15Q5" />
       </concept>
+      <concept id="3308300503039683644" name="jetbrains.mps.samples.Kaja.structure.West" flags="ng" index="2C15RV" />
       <concept id="3308300503039675713" name="jetbrains.mps.samples.Kaja.structure.East" flags="ng" index="2C17M6" />
       <concept id="3308300503039675723" name="jetbrains.mps.samples.Kaja.structure.South" flags="ng" index="2C17Mc" />
+      <concept id="3308300503039675707" name="jetbrains.mps.samples.Kaja.structure.North" flags="ng" index="2C17NW" />
       <concept id="3308300503039667424" name="jetbrains.mps.samples.Kaja.structure.While" flags="ng" index="2C1pOB">
         <child id="3308300503039667427" name="body" index="2C1pO$" />
         <child id="3308300503039667426" name="condition" index="2C1pO_" />
@@ -68,6 +70,9 @@
       </concept>
       <concept id="3210697320273608254" name="jetbrains.mps.samples.KajaSceneConstruction.structure.DropMark" flags="ng" index="24I$Sd" />
       <concept id="3210697320273550864" name="jetbrains.mps.samples.KajaSceneConstruction.structure.BuildWall" flags="ng" index="24IESz" />
+      <concept id="797149731961262176" name="jetbrains.mps.samples.KajaSceneConstruction.structure.Green" flags="ng" index="_ilGl" />
+      <concept id="797149731961262175" name="jetbrains.mps.samples.KajaSceneConstruction.structure.Red" flags="ng" index="_ilGE" />
+      <concept id="797149731961262174" name="jetbrains.mps.samples.KajaSceneConstruction.structure.Yellow" flags="ng" index="_ilGF" />
       <concept id="6504511466433091800" name="jetbrains.mps.samples.KajaSceneConstruction.structure.Vehicle" flags="ng" index="StV9J">
         <property id="6504511466433092007" name="col" index="StVcg" />
         <property id="6504511466433092005" name="row" index="StVci" />
@@ -78,6 +83,11 @@
       </concept>
       <concept id="6504511466439668685" name="jetbrains.mps.samples.KajaSceneConstruction.structure.Steps" flags="ng" index="SOX_U">
         <property id="6504511466439668686" name="steps" index="SOX_T" />
+      </concept>
+      <concept id="430846890709401470" name="jetbrains.mps.samples.KajaSceneConstruction.structure.TrafficLight" flags="ng" index="3$Exe8">
+        <property id="797149731965288803" name="ticksToChange" index="_xGCm" />
+        <child id="797149731961262106" name="lightOrder" index="_ilHJ" />
+        <child id="797149731965288808" name="directions" index="_xGCt" />
       </concept>
       <concept id="430846890709401387" name="jetbrains.mps.samples.KajaSceneConstruction.structure.Road" flags="ng" index="3$Exft">
         <property id="430846890709401500" name="direction" index="3$ExdE" />
@@ -253,12 +263,12 @@
         <ref role="2zTGDD" node="nUFfrxmd7f" resolve="TestRoad" />
       </node>
       <node concept="2C11Tl" id="nUFfrxmd7J" role="2C6hI7">
-        <ref role="2C198b" node="nUFfrxmd7$" resolve="buildRoad" />
+        <ref role="2C198b" node="nUFfrxmd7$" resolve="buildRoads" />
       </node>
       <node concept="2C1RJh" id="5D4EFtyDgun" role="2C6hI7" />
       <node concept="StV9J" id="5D4EFtz2kxm" role="2C6hI7">
-        <property role="StVci" value="4" />
-        <property role="StVcg" value="4" />
+        <property role="StVci" value="10" />
+        <property role="StVcg" value="1" />
         <property role="StVct" value="4" />
         <property role="StVcp" value="12" />
         <node concept="2C17Mc" id="5D4EFtz8yd5" role="S2x_M" />
@@ -267,43 +277,75 @@
       </node>
       <node concept="2C1RJh" id="5D4EFtz2ky6" role="2C6hI7" />
       <node concept="StV9J" id="7dPnm9Te7CC" role="2C6hI7">
-        <property role="StVci" value="4" />
-        <property role="StVcg" value="5" />
-        <property role="StVct" value="4" />
-        <property role="StVcp" value="12" />
-        <node concept="2C17M6" id="7dPnm9Te7CR" role="SIYxs" />
-        <node concept="2C17M6" id="7dPnm9Te7UB" role="S2x_M" />
+        <property role="StVci" value="1" />
+        <property role="StVcg" value="11" />
+        <property role="StVct" value="20" />
+        <property role="StVcp" value="11" />
+        <node concept="2C17Mc" id="1YWA$xsO1sx" role="SIYxs" />
+        <node concept="2C17Mc" id="1YWA$xsO1s$" role="S2x_M" />
       </node>
+      <node concept="2C1RJh" id="1YWA$xsO1sB" role="2C6hI7" />
+      <node concept="3$Exe8" id="Gg2RkIvquj" role="2C6hI7">
+        <property role="24I$TN" value="10" />
+        <property role="24I$TM" value="9" />
+        <property role="_xGCm" value="5" />
+        <node concept="_ilGl" id="1YWA$xsJIw$" role="_ilHJ" />
+        <node concept="_ilGF" id="1YWA$xsJI2c" role="_ilHJ" />
+        <node concept="_ilGE" id="1YWA$xsJIwF" role="_ilHJ" />
+        <node concept="2C17M6" id="Gg2RkIFhJI" role="_xGCt" />
+        <node concept="2C17Mc" id="1YWA$xsO1um" role="_xGCt" />
+        <node concept="2C17NW" id="1YWA$xsO1uu" role="_xGCt" />
+      </node>
+      <node concept="2C1RJh" id="1YWA$xsJI1z" role="2C6hI7" />
+      <node concept="3$Exe8" id="1YWA$xsO1tk" role="2C6hI7">
+        <property role="24I$TN" value="9" />
+        <property role="24I$TM" value="11" />
+        <property role="_xGCm" value="5" />
+        <node concept="_ilGE" id="1YWA$xsO1tJ" role="_ilHJ" />
+        <node concept="_ilGl" id="1YWA$xsO1tX" role="_ilHJ" />
+        <node concept="_ilGF" id="1YWA$xsO1u7" role="_ilHJ" />
+        <node concept="2C17Mc" id="1YWA$xsO1ud" role="_xGCt" />
+        <node concept="2C17M6" id="1YWA$xsO1uA" role="_xGCt" />
+        <node concept="2C15RV" id="1YWA$xsO1uI" role="_xGCt" />
+      </node>
+      <node concept="2C1RJh" id="1YWA$xsJI1M" role="2C6hI7" />
       <node concept="SOX_U" id="5D4EFtyEMAY" role="2C6hI7">
-        <property role="SOX_T" value="20" />
+        <property role="SOX_T" value="30" />
       </node>
     </node>
   </node>
   <node concept="2zTg$P" id="nUFfrxmd7f">
     <property role="TrG5h" value="TestRoad" />
     <node concept="2C11UY" id="nUFfrxmd7$" role="2zTg$O">
-      <property role="TrG5h" value="buildRoad" />
+      <property role="TrG5h" value="buildRoads" />
       <node concept="2C6hJS" id="nUFfrxmd7_" role="2C11UV">
         <node concept="3$Exft" id="1J3Do7cVJgj" role="2C6hI7">
-          <property role="24I$TN" value="4" />
-          <property role="24I$TM" value="4" />
+          <property role="24I$TN" value="10" />
+          <property role="24I$TM" value="1" />
           <property role="3$Exe3" value="horizontal" />
-          <property role="3$Exe5" value="10" />
+          <property role="3$Exe5" value="22" />
           <property role="3$ExdE" value="east" />
+        </node>
+        <node concept="3$Exft" id="7vNUHBkl35l" role="2C6hI7">
+          <property role="24I$TN" value="11" />
+          <property role="24I$TM" value="1" />
+          <property role="3$Exe3" value="horizontal" />
+          <property role="3$Exe5" value="22" />
+          <property role="3$ExdE" value="west" />
+        </node>
+        <node concept="3$Exft" id="7vNUHBkjhOI" role="2C6hI7">
+          <property role="24I$TN" value="1" />
+          <property role="24I$TM" value="10" />
+          <property role="3$Exe3" value="vertical" />
+          <property role="3$Exe5" value="22" />
+          <property role="3$ExdE" value="north" />
         </node>
         <node concept="3$Exft" id="5D4EFtypBQX" role="2C6hI7">
-          <property role="24I$TN" value="4" />
-          <property role="24I$TM" value="8" />
+          <property role="24I$TN" value="1" />
+          <property role="24I$TM" value="11" />
           <property role="3$Exe3" value="vertical" />
-          <property role="3$Exe5" value="10" />
+          <property role="3$Exe5" value="22" />
           <property role="3$ExdE" value="south" />
-        </node>
-        <node concept="3$Exft" id="5D4EFtz8ydk" role="2C6hI7">
-          <property role="24I$TN" value="12" />
-          <property role="24I$TM" value="8" />
-          <property role="3$Exe3" value="horizontal" />
-          <property role="3$Exe5" value="12" />
-          <property role="3$ExdE" value="east" />
         </node>
         <node concept="2C1RJh" id="5D4EFtyeJT3" role="2C6hI7" />
       </node>

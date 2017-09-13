@@ -8,6 +8,9 @@
     <classNode dependClassName="java.util.Arrays" />
     <classNode dependClassName="java.util.List" />
   </dependency>
+  <dependency className="JavaKaja.runtime.Colour" file="Colour.java">
+    <classNode dependClassName="java.awt.Color" />
+  </dependency>
   <dependency className="JavaKaja.runtime.Direction" file="Direction.java" />
   <dependency className="JavaKaja.runtime.IntersectionCell" file="IntersectionCell.java">
     <classNode dependClassName="JavaKaja.runtime.Direction" />
@@ -20,6 +23,7 @@
     <classNode dependClassName="JavaKaja.runtime.Direction" />
     <classNode dependClassName="JavaKaja.runtime.Position" />
     <classNode dependClassName="JavaKaja.runtime.RoadCell" />
+    <classNode dependClassName="JavaKaja.runtime.TrafficLightCell" />
     <classNode dependClassName="JavaKaja.runtime.Vehicle" />
     <classNode dependClassName="JavaKaja.runtime.VisualCell" />
     <classNode dependClassName="JavaKaja.runtime.WallCell" />
@@ -37,7 +41,6 @@
     <classNode dependClassName="java.lang.String" />
     <classNode dependClassName="java.lang.Thread" />
     <classNode dependClassName="java.util.ArrayList" />
-    <classNode dependClassName="java.util.Iterator" />
     <classNode dependClassName="java.util.List" />
     <classNode dependClassName="javax.swing.Icon" />
     <classNode dependClassName="javax.swing.ImageIcon" />
@@ -61,8 +64,16 @@
     <classNode dependClassName="java.lang.Override" />
     <classNode extendsClassName="JavaKaja.runtime.Cell" />
   </dependency>
+  <dependency className="JavaKaja.runtime.TrafficLightCell" file="TrafficLightCell.java">
+    <classNode dependClassName="JavaKaja.runtime.Colour" />
+    <classNode dependClassName="JavaKaja.runtime.Direction" />
+    <classNode dependClassName="java.awt.Color" />
+    <classNode dependClassName="java.lang.Override" />
+    <classNode dependClassName="java.util.List" />
+    <classNode dependClassName="java.util.Random" />
+    <classNode extendsClassName="JavaKaja.runtime.RoadCell" />
+  </dependency>
   <dependency className="JavaKaja.runtime.Vehicle" file="Vehicle.java">
-    <classNode dependClassName="JavaKaja.runtime.Cell" />
     <classNode dependClassName="JavaKaja.runtime.Direction" />
     <classNode dependClassName="JavaKaja.runtime.Position" />
     <classNode dependClassName="java.lang.Object" />

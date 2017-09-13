@@ -140,6 +140,9 @@
       </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
+      <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
+        <property id="1193676396447" name="virtualPackage" index="3GE5qa" />
+      </concept>
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
@@ -569,6 +572,79 @@
         <ref role="1NtTu8" to="rvtb:5D4EFty_Rfe" resolve="steps" />
       </node>
       <node concept="l2Vlx" id="5D4EFty_Rfl" role="2iSdaV" />
+      <node concept="3F0ifn" id="Gg2RkIjSt0" role="3EZMnx">
+        <property role="3F0ifm" value="steps" />
+      </node>
+    </node>
+  </node>
+  <node concept="24kQdi" id="Gg2RkIml1H">
+    <property role="3GE5qa" value="Colour" />
+    <ref role="1XX52x" to="rvtb:Gg2RkIml1v" resolve="Red" />
+    <node concept="PMmxH" id="Gg2RkIml1J" role="2wV5jI">
+      <ref role="PMmxG" to="tpco:2wZex4PafBj" resolve="alias" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="Gg2RkIml2a">
+    <property role="3GE5qa" value="Colour" />
+    <ref role="1XX52x" to="rvtb:Gg2RkIml1w" resolve="Green" />
+    <node concept="PMmxH" id="Gg2RkIml2c" role="2wV5jI">
+      <ref role="PMmxG" to="tpco:2wZex4PafBj" resolve="alias" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="Gg2RkIml2B">
+    <property role="3GE5qa" value="Colour" />
+    <ref role="1XX52x" to="rvtb:Gg2RkIml1u" resolve="Yellow" />
+    <node concept="PMmxH" id="Gg2RkIml2D" role="2wV5jI">
+      <ref role="PMmxG" to="tpco:2wZex4PafBj" resolve="alias" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="Gg2RkIp$sV">
+    <ref role="1XX52x" to="rvtb:nUFfrxkbXY" resolve="TrafficLight" />
+    <node concept="3EZMnI" id="Gg2RkIp$sX" role="2wV5jI">
+      <node concept="PMmxH" id="Gg2RkIp$t4" role="3EZMnx">
+        <ref role="PMmxG" to="tpco:2wZex4PafBj" resolve="alias" />
+      </node>
+      <node concept="PMmxH" id="Gg2RkIvN06" role="3EZMnx">
+        <ref role="PMmxG" node="2MeG3eCdfT3" resolve="Position" />
+      </node>
+      <node concept="3F0ifn" id="Gg2RkIDf5W" role="3EZMnx">
+        <property role="3F0ifm" value="Ticks to change colour:" />
+      </node>
+      <node concept="3F0A7n" id="Gg2RkIDf6g" role="3EZMnx">
+        <ref role="1NtTu8" to="rvtb:Gg2RkI_G5z" resolve="ticksToChange" />
+        <node concept="ljvvj" id="Gg2RkIDf6M" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="3F0ifn" id="Gg2RkIDf6_" role="3EZMnx">
+        <property role="3F0ifm" value="Colour Order:" />
+        <node concept="lj46D" id="Gg2RkIDf6O" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="3F2HdR" id="Gg2RkIp$t9" role="3EZMnx">
+        <property role="2czwfO" value=" -&gt; " />
+        <ref role="1NtTu8" to="rvtb:Gg2RkIml0q" resolve="lightOrder" />
+        <node concept="l2Vlx" id="Gg2RkIp$tb" role="2czzBx" />
+        <node concept="lj46D" id="Gg2RkIp$tt" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+        <node concept="ljvvj" id="Gg2RkIvN0d" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="3F0ifn" id="Gg2RkIDukk" role="3EZMnx">
+        <property role="3F0ifm" value="Directions allowed:" />
+        <node concept="lj46D" id="Gg2RkIDukL" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="3F2HdR" id="Gg2RkIDukN" role="3EZMnx">
+        <property role="2czwfO" value=", " />
+        <ref role="1NtTu8" to="rvtb:Gg2RkI_G5C" resolve="directions" />
+        <node concept="l2Vlx" id="Gg2RkIDukP" role="2czzBx" />
+      </node>
+      <node concept="l2Vlx" id="Gg2RkIp$t0" role="2iSdaV" />
     </node>
   </node>
 </model>

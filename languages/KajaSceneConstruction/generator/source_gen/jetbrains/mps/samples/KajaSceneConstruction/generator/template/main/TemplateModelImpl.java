@@ -72,6 +72,22 @@ public class TemplateModelImpl extends TemplateModelBase implements TemplateMode
       TemplateUtil.assertTemplateParametersCount(template, 0, arguments.length);
       return new Template_reduce_Steps();
     }
+    if (template.equals(new SNodePointer("r:262b93f0-fe86-497c-93c5-efd684d05bc6(jetbrains.mps.samples.KajaSceneConstruction.generator.template.main@generator)", "797149731962106670"))) {
+      TemplateUtil.assertTemplateParametersCount(template, 0, arguments.length);
+      return new Template_reduce_Green();
+    }
+    if (template.equals(new SNodePointer("r:262b93f0-fe86-497c-93c5-efd684d05bc6(jetbrains.mps.samples.KajaSceneConstruction.generator.template.main@generator)", "797149731962110233"))) {
+      TemplateUtil.assertTemplateParametersCount(template, 0, arguments.length);
+      return new Template_reduce_Red();
+    }
+    if (template.equals(new SNodePointer("r:262b93f0-fe86-497c-93c5-efd684d05bc6(jetbrains.mps.samples.KajaSceneConstruction.generator.template.main@generator)", "797149731962110373"))) {
+      TemplateUtil.assertTemplateParametersCount(template, 0, arguments.length);
+      return new Template_reduce_Yellow();
+    }
+    if (template.equals(new SNodePointer("r:262b93f0-fe86-497c-93c5-efd684d05bc6(jetbrains.mps.samples.KajaSceneConstruction.generator.template.main@generator)", "797149731965313489"))) {
+      TemplateUtil.assertTemplateParametersCount(template, 0, arguments.length);
+      return new Template_reduce_TrafficLight();
+    }
     return null;
   }
   @Override

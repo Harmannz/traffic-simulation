@@ -97,7 +97,7 @@
     <property role="EcuMT" value="430846890709401387" />
     <property role="TrG5h" value="Road" />
     <property role="34LRSv" value="build road" />
-    <ref role="1TJDcQ" node="2MeG3eCdfSZ" resolve="AbstractBuilderCommand" />
+    <ref role="1TJDcQ" node="nUFfrxkbX7" resolve="AbstractRoad" />
     <node concept="1TJgyi" id="nUFfrxkbXN" role="1TKVEl">
       <property role="IQ2nx" value="430846890709401459" />
       <property role="TrG5h" value="length" />
@@ -118,12 +118,32 @@
     <property role="EcuMT" value="430846890709401415" />
     <property role="R5$K7" value="true" />
     <property role="TrG5h" value="AbstractRoad" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <ref role="1TJDcQ" node="2MeG3eCdfSZ" resolve="AbstractBuilderCommand" />
   </node>
   <node concept="1TIwiD" id="nUFfrxkbXY">
     <property role="EcuMT" value="430846890709401470" />
     <property role="TrG5h" value="TrafficLight" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <property role="34LRSv" value="add traffic light" />
+    <ref role="1TJDcQ" node="nUFfrxkbX7" resolve="AbstractRoad" />
+    <node concept="1TJgyj" id="Gg2RkIml0q" role="1TKVEi">
+      <property role="IQ2ns" value="797149731961262106" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="lightOrder" />
+      <property role="20lbJX" value="1..n" />
+      <ref role="20lvS9" node="Gg2RkIml1t" resolve="Colour" />
+    </node>
+    <node concept="1TJgyj" id="Gg2RkI_G5C" role="1TKVEi">
+      <property role="IQ2ns" value="797149731965288808" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="directions" />
+      <property role="20lbJX" value="0..n" />
+      <ref role="20lvS9" to="c2kz:2RDssu5VgOT" resolve="Direction" />
+    </node>
+    <node concept="1TJgyi" id="Gg2RkI_G5z" role="1TKVEl">
+      <property role="IQ2nx" value="797149731965288803" />
+      <property role="TrG5h" value="ticksToChange" />
+      <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
+    </node>
   </node>
   <node concept="AxPO7" id="nUFfrxkIF4">
     <property role="3GE5qa" value="" />
@@ -203,6 +223,34 @@
       <property role="TrG5h" value="steps" />
       <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
     </node>
+  </node>
+  <node concept="1TIwiD" id="Gg2RkIml1t">
+    <property role="EcuMT" value="797149731961262173" />
+    <property role="TrG5h" value="Colour" />
+    <property role="3GE5qa" value="Colour" />
+    <property role="R5$K7" value="true" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+  </node>
+  <node concept="1TIwiD" id="Gg2RkIml1u">
+    <property role="EcuMT" value="797149731961262174" />
+    <property role="3GE5qa" value="Colour" />
+    <property role="TrG5h" value="Yellow" />
+    <property role="34LRSv" value="yellow" />
+    <ref role="1TJDcQ" node="Gg2RkIml1t" resolve="Colour" />
+  </node>
+  <node concept="1TIwiD" id="Gg2RkIml1v">
+    <property role="EcuMT" value="797149731961262175" />
+    <property role="3GE5qa" value="Colour" />
+    <property role="TrG5h" value="Red" />
+    <property role="34LRSv" value="red" />
+    <ref role="1TJDcQ" node="Gg2RkIml1t" resolve="Colour" />
+  </node>
+  <node concept="1TIwiD" id="Gg2RkIml1w">
+    <property role="EcuMT" value="797149731961262176" />
+    <property role="3GE5qa" value="Colour" />
+    <property role="TrG5h" value="Green" />
+    <property role="34LRSv" value="green" />
+    <ref role="1TJDcQ" node="Gg2RkIml1t" resolve="Colour" />
   </node>
 </model>
 

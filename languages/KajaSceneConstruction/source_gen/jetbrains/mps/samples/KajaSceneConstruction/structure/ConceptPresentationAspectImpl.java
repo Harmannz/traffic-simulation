@@ -12,14 +12,18 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
   private ConceptPresentation props_AbstractBuilderCommand;
   private ConceptPresentation props_AbstractRoad;
   private ConceptPresentation props_BuildWall;
+  private ConceptPresentation props_Colour;
   private ConceptPresentation props_DestroyWall;
   private ConceptPresentation props_DirectionQueue;
   private ConceptPresentation props_DropMark;
+  private ConceptPresentation props_Green;
   private ConceptPresentation props_PickMark;
+  private ConceptPresentation props_Red;
   private ConceptPresentation props_Road;
   private ConceptPresentation props_Steps;
   private ConceptPresentation props_TrafficLight;
   private ConceptPresentation props_Vehicle;
+  private ConceptPresentation props_Yellow;
 
   @Override
   @Nullable
@@ -45,6 +49,12 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_BuildWall = cpb.create();
         }
         return props_BuildWall;
+      case LanguageConceptSwitch.Colour:
+        if (props_Colour == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          props_Colour = cpb.create();
+        }
+        return props_Colour;
       case LanguageConceptSwitch.DestroyWall:
         if (props_DestroyWall == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
@@ -66,6 +76,13 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_DropMark = cpb.create();
         }
         return props_DropMark;
+      case LanguageConceptSwitch.Green:
+        if (props_Green == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.rawPresentation("green");
+          props_Green = cpb.create();
+        }
+        return props_Green;
       case LanguageConceptSwitch.PickMark:
         if (props_PickMark == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
@@ -73,6 +90,13 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_PickMark = cpb.create();
         }
         return props_PickMark;
+      case LanguageConceptSwitch.Red:
+        if (props_Red == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.rawPresentation("red");
+          props_Red = cpb.create();
+        }
+        return props_Red;
       case LanguageConceptSwitch.Road:
         if (props_Road == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
@@ -90,7 +114,7 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
       case LanguageConceptSwitch.TrafficLight:
         if (props_TrafficLight == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
-          cpb.rawPresentation("TrafficLight");
+          cpb.rawPresentation("add traffic light");
           props_TrafficLight = cpb.create();
         }
         return props_TrafficLight;
@@ -101,6 +125,13 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_Vehicle = cpb.create();
         }
         return props_Vehicle;
+      case LanguageConceptSwitch.Yellow:
+        if (props_Yellow == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.rawPresentation("yellow");
+          props_Yellow = cpb.create();
+        }
+        return props_Yellow;
     }
     return null;
   }

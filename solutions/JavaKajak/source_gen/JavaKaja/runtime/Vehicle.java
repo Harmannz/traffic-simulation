@@ -10,6 +10,7 @@ public class Vehicle {
   private Position endPosition;
   private int directionIndex;
   private boolean hasTicked = false;
+  private boolean reachedDestination;
 
   public Vehicle(Position currentPosition, Position endPosition, Direction heading, Direction... directions) {
     this.heading = heading;
@@ -17,6 +18,7 @@ public class Vehicle {
     this.endPosition = endPosition;
     this.directionsQueue = directions;
     this.directionIndex = 0;
+    this.reachedDestination = false;
   }
 
   public Direction getHeading() {
@@ -39,6 +41,7 @@ public class Vehicle {
     this.currentPosition.setRow(row);
     this.currentPosition.setCol(col);
   }
+
   public void setPosition(Position position) {
     this.currentPosition = position;
   }
@@ -69,13 +72,18 @@ public class Vehicle {
   }
 
   public boolean reachedDestination() {
-    return currentPosition.equals(endPosition);
+    if (currentPosition.equals(endPosition)) {
+      reachedDestination = true;
+      return true;
+    } else {
+      return false;
+    }
   }
 
-  public void tick(Cell[][] world) {
-    // Get the next cell based on desired direction. If that direction is drivable then take direction otherwise go ahead. 
-    // Go ahead may not be possible if next destination is traffic light and its red. 
+  public boolean hasReachedDestination() {
+    return reachedDestination;
   }
+
   @Override
   public int hashCode() {
     final int prime = 31;

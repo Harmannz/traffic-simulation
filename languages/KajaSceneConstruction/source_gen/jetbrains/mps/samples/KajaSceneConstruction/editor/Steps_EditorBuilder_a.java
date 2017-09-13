@@ -12,6 +12,7 @@ import jetbrains.mps.nodeEditor.cellLayout.CellLayout_Indent;
 import jetbrains.mps.nodeEditor.cellProviders.CellProviderWithRole;
 import jetbrains.mps.lang.editor.cellProviders.PropertyCellProvider;
 import jetbrains.mps.nodeEditor.EditorManager;
+import jetbrains.mps.nodeEditor.cells.EditorCell_Constant;
 
 /*package*/ class Steps_EditorBuilder_a extends AbstractEditorBuilder {
   @NotNull
@@ -39,6 +40,7 @@ import jetbrains.mps.nodeEditor.EditorManager;
     editorCell.setCellContext(getCellFactory().getCellContext());
     editorCell.addEditorCell(createComponent_yzfqw2_a0());
     editorCell.addEditorCell(createProperty_yzfqw2_b0());
+    editorCell.addEditorCell(createConstant_yzfqw2_c0());
     return editorCell;
   }
   private EditorCell createComponent_yzfqw2_a0() {
@@ -58,6 +60,12 @@ import jetbrains.mps.nodeEditor.EditorManager;
       EditorManager manager = EditorManager.getInstanceFromContext(getEditorContext());
       return manager.createNodeRoleAttributeCell(attributeConcept, provider.getRoleAttributeKind(), editorCell);
     } else
+    return editorCell;
+  }
+  private EditorCell createConstant_yzfqw2_c0() {
+    EditorCell_Constant editorCell = new EditorCell_Constant(getEditorContext(), myNode, "steps");
+    editorCell.setCellId("Constant_yzfqw2_c0");
+    editorCell.setDefaultText("");
     return editorCell;
   }
 }
