@@ -311,7 +311,7 @@
       <node concept="3Tm6S6" id="2RDssu5UQN0" role="1B3o_S" />
       <node concept="10Oyi0" id="2RDssu5UQN4" role="1tU5fm" />
       <node concept="3cmrfG" id="2RDssu5UQN6" role="33vP2m">
-        <property role="3cmrfH" value="5" />
+        <property role="3cmrfH" value="3" />
       </node>
     </node>
     <node concept="312cEg" id="2RDssu5UNz4" role="jymVt">
@@ -1717,7 +1717,7 @@
         </node>
         <node concept="3cpWs8" id="2pVJ_YvxORJ" role="3cqZAp">
           <node concept="3cpWsn" id="2pVJ_YvxORK" role="3cpWs9">
-            <property role="TrG5h" value="goingDirection" />
+            <property role="TrG5h" value="desiredDirection" />
             <node concept="3uibUv" id="2pVJ_YvxORL" role="1tU5fm">
               <ref role="3uigEE" node="2RDssu5UQNI" resolve="Direction" />
             </node>
@@ -1742,7 +1742,7 @@
           <node concept="3clFbC" id="5D4EFtyK_FA" role="3clFbw">
             <node concept="10Nm6u" id="5D4EFtyK_Nx" role="3uHU7w" />
             <node concept="37vLTw" id="5D4EFtyK_n6" role="3uHU7B">
-              <ref role="3cqZAo" node="2pVJ_YvxORK" resolve="goingDirection" />
+              <ref role="3cqZAo" node="2pVJ_YvxORK" resolve="desiredDirection" />
             </node>
           </node>
         </node>
@@ -1758,201 +1758,262 @@
                 <ref role="3cqZAo" node="2pVJ_YvwcOw" resolve="currentPosition" />
               </node>
               <node concept="37vLTw" id="2pVJ_YvxRF1" role="37wK5m">
-                <ref role="3cqZAo" node="2pVJ_YvxORK" resolve="goingDirection" />
+                <ref role="3cqZAo" node="2pVJ_YvxORK" resolve="desiredDirection" />
               </node>
             </node>
           </node>
         </node>
-        <node concept="3clFbJ" id="2pVJ_YvwdQU" role="3cqZAp">
-          <node concept="3clFbS" id="2pVJ_YvwdQW" role="3clFbx">
-            <node concept="3clFbF" id="2pVJ_YvwetN" role="3cqZAp">
-              <node concept="2OqwBi" id="2pVJ_Yvwezi" role="3clFbG">
-                <node concept="37vLTw" id="2pVJ_YvwetL" role="2Oq$k0">
-                  <ref role="3cqZAo" node="2pVJ_Yvwdml" resolve="desiredCell" />
-                </node>
-                <node concept="liA8E" id="2pVJ_YvweB$" role="2OqNvi">
-                  <ref role="37wK5l" node="nUFfrxpUzQ" resolve="setVehicle" />
-                  <node concept="37vLTw" id="2pVJ_YvweHZ" role="37wK5m">
-                    <ref role="3cqZAo" node="2pVJ_Yvw9SC" resolve="vehicle" />
-                  </node>
-                </node>
-              </node>
-            </node>
-            <node concept="3clFbF" id="2pVJ_YvweOL" role="3cqZAp">
-              <node concept="2OqwBi" id="2pVJ_YvweQz" role="3clFbG">
-                <node concept="37vLTw" id="2pVJ_YvweOJ" role="2Oq$k0">
-                  <ref role="3cqZAo" node="2pVJ_Yvw9SC" resolve="vehicle" />
-                </node>
-                <node concept="liA8E" id="2pVJ_YvweSR" role="2OqNvi">
-                  <ref role="37wK5l" node="2pVJ_YvvV5_" resolve="setPosition" />
-                  <node concept="1rXfSq" id="2pVJ_Yvwf1Y" role="37wK5m">
-                    <ref role="37wK5l" node="2pVJ_Yvt09B" resolve="getNextPosition" />
-                    <node concept="37vLTw" id="2pVJ_Yvwf8A" role="37wK5m">
-                      <ref role="3cqZAo" node="2pVJ_YvwcOw" resolve="currentPosition" />
-                    </node>
-                    <node concept="37vLTw" id="2pVJ_YvxS4z" role="37wK5m">
-                      <ref role="3cqZAo" node="2pVJ_YvxORK" resolve="goingDirection" />
-                    </node>
-                  </node>
-                </node>
-              </node>
-            </node>
-            <node concept="3clFbF" id="2pVJ_YvxGab" role="3cqZAp">
-              <node concept="2OqwBi" id="2pVJ_YvxItl" role="3clFbG">
-                <node concept="37vLTw" id="2pVJ_YvxGa9" role="2Oq$k0">
-                  <ref role="3cqZAo" node="2pVJ_Yvw9SC" resolve="vehicle" />
-                </node>
-                <node concept="liA8E" id="2pVJ_YvxIKV" role="2OqNvi">
-                  <ref role="37wK5l" node="1J3Do7d5Z6Z" resolve="takeDesiredDirection" />
-                </node>
-              </node>
-            </node>
-            <node concept="3clFbF" id="2pVJ_YvwfvO" role="3cqZAp">
-              <node concept="2OqwBi" id="2pVJ_Yvwfyf" role="3clFbG">
-                <node concept="37vLTw" id="2pVJ_YvwfvM" role="2Oq$k0">
-                  <ref role="3cqZAo" node="2pVJ_Yvw9SC" resolve="vehicle" />
-                </node>
-                <node concept="liA8E" id="2pVJ_YvwfAK" role="2OqNvi">
-                  <ref role="37wK5l" node="1J3Do7d9bGK" resolve="setTicked" />
-                </node>
-              </node>
-            </node>
-            <node concept="3cpWs6" id="2pVJ_YvwfH0" role="3cqZAp">
-              <node concept="3clFbT" id="2pVJ_YvwfMC" role="3cqZAk">
-                <property role="3clFbU" value="true" />
-              </node>
-            </node>
+        <node concept="3SKdUt" id="78rL0jM1kH6" role="3cqZAp">
+          <node concept="3SKdUq" id="78rL0jM1kH8" role="3SKWNk">
+            <property role="3SKdUp" value="Check if desired cell allows desired direction" />
           </node>
-          <node concept="2OqwBi" id="2pVJ_Yvwe3G" role="3clFbw">
-            <node concept="37vLTw" id="2pVJ_YvwdWg" role="2Oq$k0">
-              <ref role="3cqZAo" node="2pVJ_Yvwdml" resolve="desiredCell" />
-            </node>
-            <node concept="liA8E" id="2pVJ_Yvwe8v" role="2OqNvi">
-              <ref role="37wK5l" node="1J3Do7cGC_N" resolve="isDrivable" />
-              <node concept="37vLTw" id="2pVJ_YvxRR8" role="37wK5m">
-                <ref role="3cqZAo" node="2pVJ_YvxORK" resolve="goingDirection" />
-              </node>
-            </node>
-          </node>
-          <node concept="9aQIb" id="2pVJ_Yvwxjw" role="9aQIa">
-            <node concept="3clFbS" id="2pVJ_Yvwxjx" role="9aQI4">
-              <node concept="3SKdUt" id="2pVJ_YvwzNb" role="3cqZAp">
-                <node concept="3SKdUq" id="2pVJ_YvwzNc" role="3SKWNk">
-                  <property role="3SKdUp" value="check if desiredCell has a vehicle. If so then move vehicle" />
-                </node>
-              </node>
-              <node concept="3clFbJ" id="2pVJ_YvwzRG" role="3cqZAp">
-                <node concept="3clFbS" id="2pVJ_YvwzRI" role="3clFbx">
-                  <node concept="3clFbF" id="2pVJ_Yvw$gR" role="3cqZAp">
-                    <node concept="1rXfSq" id="2pVJ_Yvw$gP" role="3clFbG">
-                      <ref role="37wK5l" node="2RDssu5UQY9" resolve="moveVehicle" />
-                      <node concept="2OqwBi" id="2pVJ_Yvw$sD" role="37wK5m">
-                        <node concept="37vLTw" id="2pVJ_Yvw$mW" role="2Oq$k0">
-                          <ref role="3cqZAo" node="2pVJ_Yvwdml" resolve="desiredCell" />
-                        </node>
-                        <node concept="liA8E" id="2pVJ_Yvw$wD" role="2OqNvi">
-                          <ref role="37wK5l" node="1J3Do7d95$x" resolve="getVehicle" />
-                        </node>
-                      </node>
-                    </node>
-                  </node>
-                </node>
-                <node concept="2OqwBi" id="2pVJ_Yvw$2Y" role="3clFbw">
-                  <node concept="37vLTw" id="2pVJ_YvwzW7" role="2Oq$k0">
-                    <ref role="3cqZAo" node="2pVJ_Yvwdml" resolve="desiredCell" />
-                  </node>
-                  <node concept="liA8E" id="2pVJ_Yvw$5v" role="2OqNvi">
-                    <ref role="37wK5l" node="2RDssu5UQQq" resolve="hasVehicle" />
-                  </node>
-                </node>
-              </node>
-              <node concept="3SKdUt" id="2pVJ_Yvw$Er" role="3cqZAp">
-                <node concept="3SKdUq" id="2pVJ_Yvw$Et" role="3SKWNk">
-                  <property role="3SKdUp" value="now check again if desiredCell is drivable and if so then move vehicle otherwise return false" />
-                </node>
-              </node>
-              <node concept="3clFbJ" id="2pVJ_Yvw$Kv" role="3cqZAp">
-                <node concept="3clFbS" id="2pVJ_Yvw$Kx" role="3clFbx">
-                  <node concept="3clFbF" id="2pVJ_Yvw_mK" role="3cqZAp">
-                    <node concept="2OqwBi" id="2pVJ_Yvw_sl" role="3clFbG">
-                      <node concept="37vLTw" id="2pVJ_Yvw_mI" role="2Oq$k0">
+        </node>
+        <node concept="3clFbJ" id="78rL0jM2KMp" role="3cqZAp">
+          <node concept="3clFbS" id="78rL0jM2KMr" role="3clFbx">
+            <node concept="3clFbJ" id="78rL0jM1tRY" role="3cqZAp">
+              <node concept="3clFbS" id="78rL0jM1tS0" role="3clFbx">
+                <node concept="3clFbF" id="78rL0jM1xxm" role="3cqZAp">
+                  <node concept="1rXfSq" id="78rL0jM1xxk" role="3clFbG">
+                    <ref role="37wK5l" node="2RDssu5UQY9" resolve="moveVehicle" />
+                    <node concept="2OqwBi" id="78rL0jM1y5z" role="37wK5m">
+                      <node concept="37vLTw" id="78rL0jM1xZ2" role="2Oq$k0">
                         <ref role="3cqZAo" node="2pVJ_Yvwdml" resolve="desiredCell" />
                       </node>
-                      <node concept="liA8E" id="2pVJ_Yvw_uO" role="2OqNvi">
-                        <ref role="37wK5l" node="nUFfrxpUzQ" resolve="setVehicle" />
-                        <node concept="37vLTw" id="2pVJ_Yvw__p" role="37wK5m">
-                          <ref role="3cqZAo" node="2pVJ_Yvw9SC" resolve="vehicle" />
-                        </node>
-                      </node>
-                    </node>
-                  </node>
-                  <node concept="3clFbF" id="2pVJ_Yvw_HN" role="3cqZAp">
-                    <node concept="2OqwBi" id="2pVJ_Yvw_JF" role="3clFbG">
-                      <node concept="37vLTw" id="2pVJ_Yvw_HL" role="2Oq$k0">
-                        <ref role="3cqZAo" node="2pVJ_Yvw9SC" resolve="vehicle" />
-                      </node>
-                      <node concept="liA8E" id="2pVJ_Yvw_Mi" role="2OqNvi">
-                        <ref role="37wK5l" node="2pVJ_YvvV5_" resolve="setPosition" />
-                        <node concept="1rXfSq" id="2pVJ_Yvw_Rh" role="37wK5m">
-                          <ref role="37wK5l" node="2pVJ_Yvt09B" resolve="getNextPosition" />
-                          <node concept="37vLTw" id="2pVJ_YvwA4d" role="37wK5m">
-                            <ref role="3cqZAo" node="2pVJ_YvwcOw" resolve="currentPosition" />
-                          </node>
-                          <node concept="37vLTw" id="2pVJ_YvxSK$" role="37wK5m">
-                            <ref role="3cqZAo" node="2pVJ_YvxORK" resolve="goingDirection" />
-                          </node>
-                        </node>
-                      </node>
-                    </node>
-                  </node>
-                  <node concept="3clFbF" id="2pVJ_YvxAZr" role="3cqZAp">
-                    <node concept="2OqwBi" id="2pVJ_YvxDxn" role="3clFbG">
-                      <node concept="37vLTw" id="2pVJ_YvxAZp" role="2Oq$k0">
-                        <ref role="3cqZAo" node="2pVJ_Yvw9SC" resolve="vehicle" />
-                      </node>
-                      <node concept="liA8E" id="2pVJ_YvxDN6" role="2OqNvi">
-                        <ref role="37wK5l" node="1J3Do7d5Z6Z" resolve="takeDesiredDirection" />
-                      </node>
-                    </node>
-                  </node>
-                  <node concept="3clFbF" id="2pVJ_YvwArU" role="3cqZAp">
-                    <node concept="2OqwBi" id="2pVJ_YvwAur" role="3clFbG">
-                      <node concept="37vLTw" id="2pVJ_YvwArS" role="2Oq$k0">
-                        <ref role="3cqZAo" node="2pVJ_Yvw9SC" resolve="vehicle" />
-                      </node>
-                      <node concept="liA8E" id="2pVJ_YvwAyP" role="2OqNvi">
-                        <ref role="37wK5l" node="1J3Do7d9bGK" resolve="setTicked" />
-                      </node>
-                    </node>
-                  </node>
-                  <node concept="3cpWs6" id="2pVJ_YvwADm" role="3cqZAp">
-                    <node concept="3clFbT" id="2pVJ_YvwAJ0" role="3cqZAk">
-                      <property role="3clFbU" value="true" />
-                    </node>
-                  </node>
-                </node>
-                <node concept="2OqwBi" id="2pVJ_Yvw$Wy" role="3clFbw">
-                  <node concept="37vLTw" id="2pVJ_Yvw$PF" role="2Oq$k0">
-                    <ref role="3cqZAo" node="2pVJ_Yvwdml" resolve="desiredCell" />
-                  </node>
-                  <node concept="liA8E" id="2pVJ_Yvw_0W" role="2OqNvi">
-                    <ref role="37wK5l" node="1J3Do7cGC_N" resolve="isDrivable" />
-                    <node concept="37vLTw" id="2pVJ_YvxSnj" role="37wK5m">
-                      <ref role="3cqZAo" node="2pVJ_YvxORK" resolve="goingDirection" />
-                    </node>
-                  </node>
-                </node>
-                <node concept="9aQIb" id="2pVJ_YvwKM1" role="9aQIa">
-                  <node concept="3clFbS" id="2pVJ_YvwKM2" role="9aQI4">
-                    <node concept="3cpWs6" id="2pVJ_YvwNk4" role="3cqZAp">
-                      <node concept="3clFbT" id="2pVJ_YvwPQu" role="3cqZAk">
-                        <property role="3clFbU" value="false" />
+                      <node concept="liA8E" id="78rL0jM1ybw" role="2OqNvi">
+                        <ref role="37wK5l" node="1J3Do7d95$x" resolve="getVehicle" />
                       </node>
                     </node>
                   </node>
                 </node>
               </node>
+              <node concept="2OqwBi" id="78rL0jM1wZd" role="3clFbw">
+                <node concept="37vLTw" id="78rL0jM1wOA" role="2Oq$k0">
+                  <ref role="3cqZAo" node="2pVJ_Yvwdml" resolve="desiredCell" />
+                </node>
+                <node concept="liA8E" id="78rL0jM1xlK" role="2OqNvi">
+                  <ref role="37wK5l" node="2RDssu5UQQq" resolve="hasVehicle" />
+                </node>
+              </node>
             </node>
+            <node concept="3clFbJ" id="78rL0jM1FzG" role="3cqZAp">
+              <node concept="3clFbS" id="78rL0jM1FzI" role="3clFbx">
+                <node concept="3clFbF" id="78rL0jM1JkU" role="3cqZAp">
+                  <node concept="2OqwBi" id="78rL0jM1JkV" role="3clFbG">
+                    <node concept="37vLTw" id="78rL0jM1JkW" role="2Oq$k0">
+                      <ref role="3cqZAo" node="2pVJ_Yvwdml" resolve="desiredCell" />
+                    </node>
+                    <node concept="liA8E" id="78rL0jM1JkX" role="2OqNvi">
+                      <ref role="37wK5l" node="nUFfrxpUzQ" resolve="setVehicle" />
+                      <node concept="37vLTw" id="78rL0jM1JkY" role="37wK5m">
+                        <ref role="3cqZAo" node="2pVJ_Yvw9SC" resolve="vehicle" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+                <node concept="3clFbF" id="78rL0jM1JkZ" role="3cqZAp">
+                  <node concept="2OqwBi" id="78rL0jM1Jl0" role="3clFbG">
+                    <node concept="37vLTw" id="78rL0jM1Jl1" role="2Oq$k0">
+                      <ref role="3cqZAo" node="2pVJ_Yvw9SC" resolve="vehicle" />
+                    </node>
+                    <node concept="liA8E" id="78rL0jM1Jl2" role="2OqNvi">
+                      <ref role="37wK5l" node="2pVJ_YvvV5_" resolve="setPosition" />
+                      <node concept="1rXfSq" id="78rL0jM1Jl3" role="37wK5m">
+                        <ref role="37wK5l" node="2pVJ_Yvt09B" resolve="getNextPosition" />
+                        <node concept="37vLTw" id="78rL0jM1Jl4" role="37wK5m">
+                          <ref role="3cqZAo" node="2pVJ_YvwcOw" resolve="currentPosition" />
+                        </node>
+                        <node concept="37vLTw" id="78rL0jM1Jl5" role="37wK5m">
+                          <ref role="3cqZAo" node="2pVJ_YvxORK" resolve="desiredDirection" />
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+                <node concept="3clFbF" id="78rL0jM1Jl6" role="3cqZAp">
+                  <node concept="2OqwBi" id="78rL0jM1Jl7" role="3clFbG">
+                    <node concept="37vLTw" id="78rL0jM1Jl8" role="2Oq$k0">
+                      <ref role="3cqZAo" node="2pVJ_Yvw9SC" resolve="vehicle" />
+                    </node>
+                    <node concept="liA8E" id="78rL0jM1Jl9" role="2OqNvi">
+                      <ref role="37wK5l" node="1J3Do7d5Z6Z" resolve="takeDesiredDirection" />
+                    </node>
+                  </node>
+                </node>
+                <node concept="3clFbF" id="78rL0jM1Jla" role="3cqZAp">
+                  <node concept="2OqwBi" id="78rL0jM1Jlb" role="3clFbG">
+                    <node concept="37vLTw" id="78rL0jM1Jlc" role="2Oq$k0">
+                      <ref role="3cqZAo" node="2pVJ_Yvw9SC" resolve="vehicle" />
+                    </node>
+                    <node concept="liA8E" id="78rL0jM1Jld" role="2OqNvi">
+                      <ref role="37wK5l" node="1J3Do7d9bGK" resolve="setTicked" />
+                    </node>
+                  </node>
+                </node>
+                <node concept="3cpWs6" id="78rL0jM1Jle" role="3cqZAp">
+                  <node concept="3clFbT" id="78rL0jM1Jlf" role="3cqZAk">
+                    <property role="3clFbU" value="true" />
+                  </node>
+                </node>
+              </node>
+              <node concept="2OqwBi" id="78rL0jM1IYA" role="3clFbw">
+                <node concept="37vLTw" id="78rL0jM1INq" role="2Oq$k0">
+                  <ref role="3cqZAo" node="2pVJ_Yvwdml" resolve="desiredCell" />
+                </node>
+                <node concept="liA8E" id="78rL0jM1J7h" role="2OqNvi">
+                  <ref role="37wK5l" node="1J3Do7cGC_N" resolve="isDrivable" />
+                  <node concept="37vLTw" id="78rL0jM1Jid" role="37wK5m">
+                    <ref role="3cqZAo" node="2pVJ_YvxORK" resolve="desiredDirection" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3clFbH" id="78rL0jM2KMq" role="3cqZAp" />
+          </node>
+          <node concept="2OqwBi" id="78rL0jM2NTI" role="3clFbw">
+            <node concept="37vLTw" id="78rL0jM2NJh" role="2Oq$k0">
+              <ref role="3cqZAo" node="2pVJ_Yvwdml" resolve="desiredCell" />
+            </node>
+            <node concept="liA8E" id="78rL0jM2Oeo" role="2OqNvi">
+              <ref role="37wK5l" node="1J3Do7cGI2e" resolve="hasDirection" />
+              <node concept="37vLTw" id="78rL0jM2OsO" role="37wK5m">
+                <ref role="3cqZAo" node="2pVJ_YvxORK" resolve="desiredDirection" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3SKdUt" id="78rL0jM1Y1z" role="3cqZAp">
+          <node concept="3SKdUq" id="78rL0jM1Y2f" role="3SKWNk">
+            <property role="3SKdUp" value="Check if desired cell allows the current heading direction" />
+          </node>
+        </node>
+        <node concept="3cpWs8" id="78rL0jM27wW" role="3cqZAp">
+          <node concept="3cpWsn" id="78rL0jM27wX" role="3cpWs9">
+            <property role="TrG5h" value="headingDirection" />
+            <node concept="3uibUv" id="78rL0jM27wY" role="1tU5fm">
+              <ref role="3uigEE" node="2RDssu5UQNI" resolve="Direction" />
+            </node>
+            <node concept="2OqwBi" id="78rL0jM2b0u" role="33vP2m">
+              <node concept="37vLTw" id="78rL0jM2aYH" role="2Oq$k0">
+                <ref role="3cqZAo" node="2pVJ_Yvw9SC" resolve="vehicle" />
+              </node>
+              <node concept="liA8E" id="78rL0jM2b4J" role="2OqNvi">
+                <ref role="37wK5l" node="1J3Do7d5Sol" resolve="getHeading" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbJ" id="78rL0jM34_a" role="3cqZAp">
+          <node concept="3clFbS" id="78rL0jM34_c" role="3clFbx">
+            <node concept="3clFbJ" id="78rL0jM3i4R" role="3cqZAp">
+              <node concept="3clFbS" id="78rL0jM3i4S" role="3clFbx">
+                <node concept="3clFbF" id="78rL0jM3i4T" role="3cqZAp">
+                  <node concept="1rXfSq" id="78rL0jM3i4U" role="3clFbG">
+                    <ref role="37wK5l" node="2RDssu5UQY9" resolve="moveVehicle" />
+                    <node concept="2OqwBi" id="78rL0jM3i4V" role="37wK5m">
+                      <node concept="37vLTw" id="78rL0jM3i4W" role="2Oq$k0">
+                        <ref role="3cqZAo" node="2pVJ_Yvwdml" resolve="desiredCell" />
+                      </node>
+                      <node concept="liA8E" id="78rL0jM3i4X" role="2OqNvi">
+                        <ref role="37wK5l" node="1J3Do7d95$x" resolve="getVehicle" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="2OqwBi" id="78rL0jM3i4Y" role="3clFbw">
+                <node concept="37vLTw" id="78rL0jM3i4Z" role="2Oq$k0">
+                  <ref role="3cqZAo" node="2pVJ_Yvwdml" resolve="desiredCell" />
+                </node>
+                <node concept="liA8E" id="78rL0jM3i50" role="2OqNvi">
+                  <ref role="37wK5l" node="2RDssu5UQQq" resolve="hasVehicle" />
+                </node>
+              </node>
+            </node>
+            <node concept="3clFbH" id="78rL0jM3eST" role="3cqZAp" />
+            <node concept="3clFbJ" id="78rL0jM3bBx" role="3cqZAp">
+              <node concept="3clFbS" id="78rL0jM3bBy" role="3clFbx">
+                <node concept="3clFbF" id="78rL0jM3bBz" role="3cqZAp">
+                  <node concept="2OqwBi" id="78rL0jM3bB$" role="3clFbG">
+                    <node concept="37vLTw" id="78rL0jM3bB_" role="2Oq$k0">
+                      <ref role="3cqZAo" node="2pVJ_Yvwdml" resolve="desiredCell" />
+                    </node>
+                    <node concept="liA8E" id="78rL0jM3bBA" role="2OqNvi">
+                      <ref role="37wK5l" node="nUFfrxpUzQ" resolve="setVehicle" />
+                      <node concept="37vLTw" id="78rL0jM3bBB" role="37wK5m">
+                        <ref role="3cqZAo" node="2pVJ_Yvw9SC" resolve="vehicle" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+                <node concept="3clFbF" id="78rL0jM3bBC" role="3cqZAp">
+                  <node concept="2OqwBi" id="78rL0jM3bBD" role="3clFbG">
+                    <node concept="37vLTw" id="78rL0jM3bBE" role="2Oq$k0">
+                      <ref role="3cqZAo" node="2pVJ_Yvw9SC" resolve="vehicle" />
+                    </node>
+                    <node concept="liA8E" id="78rL0jM3bBF" role="2OqNvi">
+                      <ref role="37wK5l" node="2pVJ_YvvV5_" resolve="setPosition" />
+                      <node concept="1rXfSq" id="78rL0jM3bBG" role="37wK5m">
+                        <ref role="37wK5l" node="2pVJ_Yvt09B" resolve="getNextPosition" />
+                        <node concept="37vLTw" id="78rL0jM3bBH" role="37wK5m">
+                          <ref role="3cqZAo" node="2pVJ_YvwcOw" resolve="currentPosition" />
+                        </node>
+                        <node concept="37vLTw" id="78rL0jM3bBI" role="37wK5m">
+                          <ref role="3cqZAo" node="2pVJ_YvxORK" resolve="desiredDirection" />
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+                <node concept="3clFbF" id="78rL0jM3bBN" role="3cqZAp">
+                  <node concept="2OqwBi" id="78rL0jM3bBO" role="3clFbG">
+                    <node concept="37vLTw" id="78rL0jM3bBP" role="2Oq$k0">
+                      <ref role="3cqZAo" node="2pVJ_Yvw9SC" resolve="vehicle" />
+                    </node>
+                    <node concept="liA8E" id="78rL0jM3bBQ" role="2OqNvi">
+                      <ref role="37wK5l" node="1J3Do7d9bGK" resolve="setTicked" />
+                    </node>
+                  </node>
+                </node>
+                <node concept="3cpWs6" id="78rL0jM3bBR" role="3cqZAp">
+                  <node concept="3clFbT" id="78rL0jM3bBS" role="3cqZAk">
+                    <property role="3clFbU" value="true" />
+                  </node>
+                </node>
+              </node>
+              <node concept="2OqwBi" id="78rL0jM3bBT" role="3clFbw">
+                <node concept="37vLTw" id="78rL0jM3bBU" role="2Oq$k0">
+                  <ref role="3cqZAo" node="2pVJ_Yvwdml" resolve="desiredCell" />
+                </node>
+                <node concept="liA8E" id="78rL0jM3bBV" role="2OqNvi">
+                  <ref role="37wK5l" node="1J3Do7cGC_N" resolve="isDrivable" />
+                  <node concept="37vLTw" id="78rL0jM97S2" role="37wK5m">
+                    <ref role="3cqZAo" node="78rL0jM27wX" resolve="headingDirection" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3clFbH" id="78rL0jM34_b" role="3cqZAp" />
+          </node>
+          <node concept="2OqwBi" id="78rL0jM37He" role="3clFbw">
+            <node concept="37vLTw" id="78rL0jM37yp" role="2Oq$k0">
+              <ref role="3cqZAo" node="2pVJ_Yvwdml" resolve="desiredCell" />
+            </node>
+            <node concept="liA8E" id="78rL0jM3849" role="2OqNvi">
+              <ref role="37wK5l" node="1J3Do7cGI2e" resolve="hasDirection" />
+              <node concept="37vLTw" id="78rL0jM38is" role="37wK5m">
+                <ref role="3cqZAo" node="78rL0jM27wX" resolve="headingDirection" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3SKdUt" id="78rL0jM2qsI" role="3cqZAp">
+          <node concept="3SKdUq" id="78rL0jM2qsK" role="3SKWNk">
+            <property role="3SKdUp" value="Otherwise Vehicle cannot move to the desired cell" />
+          </node>
+        </node>
+        <node concept="3cpWs6" id="78rL0jM2n4N" role="3cqZAp">
+          <node concept="3clFbT" id="78rL0jM2nbN" role="3cqZAk">
+            <property role="3clFbU" value="false" />
           </node>
         </node>
       </node>
@@ -2009,7 +2070,7 @@
         </node>
         <node concept="3cpWs8" id="2pVJ_YvxXT6" role="3cqZAp">
           <node concept="3cpWsn" id="2pVJ_YvxXT7" role="3cpWs9">
-            <property role="TrG5h" value="goingDirection" />
+            <property role="TrG5h" value="headingDirection" />
             <node concept="3uibUv" id="2pVJ_YvxXT8" role="1tU5fm">
               <ref role="3uigEE" node="2RDssu5UQNI" resolve="Direction" />
             </node>
@@ -2035,184 +2096,146 @@
                 <ref role="3cqZAo" node="2pVJ_YvxtkG" resolve="currentPosition" />
               </node>
               <node concept="37vLTw" id="2pVJ_Yvy0Ot" role="37wK5m">
-                <ref role="3cqZAo" node="2pVJ_YvxXT7" resolve="goingDirection" />
+                <ref role="3cqZAo" node="2pVJ_YvxXT7" resolve="headingDirection" />
               </node>
             </node>
           </node>
         </node>
-        <node concept="3clFbJ" id="2pVJ_Yvxypc" role="3cqZAp">
-          <node concept="3clFbS" id="2pVJ_Yvxypd" role="3clFbx">
-            <node concept="3clFbF" id="2pVJ_Yvxype" role="3cqZAp">
-              <node concept="2OqwBi" id="2pVJ_Yvxypf" role="3clFbG">
-                <node concept="37vLTw" id="2pVJ_Yvxypg" role="2Oq$k0">
-                  <ref role="3cqZAo" node="2pVJ_Yvxyp5" resolve="headingCell" />
-                </node>
-                <node concept="liA8E" id="2pVJ_Yvxyph" role="2OqNvi">
-                  <ref role="37wK5l" node="nUFfrxpUzQ" resolve="setVehicle" />
-                  <node concept="37vLTw" id="2pVJ_Yvxypi" role="37wK5m">
-                    <ref role="3cqZAo" node="2pVJ_YvxbsC" resolve="vehicle" />
-                  </node>
-                </node>
-              </node>
-            </node>
-            <node concept="3clFbF" id="2pVJ_Yvxypj" role="3cqZAp">
-              <node concept="2OqwBi" id="2pVJ_Yvxypk" role="3clFbG">
-                <node concept="37vLTw" id="2pVJ_Yvxypl" role="2Oq$k0">
-                  <ref role="3cqZAo" node="2pVJ_YvxbsC" resolve="vehicle" />
-                </node>
-                <node concept="liA8E" id="2pVJ_Yvxypm" role="2OqNvi">
-                  <ref role="37wK5l" node="2pVJ_YvvV5_" resolve="setPosition" />
-                  <node concept="1rXfSq" id="2pVJ_Yvxypn" role="37wK5m">
-                    <ref role="37wK5l" node="2pVJ_Yvt09B" resolve="getNextPosition" />
-                    <node concept="37vLTw" id="2pVJ_Yvxypo" role="37wK5m">
-                      <ref role="3cqZAo" node="2pVJ_YvxtkG" resolve="currentPosition" />
-                    </node>
-                    <node concept="37vLTw" id="2pVJ_Yvy1nu" role="37wK5m">
-                      <ref role="3cqZAo" node="2pVJ_YvxXT7" resolve="goingDirection" />
-                    </node>
-                  </node>
-                </node>
-              </node>
-            </node>
-            <node concept="3clFbF" id="2pVJ_Yvxyps" role="3cqZAp">
-              <node concept="2OqwBi" id="2pVJ_Yvxypt" role="3clFbG">
-                <node concept="37vLTw" id="2pVJ_Yvxypu" role="2Oq$k0">
-                  <ref role="3cqZAo" node="2pVJ_YvxbsC" resolve="vehicle" />
-                </node>
-                <node concept="liA8E" id="2pVJ_Yvxypv" role="2OqNvi">
-                  <ref role="37wK5l" node="1J3Do7d9bGK" resolve="setTicked" />
-                </node>
-              </node>
-            </node>
-            <node concept="3cpWs6" id="2pVJ_Yvxypw" role="3cqZAp">
-              <node concept="3clFbT" id="2pVJ_Yvxypx" role="3cqZAk">
-                <property role="3clFbU" value="true" />
+        <node concept="3SKdUt" id="78rL0jM2zNr" role="3cqZAp">
+          <node concept="3SKdUq" id="78rL0jM2zNt" role="3SKWNk">
+            <property role="3SKdUp" value="sanity check if heading cell exists. E.g. it may be out of bounds but that shouldn't really happen" />
+          </node>
+        </node>
+        <node concept="3clFbJ" id="78rL0jM2DAr" role="3cqZAp">
+          <node concept="3clFbS" id="78rL0jM2DAt" role="3clFbx">
+            <node concept="3cpWs6" id="78rL0jM2Hus" role="3cqZAp">
+              <node concept="3clFbT" id="78rL0jM2Hy$" role="3cqZAk">
+                <property role="3clFbU" value="false" />
               </node>
             </node>
           </node>
-          <node concept="2OqwBi" id="2pVJ_Yvxypy" role="3clFbw">
-            <node concept="37vLTw" id="2pVJ_Yvxypz" role="2Oq$k0">
+          <node concept="3clFbC" id="78rL0jM2Hit" role="3clFbw">
+            <node concept="10Nm6u" id="78rL0jM2HmA" role="3uHU7w" />
+            <node concept="37vLTw" id="78rL0jM2GOm" role="3uHU7B">
               <ref role="3cqZAo" node="2pVJ_Yvxyp5" resolve="headingCell" />
-            </node>
-            <node concept="liA8E" id="2pVJ_Yvxyp$" role="2OqNvi">
-              <ref role="37wK5l" node="1J3Do7cGC_N" resolve="isDrivable" />
-              <node concept="37vLTw" id="2pVJ_Yvy16g" role="37wK5m">
-                <ref role="3cqZAo" node="2pVJ_YvxXT7" resolve="goingDirection" />
-              </node>
-            </node>
-          </node>
-          <node concept="9aQIb" id="2pVJ_YvxypC" role="9aQIa">
-            <node concept="3clFbS" id="2pVJ_YvxypD" role="9aQI4">
-              <node concept="3SKdUt" id="2pVJ_YvxypE" role="3cqZAp">
-                <node concept="3SKdUq" id="2pVJ_YvxypF" role="3SKWNk">
-                  <property role="3SKdUp" value="check if headingCell has a vehicle. If so then move that vehicle" />
-                </node>
-              </node>
-              <node concept="3clFbJ" id="2pVJ_YvxypG" role="3cqZAp">
-                <node concept="3clFbS" id="2pVJ_YvxypH" role="3clFbx">
-                  <node concept="3clFbF" id="2pVJ_YvxypI" role="3cqZAp">
-                    <node concept="1rXfSq" id="2pVJ_YvxypJ" role="3clFbG">
-                      <ref role="37wK5l" node="2RDssu5UQY9" resolve="moveVehicle" />
-                      <node concept="2OqwBi" id="2pVJ_YvxypK" role="37wK5m">
-                        <node concept="37vLTw" id="2pVJ_YvxypL" role="2Oq$k0">
-                          <ref role="3cqZAo" node="2pVJ_Yvxyp5" resolve="headingCell" />
-                        </node>
-                        <node concept="liA8E" id="2pVJ_YvxypM" role="2OqNvi">
-                          <ref role="37wK5l" node="1J3Do7d95$x" resolve="getVehicle" />
-                        </node>
-                      </node>
-                    </node>
-                  </node>
-                </node>
-                <node concept="2OqwBi" id="2pVJ_YvxypN" role="3clFbw">
-                  <node concept="37vLTw" id="2pVJ_YvxypO" role="2Oq$k0">
-                    <ref role="3cqZAo" node="2pVJ_Yvxyp5" resolve="headingCell" />
-                  </node>
-                  <node concept="liA8E" id="2pVJ_YvxypP" role="2OqNvi">
-                    <ref role="37wK5l" node="2RDssu5UQQq" resolve="hasVehicle" />
-                  </node>
-                </node>
-              </node>
-              <node concept="3SKdUt" id="2pVJ_YvxypQ" role="3cqZAp">
-                <node concept="3SKdUq" id="2pVJ_YvxypR" role="3SKWNk">
-                  <property role="3SKdUp" value="now check again if headingCell is drivable and if so then move vehicle otherwise return false" />
-                </node>
-              </node>
-              <node concept="3clFbJ" id="2pVJ_YvxypS" role="3cqZAp">
-                <node concept="3clFbS" id="2pVJ_YvxypT" role="3clFbx">
-                  <node concept="3clFbF" id="2pVJ_YvxypU" role="3cqZAp">
-                    <node concept="2OqwBi" id="2pVJ_YvxypV" role="3clFbG">
-                      <node concept="37vLTw" id="2pVJ_YvxypW" role="2Oq$k0">
-                        <ref role="3cqZAo" node="2pVJ_Yvxyp5" resolve="headingCell" />
-                      </node>
-                      <node concept="liA8E" id="2pVJ_YvxypX" role="2OqNvi">
-                        <ref role="37wK5l" node="nUFfrxpUzQ" resolve="setVehicle" />
-                        <node concept="37vLTw" id="2pVJ_YvxypY" role="37wK5m">
-                          <ref role="3cqZAo" node="2pVJ_YvxbsC" resolve="vehicle" />
-                        </node>
-                      </node>
-                    </node>
-                  </node>
-                  <node concept="3clFbF" id="2pVJ_YvxypZ" role="3cqZAp">
-                    <node concept="2OqwBi" id="2pVJ_Yvxyq0" role="3clFbG">
-                      <node concept="37vLTw" id="2pVJ_Yvxyq1" role="2Oq$k0">
-                        <ref role="3cqZAo" node="2pVJ_YvxbsC" resolve="vehicle" />
-                      </node>
-                      <node concept="liA8E" id="2pVJ_Yvxyq2" role="2OqNvi">
-                        <ref role="37wK5l" node="2pVJ_YvvV5_" resolve="setPosition" />
-                        <node concept="1rXfSq" id="2pVJ_Yvxyq3" role="37wK5m">
-                          <ref role="37wK5l" node="2pVJ_Yvt09B" resolve="getNextPosition" />
-                          <node concept="37vLTw" id="2pVJ_Yvxyq4" role="37wK5m">
-                            <ref role="3cqZAo" node="2pVJ_YvxtkG" resolve="currentPosition" />
-                          </node>
-                          <node concept="37vLTw" id="2pVJ_Yvy1N8" role="37wK5m">
-                            <ref role="3cqZAo" node="2pVJ_YvxXT7" resolve="goingDirection" />
-                          </node>
-                        </node>
-                      </node>
-                    </node>
-                  </node>
-                  <node concept="3clFbF" id="2pVJ_Yvxyq8" role="3cqZAp">
-                    <node concept="2OqwBi" id="2pVJ_Yvxyq9" role="3clFbG">
-                      <node concept="37vLTw" id="2pVJ_Yvxyqa" role="2Oq$k0">
-                        <ref role="3cqZAo" node="2pVJ_YvxbsC" resolve="vehicle" />
-                      </node>
-                      <node concept="liA8E" id="2pVJ_Yvxyqb" role="2OqNvi">
-                        <ref role="37wK5l" node="1J3Do7d9bGK" resolve="setTicked" />
-                      </node>
-                    </node>
-                  </node>
-                  <node concept="3cpWs6" id="2pVJ_Yvxyqc" role="3cqZAp">
-                    <node concept="3clFbT" id="2pVJ_Yvxyqd" role="3cqZAk">
-                      <property role="3clFbU" value="true" />
-                    </node>
-                  </node>
-                </node>
-                <node concept="2OqwBi" id="2pVJ_Yvxyqe" role="3clFbw">
-                  <node concept="37vLTw" id="2pVJ_Yvxyqf" role="2Oq$k0">
-                    <ref role="3cqZAo" node="2pVJ_Yvxyp5" resolve="headingCell" />
-                  </node>
-                  <node concept="liA8E" id="2pVJ_Yvxyqg" role="2OqNvi">
-                    <ref role="37wK5l" node="1J3Do7cGC_N" resolve="isDrivable" />
-                    <node concept="37vLTw" id="2pVJ_Yvy1x2" role="37wK5m">
-                      <ref role="3cqZAo" node="2pVJ_YvxXT7" resolve="goingDirection" />
-                    </node>
-                  </node>
-                </node>
-                <node concept="9aQIb" id="2pVJ_Yvxyqk" role="9aQIa">
-                  <node concept="3clFbS" id="2pVJ_Yvxyql" role="9aQI4">
-                    <node concept="3cpWs6" id="2pVJ_Yvxyqm" role="3cqZAp">
-                      <node concept="3clFbT" id="2pVJ_Yvxyqn" role="3cqZAk">
-                        <property role="3clFbU" value="false" />
-                      </node>
-                    </node>
-                  </node>
-                </node>
-              </node>
             </node>
           </node>
         </node>
         <node concept="3clFbH" id="2pVJ_YvxvWC" role="3cqZAp" />
+        <node concept="3clFbJ" id="78rL0jM3v1l" role="3cqZAp">
+          <node concept="3clFbS" id="78rL0jM3v1m" role="3clFbx">
+            <node concept="3clFbJ" id="78rL0jM3v1n" role="3cqZAp">
+              <node concept="3clFbS" id="78rL0jM3v1o" role="3clFbx">
+                <node concept="3clFbF" id="78rL0jM3v1p" role="3cqZAp">
+                  <node concept="1rXfSq" id="78rL0jM3v1q" role="3clFbG">
+                    <ref role="37wK5l" node="2RDssu5UQY9" resolve="moveVehicle" />
+                    <node concept="2OqwBi" id="78rL0jM3v1r" role="37wK5m">
+                      <node concept="37vLTw" id="78rL0jM44zU" role="2Oq$k0">
+                        <ref role="3cqZAo" node="2pVJ_Yvxyp5" resolve="headingCell" />
+                      </node>
+                      <node concept="liA8E" id="78rL0jM3v1t" role="2OqNvi">
+                        <ref role="37wK5l" node="1J3Do7d95$x" resolve="getVehicle" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="2OqwBi" id="78rL0jM3v1u" role="3clFbw">
+                <node concept="37vLTw" id="78rL0jM44uR" role="2Oq$k0">
+                  <ref role="3cqZAo" node="2pVJ_Yvxyp5" resolve="headingCell" />
+                </node>
+                <node concept="liA8E" id="78rL0jM3v1w" role="2OqNvi">
+                  <ref role="37wK5l" node="2RDssu5UQQq" resolve="hasVehicle" />
+                </node>
+              </node>
+            </node>
+            <node concept="3clFbH" id="78rL0jM3v1x" role="3cqZAp" />
+            <node concept="3clFbJ" id="78rL0jM3v1y" role="3cqZAp">
+              <node concept="3clFbS" id="78rL0jM3v1z" role="3clFbx">
+                <node concept="3clFbF" id="78rL0jM3v1$" role="3cqZAp">
+                  <node concept="2OqwBi" id="78rL0jM3v1_" role="3clFbG">
+                    <node concept="37vLTw" id="78rL0jM44Rg" role="2Oq$k0">
+                      <ref role="3cqZAo" node="2pVJ_Yvxyp5" resolve="headingCell" />
+                    </node>
+                    <node concept="liA8E" id="78rL0jM3v1B" role="2OqNvi">
+                      <ref role="37wK5l" node="nUFfrxpUzQ" resolve="setVehicle" />
+                      <node concept="37vLTw" id="78rL0jM3v1C" role="37wK5m">
+                        <ref role="3cqZAo" node="2pVJ_YvxbsC" resolve="vehicle" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+                <node concept="3clFbF" id="78rL0jM3v1D" role="3cqZAp">
+                  <node concept="2OqwBi" id="78rL0jM3v1E" role="3clFbG">
+                    <node concept="37vLTw" id="78rL0jM3v1F" role="2Oq$k0">
+                      <ref role="3cqZAo" node="2pVJ_YvxbsC" resolve="vehicle" />
+                    </node>
+                    <node concept="liA8E" id="78rL0jM3v1G" role="2OqNvi">
+                      <ref role="37wK5l" node="2pVJ_YvvV5_" resolve="setPosition" />
+                      <node concept="1rXfSq" id="78rL0jM3v1H" role="37wK5m">
+                        <ref role="37wK5l" node="2pVJ_Yvt09B" resolve="getNextPosition" />
+                        <node concept="37vLTw" id="78rL0jM3v1I" role="37wK5m">
+                          <ref role="3cqZAo" node="2pVJ_YvxtkG" resolve="currentPosition" />
+                        </node>
+                        <node concept="37vLTw" id="78rL0jM44Z9" role="37wK5m">
+                          <ref role="3cqZAo" node="2pVJ_YvxXT7" resolve="headingDirection" />
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+                <node concept="3clFbF" id="78rL0jM3v1O" role="3cqZAp">
+                  <node concept="2OqwBi" id="78rL0jM3v1P" role="3clFbG">
+                    <node concept="37vLTw" id="78rL0jM3v1Q" role="2Oq$k0">
+                      <ref role="3cqZAo" node="2pVJ_YvxbsC" resolve="vehicle" />
+                    </node>
+                    <node concept="liA8E" id="78rL0jM3v1R" role="2OqNvi">
+                      <ref role="37wK5l" node="1J3Do7d9bGK" resolve="setTicked" />
+                    </node>
+                  </node>
+                </node>
+                <node concept="3cpWs6" id="78rL0jM3v1S" role="3cqZAp">
+                  <node concept="3clFbT" id="78rL0jM3v1T" role="3cqZAk">
+                    <property role="3clFbU" value="true" />
+                  </node>
+                </node>
+              </node>
+              <node concept="2OqwBi" id="78rL0jM3v1U" role="3clFbw">
+                <node concept="37vLTw" id="78rL0jM44Dg" role="2Oq$k0">
+                  <ref role="3cqZAo" node="2pVJ_Yvxyp5" resolve="headingCell" />
+                </node>
+                <node concept="liA8E" id="78rL0jM3v1W" role="2OqNvi">
+                  <ref role="37wK5l" node="1J3Do7cGC_N" resolve="isDrivable" />
+                  <node concept="37vLTw" id="78rL0jM44In" role="37wK5m">
+                    <ref role="3cqZAo" node="2pVJ_YvxXT7" resolve="headingDirection" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="2OqwBi" id="78rL0jM3v1Z" role="3clFbw">
+            <node concept="37vLTw" id="78rL0jM44gU" role="2Oq$k0">
+              <ref role="3cqZAo" node="2pVJ_Yvxyp5" resolve="headingCell" />
+            </node>
+            <node concept="liA8E" id="78rL0jM3v21" role="2OqNvi">
+              <ref role="37wK5l" node="1J3Do7cGI2e" resolve="hasDirection" />
+              <node concept="37vLTw" id="78rL0jM44m6" role="37wK5m">
+                <ref role="3cqZAo" node="2pVJ_YvxXT7" resolve="headingDirection" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3SKdUt" id="78rL0jM3v23" role="3cqZAp">
+          <node concept="3SKdUq" id="78rL0jM3v24" role="3SKWNk">
+            <property role="3SKdUp" value="Otherwise Vehicle cannot move to the desired cell" />
+          </node>
+        </node>
+        <node concept="3cpWs6" id="78rL0jM3v25" role="3cqZAp">
+          <node concept="3clFbT" id="78rL0jM3v26" role="3cqZAk">
+            <property role="3clFbU" value="false" />
+          </node>
+        </node>
+        <node concept="3clFbH" id="78rL0jM3rOW" role="3cqZAp" />
       </node>
       <node concept="3Tm6S6" id="2pVJ_Yvx619" role="1B3o_S" />
       <node concept="10P_77" id="2pVJ_Yvx8HD" role="3clF45" />
@@ -2770,6 +2793,7 @@
         </node>
       </node>
     </node>
+    <node concept="2tJIrI" id="78rL0jM0RtA" role="jymVt" />
     <node concept="3clFb_" id="5D4EFtywvuK" role="jymVt">
       <property role="1EzhhJ" value="false" />
       <property role="TrG5h" value="addVehicle" />
@@ -2961,8 +2985,7 @@
                     <node concept="10Nm6u" id="1DJg4Tz1Atn" role="33vP2m" />
                   </node>
                 </node>
-                <node concept="3clFbH" id="1DJg4Tz1BHS" role="3cqZAp" />
-                <node concept="3clFbH" id="5D4EFtywiTL" role="3cqZAp" />
+                <node concept="3clFbH" id="78rL0jM0W2c" role="3cqZAp" />
                 <node concept="3clFbJ" id="2RDssu5UZuV" role="3cqZAp">
                   <node concept="3clFbS" id="2RDssu5UZuW" role="3clFbx">
                     <node concept="3clFbF" id="2RDssu5UZvc" role="3cqZAp">
@@ -5658,7 +5681,7 @@
       <node concept="3Tm6S6" id="Gg2RkI$MHY" role="1B3o_S" />
       <node concept="10P55v" id="Gg2RkI$P63" role="1tU5fm" />
       <node concept="3cmrfG" id="Gg2RkI_6pa" role="33vP2m">
-        <property role="3cmrfH" value="2" />
+        <property role="3cmrfH" value="1" />
       </node>
     </node>
     <node concept="Wx3nA" id="1YWA$xsLWDh" role="jymVt">

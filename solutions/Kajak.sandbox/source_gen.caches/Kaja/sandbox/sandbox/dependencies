@@ -1,5 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <dependenciesRoot>
+  <dependency className="Kaja.sandbox.sandbox.Fork" file="Fork.java">
+    <classNode dependClassName="JavaKaja.runtime.Colour" />
+    <classNode dependClassName="JavaKaja.runtime.Direction" />
+    <classNode dependClassName="JavaKaja.runtime.Orientation" />
+    <classNode dependClassName="JavaKaja.runtime.Position" />
+    <classNode dependClassName="JavaKaja.runtime.TrafficLightCell" />
+    <classNode dependClassName="JavaKaja.runtime.Vehicle" />
+    <classNode dependClassName="java.lang.String" />
+    <classNode dependClassName="java.util.ArrayList" />
+    <classNode dependClassName="java.util.Arrays" />
+    <classNode dependClassName="java.util.List" />
+    <classNode extendsClassName="JavaKaja.runtime.KajaFrame" />
+  </dependency>
   <dependency className="Kaja.sandbox.sandbox.Sample" file="Sample.java">
     <classNode dependClassName="JavaKaja.runtime.Direction" />
     <classNode dependClassName="java.lang.String" />

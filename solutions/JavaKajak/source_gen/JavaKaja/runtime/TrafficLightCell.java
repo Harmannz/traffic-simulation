@@ -11,7 +11,7 @@ public class TrafficLightCell extends RoadCell {
   private final int ticksToChange;
   private int currentColourIndex;
   private List<Colour> colours;
-  private static final double PASS_YELLOW_PROB = 2;
+  private static final double PASS_YELLOW_PROB = 1;
   private static final Random random = new Random();
 
   public TrafficLightCell(int ticksToChange, List<Colour> colours, Direction... directions) {

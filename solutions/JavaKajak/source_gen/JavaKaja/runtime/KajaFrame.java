@@ -22,7 +22,7 @@ import java.awt.Font;
 public abstract class KajaFrame {
   public static final int HEIGHT = 30;
   public static final int WIDTH = 45;
-  private static final int CELL_SIZE = 5;
+  private static final int CELL_SIZE = 3;
   protected final int width = CELL_SIZE * WIDTH;
   protected final int height = CELL_SIZE * HEIGHT;
   protected final JPanel canvas = new JPanel(new GridLayout(HEIGHT, WIDTH), true);
@@ -177,33 +177,42 @@ public abstract class KajaFrame {
     }
 
     Position currentPosition = vehicle.getCurrentPosition();
-    Direction goingDirection = vehicle.getDesiredDirection();
-    if (goingDirection == null) {
+    Direction desiredDirection = vehicle.getDesiredDirection();
+    if (desiredDirection == null) {
       return false;
     }
-    Cell desiredCell = getNextCell(currentPosition, goingDirection);
-    if (desiredCell.isDrivable(goingDirection)) {
-      desiredCell.setVehicle(vehicle);
-      vehicle.setPosition(getNextPosition(currentPosition, goingDirection));
-      vehicle.takeDesiredDirection();
-      vehicle.setTicked();
-      return true;
-    } else {
-      // check if desiredCell has a vehicle. If so then move vehicle 
+    Cell desiredCell = getNextCell(currentPosition, desiredDirection);
+    // Check if desired cell allows desired direction 
+    if (desiredCell.hasDirection(desiredDirection)) {
       if (desiredCell.hasVehicle()) {
         moveVehicle(desiredCell.getVehicle());
       }
-      // now check again if desiredCell is drivable and if so then move vehicle otherwise return false 
-      if (desiredCell.isDrivable(goingDirection)) {
+      if (desiredCell.isDrivable(desiredDirection)) {
         desiredCell.setVehicle(vehicle);
-        vehicle.setPosition(getNextPosition(currentPosition, goingDirection));
+        vehicle.setPosition(getNextPosition(currentPosition, desiredDirection));
         vehicle.takeDesiredDirection();
         vehicle.setTicked();
         return true;
-      } else {
-        return false;
       }
+
     }
+    // Check if desired cell allows the current heading direction 
+    Direction headingDirection = vehicle.getHeading();
+    if (desiredCell.hasDirection(headingDirection)) {
+      if (desiredCell.hasVehicle()) {
+        moveVehicle(desiredCell.getVehicle());
+      }
+
+      if (desiredCell.isDrivable(headingDirection)) {
+        desiredCell.setVehicle(vehicle);
+        vehicle.setPosition(getNextPosition(currentPosition, desiredDirection));
+        vehicle.setTicked();
+        return true;
+      }
+
+    }
+    // Otherwise Vehicle cannot move to the desired cell 
+    return false;
   }
 
   private boolean takeHeadingDirection(Vehicle vehicle) {
@@ -212,28 +221,27 @@ public abstract class KajaFrame {
     }
 
     Position currentPosition = vehicle.getCurrentPosition();
-    Direction goingDirection = vehicle.getHeading();
-    Cell headingCell = getNextCell(currentPosition, goingDirection);
-    if (headingCell.isDrivable(goingDirection)) {
-      headingCell.setVehicle(vehicle);
-      vehicle.setPosition(getNextPosition(currentPosition, goingDirection));
-      vehicle.setTicked();
-      return true;
-    } else {
-      // check if headingCell has a vehicle. If so then move that vehicle 
+    Direction headingDirection = vehicle.getHeading();
+    Cell headingCell = getNextCell(currentPosition, headingDirection);
+    // sanity check if heading cell exists. E.g. it may be out of bounds but that shouldn't really happen 
+    if (headingCell == null) {
+      return false;
+    }
+
+    if (headingCell.hasDirection(headingDirection)) {
       if (headingCell.hasVehicle()) {
         moveVehicle(headingCell.getVehicle());
       }
-      // now check again if headingCell is drivable and if so then move vehicle otherwise return false 
-      if (headingCell.isDrivable(goingDirection)) {
+
+      if (headingCell.isDrivable(headingDirection)) {
         headingCell.setVehicle(vehicle);
-        vehicle.setPosition(getNextPosition(currentPosition, goingDirection));
+        vehicle.setPosition(getNextPosition(currentPosition, headingDirection));
         vehicle.setTicked();
         return true;
-      } else {
-        return false;
       }
     }
+    // Otherwise Vehicle cannot move to the desired cell 
+    return false;
 
   }
 
@@ -296,6 +304,7 @@ public abstract class KajaFrame {
       trafficLights.add(trafficLight);
     }
   }
+
   protected void addVehicle(int row, int col, Vehicle vehicle) {
     world[row][col].setVehicle(vehicle);
     this.vehicles.add(vehicle);
@@ -315,7 +324,6 @@ public abstract class KajaFrame {
         Color cell = Color.WHITE;
         Cell worldCell = world[i][j];
         Icon karelIcon = null;
-
 
         if (worldCell.hasVehicle()) {
           cell = Color.BLUE;

@@ -6,18 +6,18 @@ import JavaKaja.runtime.KajaFrame;
 import JavaKaja.runtime.Direction;
 import JavaKaja.runtime.Vehicle;
 import JavaKaja.runtime.Position;
+import JavaKaja.runtime.Orientation;
 import java.util.List;
 import JavaKaja.runtime.Colour;
 import java.util.ArrayList;
 import java.util.Arrays;
 import JavaKaja.runtime.TrafficLightCell;
-import JavaKaja.runtime.Orientation;
 
-public class Test extends KajaFrame {
-  public Test() {
+public class Fork extends KajaFrame {
+  public Fork() {
   }
   protected void perform() {
-    buildRoads_from_library_TestRoad_routine();
+    buildFork_from_library_TestRoad_routine();
     // check if starting position is allowed. 
     // check if destination position is allowed. 
     // if so, then create vehicle and add vehicle to cell at starting position 
@@ -25,7 +25,7 @@ public class Test extends KajaFrame {
       // check if vehicle is drivable here 
       if (world[10][5].isDrivable(Direction.east)) {
         // create a new vehicle 
-        Vehicle vehicle = new Vehicle(new Position(10, 5), new Position(4, 12), Direction.east, Direction.south, Direction.east);
+        Vehicle vehicle = new Vehicle(new Position(10, 5), new Position(4, 12), Direction.east, Direction.east);
 
         addVehicle(10, 5, vehicle);
         // place vehcile in this starting position 
@@ -35,13 +35,13 @@ public class Test extends KajaFrame {
     // check if starting position is allowed. 
     // check if destination position is allowed. 
     // if so, then create vehicle and add vehicle to cell at starting position 
-    if (isAllowedRow(5) && isAllowedCol(11) && isAllowedRow(20) && isAllowedCol(11)) {
+    if (isAllowedRow(10) && isAllowedCol(4) && isAllowedRow(20) && isAllowedCol(11)) {
       // check if vehicle is drivable here 
-      if (world[5][11].isDrivable(Direction.south)) {
+      if (world[10][4].isDrivable(Direction.east)) {
         // create a new vehicle 
-        Vehicle vehicle = new Vehicle(new Position(5, 11), new Position(20, 11), Direction.south, Direction.south, Direction.west);
+        Vehicle vehicle = new Vehicle(new Position(10, 4), new Position(20, 11), Direction.east, Direction.north);
 
-        addVehicle(5, 11, vehicle);
+        addVehicle(10, 4, vehicle);
         // place vehcile in this starting position 
 
       }
@@ -49,22 +49,16 @@ public class Test extends KajaFrame {
     // check if starting position is allowed. 
     // check if destination position is allowed. 
     // if so, then create vehicle and add vehicle to cell at starting position 
-    if (isAllowedRow(10) && isAllowedCol(9)) {
-      // create new traffic light object 
-      // create list of colours 
-      List<Colour> colours = new ArrayList<Colour>(Arrays.asList(Colour.GREEN, Colour.YELLOW, Colour.RED));
-      TrafficLightCell trafficLight = new TrafficLightCell(50, colours, Direction.east, Direction.south, Direction.north);
-      addTrafficLight(10, 9, trafficLight);
-    }
-    // check if starting position is allowed. 
-    // check if destination position is allowed. 
-    // if so, then create vehicle and add vehicle to cell at starting position 
-    if (isAllowedRow(9) && isAllowedCol(11)) {
-      // create new traffic light object 
-      // create list of colours 
-      List<Colour> colours = new ArrayList<Colour>(Arrays.asList(Colour.GREEN, Colour.RED, Colour.GREEN, Colour.YELLOW));
-      TrafficLightCell trafficLight = new TrafficLightCell(50, colours, Direction.south, Direction.east, Direction.west);
-      addTrafficLight(9, 11, trafficLight);
+    if (isAllowedRow(10) && isAllowedCol(3) && isAllowedRow(20) && isAllowedCol(11)) {
+      // check if vehicle is drivable here 
+      if (world[10][3].isDrivable(Direction.east)) {
+        // create a new vehicle 
+        Vehicle vehicle = new Vehicle(new Position(10, 3), new Position(20, 11), Direction.east, Direction.south);
+
+        addVehicle(10, 3, vehicle);
+        // place vehcile in this starting position 
+
+      }
     }
     int steps = 0;
     while (steps < 30) {
@@ -352,7 +346,7 @@ public class Test extends KajaFrame {
     }
   }
   public static void main(String[] args) {
-    Test script = new Test();
+    Fork script = new Fork();
     script.initializeComponents();
     script.run();
   }
