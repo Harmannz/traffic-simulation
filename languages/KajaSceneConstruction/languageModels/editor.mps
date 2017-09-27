@@ -530,7 +530,7 @@
         </node>
       </node>
       <node concept="3F0ifn" id="5D4EFtz70br" role="3EZMnx">
-        <property role="3F0ifm" value="Directions to take" />
+        <property role="3F0ifm" value="Path to take" />
         <node concept="lj46D" id="5D4EFtz70bP" role="3F10Kt">
           <property role="VOm3f" value="true" />
         </node>

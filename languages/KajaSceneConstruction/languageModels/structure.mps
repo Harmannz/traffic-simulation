@@ -163,7 +163,7 @@
   <node concept="1TIwiD" id="5D4EFtycLzo">
     <property role="EcuMT" value="6504511466433091800" />
     <property role="TrG5h" value="Vehicle" />
-    <property role="34LRSv" value="add vehicle" />
+    <property role="34LRSv" value="add vehicle: " />
     <ref role="1TJDcQ" to="c2kz:2Pif5TcL5ta" resolve="AbstractCommand" />
     <node concept="1TJgyi" id="5D4EFtycLA_" role="1TKVEl">
       <property role="IQ2nx" value="6504511466433092005" />

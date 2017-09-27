@@ -12,7 +12,6 @@ import javax.swing.UIManager;
 import javax.swing.plaf.metal.MetalLookAndFeel;
 import javax.swing.UnsupportedLookAndFeelException;
 import javax.swing.ImageIcon;
-import java.awt.Dimension;
 import java.awt.BorderLayout;
 import javax.swing.JOptionPane;
 import java.awt.Color;
@@ -23,6 +22,7 @@ public abstract class KajaFrame {
   public static final int HEIGHT = 30;
   public static final int WIDTH = 45;
   private static final int CELL_SIZE = 3;
+  private static boolean isInitialRender = true;
   protected final int width = CELL_SIZE * WIDTH;
   protected final int height = CELL_SIZE * HEIGHT;
   protected final JPanel canvas = new JPanel(new GridLayout(HEIGHT, WIDTH), true);
@@ -60,13 +60,13 @@ public abstract class KajaFrame {
         canvas.add(button);
       }
     }
-
-    frame.setPreferredSize(new Dimension(width, height));
     frame.setResizable(true);
     frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
     frame.add(BorderLayout.CENTER, canvas);
     frame.setVisible(true);
     frame.pack();
+    frame.setExtendedState(JFrame.MAXIMIZED_BOTH);
+
     updateUI();
   }
 
@@ -321,49 +321,52 @@ public abstract class KajaFrame {
   private void updateUI() {
     for (int i = 0; i < HEIGHT; i++) {
       for (int j = 0; j < WIDTH; j++) {
-        Color cell = Color.WHITE;
-        Cell worldCell = world[i][j];
-        Icon karelIcon = null;
+        if (isInitialRender || !(world[i][j] instanceof WallCell)) {
+          Color cell = Color.WHITE;
+          Cell worldCell = world[i][j];
+          Icon karelIcon = null;
 
-        if (worldCell.hasVehicle()) {
-          cell = Color.BLUE;
-          Direction direction = worldCell.getVehicle().getHeading();
-          switch (direction) {
-            case north:
-              karelIcon = karelIconNorth;
-              break;
-            case east:
-              karelIcon = karelIconEast;
-              break;
-            case south:
-              karelIcon = karelIconSouth;
-              break;
-            default:
-              karelIcon = karelIconWest;
-          }
-        }
-        cell = worldCell.getColor();
-        final VisualCell currentVisual = visuals[i][j];
-        final Color cellValue = cell;
-        final Icon cellIcon = karelIcon;
-        final boolean isStopped = stopped;
-        try {
-          SwingUtilities.invokeAndWait(new Runnable() {
-            @Override
-            public void run() {
-              if (isStopped) {
-                frame.setTitle("Traffic Simulation - STOPPED");
-              }
-              currentVisual.setBackground(cellValue);
-              currentVisual.setIcon(cellIcon);
-              currentVisual.setFont(new Font(currentVisual.getFont().getName(), Font.BOLD, 18));
+          if (worldCell.hasVehicle()) {
+            cell = Color.BLUE;
+            Direction direction = worldCell.getVehicle().getHeading();
+            switch (direction) {
+              case north:
+                karelIcon = karelIconNorth;
+                break;
+              case east:
+                karelIcon = karelIconEast;
+                break;
+              case south:
+                karelIcon = karelIconSouth;
+                break;
+              default:
+                karelIcon = karelIconWest;
             }
-          });
-        } catch (Exception e) {
-          throw new RuntimeException(e);
-        }
+          }
+          cell = worldCell.getColor();
+          final VisualCell currentVisual = visuals[i][j];
+          final Color cellValue = cell;
+          final Icon cellIcon = karelIcon;
+          final boolean isStopped = stopped;
+          try {
+            SwingUtilities.invokeAndWait(new Runnable() {
+              @Override
+              public void run() {
+                if (isStopped) {
+                  frame.setTitle("Traffic Simulation - STOPPED");
+                }
+                currentVisual.setBackground(cellValue);
+                currentVisual.setIcon(cellIcon);
+                currentVisual.setFont(new Font(currentVisual.getFont().getName(), Font.BOLD, 18));
+              }
+            });
+          } catch (Exception e) {
+            throw new RuntimeException(e);
+          }
 
+        }
       }
     }
+    isInitialRender = false;
   }
 }

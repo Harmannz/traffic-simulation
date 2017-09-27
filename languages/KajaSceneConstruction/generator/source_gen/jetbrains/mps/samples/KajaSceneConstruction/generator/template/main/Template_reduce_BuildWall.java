@@ -88,29 +88,11 @@ public class Template_reduce_BuildWall extends TemplateDeclarationBase {
                     // TODO validate child 
                   }
                   {
-                    final SNode tnode9 = environment.createOutputNode(myConcepts[3]);
+                    final SNode tnode9 = environment.createOutputNode(myConcepts[6]);
                     try {
-                      TemplateContext context7 = context4.subContext();
-                      {
-                        final SNode tnode10 = environment.createOutputNode(myConcepts[4]);
-                        try {
-                          tnode10.setReference(myAssociationLinks[0], SReference.create(myAssociationLinks[0], tnode10, PersistenceFacade.getInstance().createModelReference("r:f5e9b11f-5073-4786-8ed1-a9e42307c3f8(JavaKaja.runtime)"), PersistenceFacade.getInstance().createNodeId("3210697320273550615")));
-                        } finally {
-                        }
-                        tnode9.addChild(myAggregationLinks[1], tnode10);
-                        // TODO validate child 
-                      }
                     } finally {
                     }
                     tnode4.addChild(myAggregationLinks[2], tnode9);
-                    // TODO validate child 
-                  }
-                  {
-                    final SNode tnode11 = environment.createOutputNode(myConcepts[6]);
-                    try {
-                    } finally {
-                    }
-                    tnode4.addChild(myAggregationLinks[2], tnode11);
                     // TODO validate child 
                   }
                 } finally {
@@ -119,18 +101,37 @@ public class Template_reduce_BuildWall extends TemplateDeclarationBase {
                 // TODO validate child 
               }
               {
-                final SNode tnode12 = environment.createOutputNode(myConcepts[7]);
+                final SNode tnode10 = environment.createOutputNode(myConcepts[7]);
                 try {
-                  TemplateContext context8 = context3.subContext();
+                  TemplateContext context7 = context3.subContext();
+                  {
+                    final SNode tnode11 = environment.createOutputNode(myConcepts[4]);
+                    try {
+                      tnode11.setReference(myAssociationLinks[0], SReference.create(myAssociationLinks[0], tnode11, PersistenceFacade.getInstance().createModelReference("r:f5e9b11f-5073-4786-8ed1-a9e42307c3f8(JavaKaja.runtime)"), PersistenceFacade.getInstance().createNodeId("3210697320273648281")));
+                      TemplateContext context8 = context7.subContext();
+                      {
+                        final SNode tnode12 = environment.createOutputNode(myConcepts[5]);
+                        try {
+                          SNodeAccessUtil.setProperty(tnode12, myProperties[0], TemplateUtil.asString(QueriesGenerated.propertyMacro_GetPropertyValue_3210697320273648347(new PropertyMacroContext(context8, "0", propertyMacro_n5kn6a_c0a0c0a0b0c0b0b0b0c0b0b0b0b0c0e))));
+                        } finally {
+                        }
+                        tnode11.addChild(myAggregationLinks[0], tnode12);
+                        // TODO validate child 
+                      }
+                    } finally {
+                    }
+                    tnode10.addChild(myAggregationLinks[4], tnode11);
+                    // TODO validate child 
+                  }
                   {
                     final SNode tnode13 = environment.createOutputNode(myConcepts[4]);
                     try {
-                      tnode13.setReference(myAssociationLinks[0], SReference.create(myAssociationLinks[0], tnode13, PersistenceFacade.getInstance().createModelReference("r:f5e9b11f-5073-4786-8ed1-a9e42307c3f8(JavaKaja.runtime)"), PersistenceFacade.getInstance().createNodeId("3210697320273648281")));
-                      TemplateContext context9 = context8.subContext();
+                      tnode13.setReference(myAssociationLinks[0], SReference.create(myAssociationLinks[0], tnode13, PersistenceFacade.getInstance().createModelReference("r:f5e9b11f-5073-4786-8ed1-a9e42307c3f8(JavaKaja.runtime)"), PersistenceFacade.getInstance().createNodeId("3210697320273648203")));
+                      TemplateContext context9 = context7.subContext();
                       {
                         final SNode tnode14 = environment.createOutputNode(myConcepts[5]);
                         try {
-                          SNodeAccessUtil.setProperty(tnode14, myProperties[0], TemplateUtil.asString(QueriesGenerated.propertyMacro_GetPropertyValue_3210697320273648347(new PropertyMacroContext(context9, "0", propertyMacro_n5kn6a_c0a0c0a0b0c0b0b0b0c0b0b0b0b0c0e))));
+                          SNodeAccessUtil.setProperty(tnode14, myProperties[0], TemplateUtil.asString(QueriesGenerated.propertyMacro_GetPropertyValue_3210697320273648356(new PropertyMacroContext(context9, "0", propertyMacro_n5kn6a_c0a0c0a0b0c0b0c0b0c0b0b0b0b0c0e))));
                         } finally {
                         }
                         tnode13.addChild(myAggregationLinks[0], tnode14);
@@ -138,77 +139,58 @@ public class Template_reduce_BuildWall extends TemplateDeclarationBase {
                       }
                     } finally {
                     }
-                    tnode12.addChild(myAggregationLinks[4], tnode13);
-                    // TODO validate child 
-                  }
-                  {
-                    final SNode tnode15 = environment.createOutputNode(myConcepts[4]);
-                    try {
-                      tnode15.setReference(myAssociationLinks[0], SReference.create(myAssociationLinks[0], tnode15, PersistenceFacade.getInstance().createModelReference("r:f5e9b11f-5073-4786-8ed1-a9e42307c3f8(JavaKaja.runtime)"), PersistenceFacade.getInstance().createNodeId("3210697320273648203")));
-                      TemplateContext context10 = context8.subContext();
-                      {
-                        final SNode tnode16 = environment.createOutputNode(myConcepts[5]);
-                        try {
-                          SNodeAccessUtil.setProperty(tnode16, myProperties[0], TemplateUtil.asString(QueriesGenerated.propertyMacro_GetPropertyValue_3210697320273648356(new PropertyMacroContext(context10, "0", propertyMacro_n5kn6a_c0a0c0a0b0c0b0c0b0c0b0b0b0b0c0e))));
-                        } finally {
-                        }
-                        tnode15.addChild(myAggregationLinks[0], tnode16);
-                        // TODO validate child 
-                      }
-                    } finally {
-                    }
-                    tnode12.addChild(myAggregationLinks[5], tnode15);
+                    tnode10.addChild(myAggregationLinks[5], tnode13);
                     // TODO validate child 
                   }
                 } finally {
                 }
-                tnode3.addChild(myAggregationLinks[6], tnode12);
+                tnode3.addChild(myAggregationLinks[6], tnode10);
                 // TODO validate child 
               }
               {
-                final SNode tnode17 = environment.createOutputNode(myConcepts[0]);
+                final SNode tnode15 = environment.createOutputNode(myConcepts[0]);
                 try {
-                  TemplateContext context11 = context3.subContext();
+                  TemplateContext context10 = context3.subContext();
                   {
-                    final SNode tnode18 = environment.createOutputNode(myConcepts[1]);
+                    final SNode tnode16 = environment.createOutputNode(myConcepts[1]);
                     try {
-                      TemplateContext context12 = context11.subContext();
+                      TemplateContext context11 = context10.subContext();
                       {
-                        final SNode tnode19 = environment.createOutputNode(myConcepts[3]);
+                        final SNode tnode17 = environment.createOutputNode(myConcepts[3]);
                         try {
-                          TemplateContext context13 = context12.subContext();
+                          TemplateContext context12 = context11.subContext();
                           {
-                            final SNode tnode20 = environment.createOutputNode(myConcepts[4]);
+                            final SNode tnode18 = environment.createOutputNode(myConcepts[4]);
                             try {
-                              tnode20.setReference(myAssociationLinks[0], SReference.create(myAssociationLinks[0], tnode20, PersistenceFacade.getInstance().createModelReference("r:f5e9b11f-5073-4786-8ed1-a9e42307c3f8(JavaKaja.runtime)"), PersistenceFacade.getInstance().createNodeId("3308300503039580739")));
-                              TemplateContext context14 = context13.subContext();
+                              tnode18.setReference(myAssociationLinks[0], SReference.create(myAssociationLinks[0], tnode18, PersistenceFacade.getInstance().createModelReference("r:f5e9b11f-5073-4786-8ed1-a9e42307c3f8(JavaKaja.runtime)"), PersistenceFacade.getInstance().createNodeId("3308300503039580739")));
+                              TemplateContext context13 = context12.subContext();
                               {
-                                final SNode tnode21 = environment.createOutputNode(myConcepts[8]);
+                                final SNode tnode19 = environment.createOutputNode(myConcepts[8]);
                                 try {
-                                  SNodeAccessUtil.setProperty(tnode21, myProperties[1], "Attempted to build wall outside of the playground!");
+                                  SNodeAccessUtil.setProperty(tnode19, myProperties[1], "Attempted to build wall outside of the playground!");
                                 } finally {
                                 }
-                                tnode20.addChild(myAggregationLinks[0], tnode21);
+                                tnode18.addChild(myAggregationLinks[0], tnode19);
                                 // TODO validate child 
                               }
                             } finally {
                             }
-                            tnode19.addChild(myAggregationLinks[1], tnode20);
+                            tnode17.addChild(myAggregationLinks[1], tnode18);
                             // TODO validate child 
                           }
                         } finally {
                         }
-                        tnode18.addChild(myAggregationLinks[2], tnode19);
+                        tnode16.addChild(myAggregationLinks[2], tnode17);
                         // TODO validate child 
                       }
                     } finally {
                     }
-                    tnode17.addChild(myAggregationLinks[7], tnode18);
+                    tnode15.addChild(myAggregationLinks[7], tnode16);
                     // TODO validate child 
                   }
                 } finally {
                 }
-                tnode3.addChild(myAggregationLinks[8], tnode17);
+                tnode3.addChild(myAggregationLinks[8], tnode15);
                 // TODO validate child 
               }
             } finally {

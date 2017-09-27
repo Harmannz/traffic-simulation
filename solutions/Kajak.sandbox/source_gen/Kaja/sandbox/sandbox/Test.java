@@ -181,9 +181,9 @@ public class Test extends KajaFrame {
 
       if (Orientation.vertical == Orientation.vertical) {
         // first check if it is possible to create a road vertically 
-        if (isAllowedRow(23) && isAllowedCol(10)) {
+        if (isAllowedRow(19) && isAllowedCol(10)) {
           // addRoad(row, column, direction) iterating over the columns 
-          for (int i = 0; i < 22; i++) {
+          for (int i = 0; i < 18; i++) {
             addRoad(1 + i, 10, Direction.north);
           }
         } else {
@@ -191,9 +191,9 @@ public class Test extends KajaFrame {
         }
       } else {
         // first check if it is possible to create a road horizontally 
-        if (isAllowedRow(1) && isAllowedCol(32)) {
+        if (isAllowedRow(1) && isAllowedCol(28)) {
           // addRoad(row, coloum, direction) iterating over the rows 
-          for (int i = 0; i < 22; i++) {
+          for (int i = 0; i < 18; i++) {
             addRoad(1, 10 + i, Direction.north);
           }
         } else {

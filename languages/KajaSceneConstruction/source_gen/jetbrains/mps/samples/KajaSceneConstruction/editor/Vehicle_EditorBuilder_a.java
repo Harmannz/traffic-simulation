@@ -248,7 +248,7 @@ import jetbrains.mps.nodeEditor.cellActions.CellAction_DeleteNode;
     }
   }
   private EditorCell createConstant_aadus0_n0() {
-    EditorCell_Constant editorCell = new EditorCell_Constant(getEditorContext(), myNode, "Directions to take");
+    EditorCell_Constant editorCell = new EditorCell_Constant(getEditorContext(), myNode, "Path to take");
     editorCell.setCellId("Constant_aadus0_n0");
     Style style = new StyleImpl();
     style.set(StyleAttributes.INDENT_LAYOUT_INDENT, true);

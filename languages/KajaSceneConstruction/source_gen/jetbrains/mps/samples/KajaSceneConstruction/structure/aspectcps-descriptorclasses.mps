@@ -1262,7 +1262,7 @@
                       <node concept="liA8E" id="6s" role="2OqNvi">
                         <ref role="37wK5l" to="ze1i:~ConceptPresentationBuilder.rawPresentation(java.lang.String):jetbrains.mps.smodel.runtime.ConceptPresentationBuilder" resolve="rawPresentation" />
                         <node concept="Xl_RD" id="6t" role="37wK5m">
-                          <property role="Xl_RC" value="add vehicle" />
+                          <property role="Xl_RC" value="add vehicle: " />
                         </node>
                       </node>
                     </node>
@@ -4656,7 +4656,7 @@
             <node concept="liA8E" id="pG" role="2OqNvi">
               <ref role="37wK5l" to="bzg8:~ConceptDescriptorBuilder2.alias(java.lang.String):jetbrains.mps.smodel.runtime.impl.ConceptDescriptorBuilder2" resolve="alias" />
               <node concept="Xl_RD" id="pH" role="37wK5m">
-                <property role="Xl_RC" value="add vehicle" />
+                <property role="Xl_RC" value="add vehicle: " />
               </node>
             </node>
           </node>

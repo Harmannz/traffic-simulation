@@ -202,7 +202,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.prop("destinationCol", 0x5a44aab7623319aeL, "6504511466433092014");
     b.aggregate("directionQueue", 0x5a44aab7624eb3c5L).target(0x49a08c51fe543ccL, 0xbd998b46d641d7f5L, 0x2de971c785ed0d39L).optional(true).ordered(true).multiple(true).origin("6504511466434900933").done();
     b.aggregate("startingDirection", 0x5a44aab762ff42ebL).target(0x49a08c51fe543ccL, 0xbd998b46d641d7f5L, 0x2de971c785ed0d39L).optional(false).ordered(true).multiple(false).origin("6504511466446471915").done();
-    b.alias("add vehicle");
+    b.alias("add vehicle: ");
     return b.create();
   }
   private static ConceptDescriptor createDescriptorForYellow() {

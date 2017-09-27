@@ -29,7 +29,6 @@
     <classNode dependClassName="JavaKaja.runtime.WallCell" />
     <classNode dependClassName="java.awt.BorderLayout" />
     <classNode dependClassName="java.awt.Color" />
-    <classNode dependClassName="java.awt.Dimension" />
     <classNode dependClassName="java.awt.Font" />
     <classNode dependClassName="java.awt.GridLayout" />
     <classNode dependClassName="java.lang.ClassLoader" />

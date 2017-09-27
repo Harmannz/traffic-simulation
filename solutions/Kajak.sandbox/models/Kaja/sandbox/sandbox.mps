@@ -347,7 +347,7 @@
           <property role="24I$TN" value="1" />
           <property role="24I$TM" value="10" />
           <property role="3$Exe3" value="vertical" />
-          <property role="3$Exe5" value="22" />
+          <property role="3$Exe5" value="18" />
           <property role="3$ExdE" value="north" />
         </node>
         <node concept="3$Exft" id="1g5YnyTY3rH" role="2C6hI7">

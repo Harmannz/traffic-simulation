@@ -348,11 +348,6 @@
                       </node>
                     </node>
                   </node>
-                  <node concept="3clFbF" id="2MeG3eCd4QK" role="3cqZAp">
-                    <node concept="1rXfSq" id="4hiugqyyTtw" role="3clFbG">
-                      <ref role="37wK5l" to="wd51:2MeG3eCd1On" resolve="minipause" />
-                    </node>
-                  </node>
                   <node concept="3clFbH" id="2MeG3eCdpEV" role="3cqZAp" />
                 </node>
                 <node concept="1Wc70l" id="2MeG3eCdpFj" role="3clFbw">

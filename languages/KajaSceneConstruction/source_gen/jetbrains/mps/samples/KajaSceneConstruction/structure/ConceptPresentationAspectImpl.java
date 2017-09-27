@@ -121,7 +121,7 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
       case LanguageConceptSwitch.Vehicle:
         if (props_Vehicle == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
-          cpb.rawPresentation("add vehicle");
+          cpb.rawPresentation("add vehicle: ");
           props_Vehicle = cpb.create();
         }
         return props_Vehicle;
