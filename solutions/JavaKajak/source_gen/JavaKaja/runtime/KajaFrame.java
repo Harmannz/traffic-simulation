@@ -321,7 +321,7 @@ public abstract class KajaFrame {
   private void updateUI() {
     for (int i = 0; i < HEIGHT; i++) {
       for (int j = 0; j < WIDTH; j++) {
-        if (isInitialRender || !(world[i][j] instanceof WallCell)) {
+        if (isInitialRender || world[i][j] instanceof WallCell) {
           Color cell = Color.WHITE;
           Cell worldCell = world[i][j];
           Icon karelIcon = null;
@@ -367,6 +367,5 @@ public abstract class KajaFrame {
         }
       }
     }
-    isInitialRender = false;
   }
 }

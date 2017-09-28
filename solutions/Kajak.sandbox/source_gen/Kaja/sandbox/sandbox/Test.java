@@ -62,6 +62,8 @@ public class Test extends KajaFrame {
     }
     int steps = 0;
     while (steps < 30) {
+      if (steps % 0 == 0) {
+      }
       tick();
       steps++;
     }
@@ -667,7 +669,7 @@ public class Test extends KajaFrame {
       // create new traffic light object 
       // create list of colours 
       List<Colour> colours = new ArrayList<Colour>(Arrays.asList(Colour.YELLOW, Colour.RED, Colour.GREEN));
-      TrafficLightCell trafficLight = new TrafficLightCell(10, colours, Direction.east);
+      TrafficLightCell trafficLight = new TrafficLightCell(2, colours, Direction.east);
       addTrafficLight(10, 9, trafficLight);
     }
     // check if starting position is allowed. 

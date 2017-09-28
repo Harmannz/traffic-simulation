@@ -61,7 +61,51 @@ public class Fork extends KajaFrame {
       }
     }
     int steps = 0;
-    while (steps < 30) {
+    while (steps < 50) {
+      if (steps % 10 == 0) {
+        // check if starting position is allowed. 
+        // check if destination position is allowed. 
+        // if so, then create vehicle and add vehicle to cell at starting position 
+        if (isAllowedRow(10) && isAllowedCol(3) && isAllowedRow(20) && isAllowedCol(11)) {
+          // check if vehicle is drivable here 
+          if (world[10][3].isDrivable(Direction.east)) {
+            // create a new vehicle 
+            Vehicle vehicle = new Vehicle(new Position(10, 3), new Position(20, 11), Direction.east, Direction.south);
+
+            addVehicle(10, 3, vehicle);
+            // place vehcile in this starting position 
+
+          }
+        }
+        // check if starting position is allowed. 
+        // check if destination position is allowed. 
+        // if so, then create vehicle and add vehicle to cell at starting position 
+        if (isAllowedRow(10) && isAllowedCol(4) && isAllowedRow(20) && isAllowedCol(11)) {
+          // check if vehicle is drivable here 
+          if (world[10][4].isDrivable(Direction.east)) {
+            // create a new vehicle 
+            Vehicle vehicle = new Vehicle(new Position(10, 4), new Position(20, 11), Direction.east, Direction.north);
+
+            addVehicle(10, 4, vehicle);
+            // place vehcile in this starting position 
+
+          }
+        }
+        // check if starting position is allowed. 
+        // check if destination position is allowed. 
+        // if so, then create vehicle and add vehicle to cell at starting position 
+        if (isAllowedRow(10) && isAllowedCol(5) && isAllowedRow(4) && isAllowedCol(12)) {
+          // check if vehicle is drivable here 
+          if (world[10][5].isDrivable(Direction.east)) {
+            // create a new vehicle 
+            Vehicle vehicle = new Vehicle(new Position(10, 5), new Position(4, 12), Direction.east, Direction.east);
+
+            addVehicle(10, 5, vehicle);
+            // place vehcile in this starting position 
+
+          }
+        }
+      }
       tick();
       steps++;
     }
@@ -667,7 +711,7 @@ public class Fork extends KajaFrame {
       // create new traffic light object 
       // create list of colours 
       List<Colour> colours = new ArrayList<Colour>(Arrays.asList(Colour.YELLOW, Colour.RED, Colour.GREEN));
-      TrafficLightCell trafficLight = new TrafficLightCell(10, colours, Direction.east);
+      TrafficLightCell trafficLight = new TrafficLightCell(2, colours, Direction.east);
       addTrafficLight(10, 9, trafficLight);
     }
     // check if starting position is allowed. 

@@ -292,6 +292,7 @@
     <classNode extendsClassName="jetbrains.mps.generator.runtime.TemplateDeclarationBase" />
   </dependency>
   <dependency className="jetbrains.mps.samples.KajaSceneConstruction.generator.template.main.Template_reduce_Steps" file="Template_reduce_Steps.java">
+    <classNode dependClassName="java.lang.Iterable" />
     <classNode dependClassName="java.lang.Override" />
     <classNode dependClassName="java.util.Collection" />
     <classNode dependClassName="jetbrains.mps.generator.runtime.Generated" />
@@ -301,6 +302,7 @@
     <classNode dependClassName="jetbrains.mps.generator.runtime.TemplateExecutionEnvironment" />
     <classNode dependClassName="jetbrains.mps.generator.runtime.TemplateUtil" />
     <classNode dependClassName="jetbrains.mps.generator.template.PropertyMacroContext" />
+    <classNode dependClassName="jetbrains.mps.generator.template.SourceSubstituteMacroNodesContext" />
     <classNode dependClassName="jetbrains.mps.samples.KajaSceneConstruction.generator.template.main.QueriesGenerated" />
     <classNode dependClassName="jetbrains.mps.smodel.SNodePointer" />
     <classNode dependClassName="jetbrains.mps.smodel.SReference" />

@@ -223,6 +223,18 @@
       <property role="TrG5h" value="steps" />
       <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
     </node>
+    <node concept="1TJgyi" id="7nG8LcLgyJ6" role="1TKVEl">
+      <property role="IQ2nx" value="8497205162279054278" />
+      <property role="TrG5h" value="insertCounter" />
+      <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
+    </node>
+    <node concept="1TJgyj" id="PMv0TwzO3t" role="1TKVEi">
+      <property role="IQ2ns" value="968973271029465309" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="vehicles" />
+      <property role="20lbJX" value="0..n" />
+      <ref role="20lvS9" node="5D4EFtycLzo" resolve="Vehicle" />
+    </node>
   </node>
   <node concept="1TIwiD" id="Gg2RkIml1t">
     <property role="EcuMT" value="797149731961262173" />
