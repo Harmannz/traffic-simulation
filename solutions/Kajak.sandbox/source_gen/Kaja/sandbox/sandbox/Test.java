@@ -521,9 +521,9 @@ public class Test extends KajaFrame {
 
       if (Orientation.horizontal == Orientation.vertical) {
         // first check if it is possible to create a road vertically 
-        if (isAllowedRow(33) && isAllowedCol(1)) {
+        if (isAllowedRow(40) && isAllowedCol(1)) {
           // addRoad(row, column, direction) iterating over the columns 
-          for (int i = 0; i < 23; i++) {
+          for (int i = 0; i < 30; i++) {
             addRoad(10 + i, 1, Direction.east);
           }
         } else {
@@ -531,9 +531,9 @@ public class Test extends KajaFrame {
         }
       } else {
         // first check if it is possible to create a road horizontally 
-        if (isAllowedRow(10) && isAllowedCol(24)) {
+        if (isAllowedRow(10) && isAllowedCol(31)) {
           // addRoad(row, coloum, direction) iterating over the rows 
-          for (int i = 0; i < 23; i++) {
+          for (int i = 0; i < 30; i++) {
             addRoad(10, 1 + i, Direction.east);
           }
         } else {
@@ -571,14 +571,14 @@ public class Test extends KajaFrame {
     } else {
       reportError("Attempted to build road outside of the environment!");
     }
-    if (isAllowedRow(9) && isAllowedCol(8)) {
+    if (isAllowedRow(9) && isAllowedCol(5)) {
 
       if (Orientation.horizontal == Orientation.vertical) {
         // first check if it is possible to create a road vertically 
-        if (isAllowedRow(12) && isAllowedCol(8)) {
+        if (isAllowedRow(15) && isAllowedCol(5)) {
           // addRoad(row, column, direction) iterating over the columns 
-          for (int i = 0; i < 3; i++) {
-            addRoad(9 + i, 8, Direction.east);
+          for (int i = 0; i < 6; i++) {
+            addRoad(9 + i, 5, Direction.east);
           }
         } else {
           reportError("Length exceeds the environment bounds. Vertical");
@@ -587,8 +587,8 @@ public class Test extends KajaFrame {
         // first check if it is possible to create a road horizontally 
         if (isAllowedRow(9) && isAllowedCol(11)) {
           // addRoad(row, coloum, direction) iterating over the rows 
-          for (int i = 0; i < 3; i++) {
-            addRoad(9, 8 + i, Direction.east);
+          for (int i = 0; i < 6; i++) {
+            addRoad(9, 5 + i, Direction.east);
           }
         } else {
           reportError("Length exceeds the environment bounds. Horizontal");
@@ -598,14 +598,14 @@ public class Test extends KajaFrame {
     } else {
       reportError("Attempted to build road outside of the environment!");
     }
-    if (isAllowedRow(11) && isAllowedCol(8)) {
+    if (isAllowedRow(11) && isAllowedCol(5)) {
 
       if (Orientation.horizontal == Orientation.vertical) {
         // first check if it is possible to create a road vertically 
-        if (isAllowedRow(14) && isAllowedCol(8)) {
+        if (isAllowedRow(17) && isAllowedCol(5)) {
           // addRoad(row, column, direction) iterating over the columns 
-          for (int i = 0; i < 3; i++) {
-            addRoad(11 + i, 8, Direction.east);
+          for (int i = 0; i < 6; i++) {
+            addRoad(11 + i, 5, Direction.east);
           }
         } else {
           reportError("Length exceeds the environment bounds. Vertical");
@@ -614,8 +614,8 @@ public class Test extends KajaFrame {
         // first check if it is possible to create a road horizontally 
         if (isAllowedRow(11) && isAllowedCol(11)) {
           // addRoad(row, coloum, direction) iterating over the rows 
-          for (int i = 0; i < 3; i++) {
-            addRoad(11, 8 + i, Direction.east);
+          for (int i = 0; i < 6; i++) {
+            addRoad(11, 5 + i, Direction.east);
           }
         } else {
           reportError("Length exceeds the environment bounds. Horizontal");
@@ -629,9 +629,9 @@ public class Test extends KajaFrame {
 
       if (Orientation.vertical == Orientation.vertical) {
         // first check if it is possible to create a road vertically 
-        if (isAllowedRow(21) && isAllowedCol(10)) {
+        if (isAllowedRow(28) && isAllowedCol(10)) {
           // addRoad(row, column, direction) iterating over the columns 
-          for (int i = 0; i < 10; i++) {
+          for (int i = 0; i < 17; i++) {
             addRoad(11 + i, 10, Direction.south);
           }
         } else {
@@ -639,10 +639,145 @@ public class Test extends KajaFrame {
         }
       } else {
         // first check if it is possible to create a road horizontally 
-        if (isAllowedRow(11) && isAllowedCol(20)) {
+        if (isAllowedRow(11) && isAllowedCol(27)) {
           // addRoad(row, coloum, direction) iterating over the rows 
-          for (int i = 0; i < 10; i++) {
+          for (int i = 0; i < 17; i++) {
             addRoad(11, 10 + i, Direction.south);
+          }
+        } else {
+          reportError("Length exceeds the environment bounds. Horizontal");
+        }
+      }
+      minipause();
+    } else {
+      reportError("Attempted to build road outside of the environment!");
+    }
+    if (isAllowedRow(10) && isAllowedCol(20)) {
+
+      if (Orientation.vertical == Orientation.vertical) {
+        // first check if it is possible to create a road vertically 
+        if (isAllowedRow(23) && isAllowedCol(20)) {
+          // addRoad(row, column, direction) iterating over the columns 
+          for (int i = 0; i < 13; i++) {
+            addRoad(10 + i, 20, Direction.south);
+          }
+        } else {
+          reportError("Length exceeds the environment bounds. Vertical");
+        }
+      } else {
+        // first check if it is possible to create a road horizontally 
+        if (isAllowedRow(10) && isAllowedCol(33)) {
+          // addRoad(row, coloum, direction) iterating over the rows 
+          for (int i = 0; i < 13; i++) {
+            addRoad(10, 20 + i, Direction.south);
+          }
+        } else {
+          reportError("Length exceeds the environment bounds. Horizontal");
+        }
+      }
+      minipause();
+    } else {
+      reportError("Attempted to build road outside of the environment!");
+    }
+    if (isAllowedRow(19) && isAllowedCol(9)) {
+
+      if (Orientation.vertical == Orientation.vertical) {
+        // first check if it is possible to create a road vertically 
+        if (isAllowedRow(23) && isAllowedCol(9)) {
+          // addRoad(row, column, direction) iterating over the columns 
+          for (int i = 0; i < 4; i++) {
+            addRoad(19 + i, 9, Direction.south);
+          }
+        } else {
+          reportError("Length exceeds the environment bounds. Vertical");
+        }
+      } else {
+        // first check if it is possible to create a road horizontally 
+        if (isAllowedRow(19) && isAllowedCol(13)) {
+          // addRoad(row, coloum, direction) iterating over the rows 
+          for (int i = 0; i < 4; i++) {
+            addRoad(19, 9 + i, Direction.south);
+          }
+        } else {
+          reportError("Length exceeds the environment bounds. Horizontal");
+        }
+      }
+      minipause();
+    } else {
+      reportError("Attempted to build road outside of the environment!");
+    }
+    if (isAllowedRow(19) && isAllowedCol(11)) {
+
+      if (Orientation.vertical == Orientation.vertical) {
+        // first check if it is possible to create a road vertically 
+        if (isAllowedRow(23) && isAllowedCol(11)) {
+          // addRoad(row, column, direction) iterating over the columns 
+          for (int i = 0; i < 4; i++) {
+            addRoad(19 + i, 11, Direction.south);
+          }
+        } else {
+          reportError("Length exceeds the environment bounds. Vertical");
+        }
+      } else {
+        // first check if it is possible to create a road horizontally 
+        if (isAllowedRow(19) && isAllowedCol(15)) {
+          // addRoad(row, coloum, direction) iterating over the rows 
+          for (int i = 0; i < 4; i++) {
+            addRoad(19, 11 + i, Direction.south);
+          }
+        } else {
+          reportError("Length exceeds the environment bounds. Horizontal");
+        }
+      }
+      minipause();
+    } else {
+      reportError("Attempted to build road outside of the environment!");
+    }
+    if (isAllowedRow(22) && isAllowedCol(11)) {
+
+      if (Orientation.horizontal == Orientation.vertical) {
+        // first check if it is possible to create a road vertically 
+        if (isAllowedRow(42) && isAllowedCol(11)) {
+          // addRoad(row, column, direction) iterating over the columns 
+          for (int i = 0; i < 20; i++) {
+            addRoad(22 + i, 11, Direction.east);
+          }
+        } else {
+          reportError("Length exceeds the environment bounds. Vertical");
+        }
+      } else {
+        // first check if it is possible to create a road horizontally 
+        if (isAllowedRow(22) && isAllowedCol(31)) {
+          // addRoad(row, coloum, direction) iterating over the rows 
+          for (int i = 0; i < 20; i++) {
+            addRoad(22, 11 + i, Direction.east);
+          }
+        } else {
+          reportError("Length exceeds the environment bounds. Horizontal");
+        }
+      }
+      minipause();
+    } else {
+      reportError("Attempted to build road outside of the environment!");
+    }
+    if (isAllowedRow(22) && isAllowedCol(1)) {
+
+      if (Orientation.horizontal == Orientation.vertical) {
+        // first check if it is possible to create a road vertically 
+        if (isAllowedRow(31) && isAllowedCol(1)) {
+          // addRoad(row, column, direction) iterating over the columns 
+          for (int i = 0; i < 9; i++) {
+            addRoad(22 + i, 1, Direction.west);
+          }
+        } else {
+          reportError("Length exceeds the environment bounds. Vertical");
+        }
+      } else {
+        // first check if it is possible to create a road horizontally 
+        if (isAllowedRow(22) && isAllowedCol(10)) {
+          // addRoad(row, coloum, direction) iterating over the rows 
+          for (int i = 0; i < 9; i++) {
+            addRoad(22, 1 + i, Direction.west);
           }
         } else {
           reportError("Length exceeds the environment bounds. Horizontal");
@@ -681,6 +816,56 @@ public class Test extends KajaFrame {
       List<Colour> colours = new ArrayList<Colour>(Arrays.asList(Colour.RED, Colour.GREEN, Colour.YELLOW));
       TrafficLightCell trafficLight = new TrafficLightCell(3, colours, Direction.east);
       addTrafficLight(11, 9, trafficLight);
+    }
+    // check if starting position is allowed. 
+    // check if destination position is allowed. 
+    // if so, then create vehicle and add vehicle to cell at starting position 
+    if (isAllowedRow(21) && isAllowedCol(9)) {
+      // create new traffic light object 
+      // create list of colours 
+      List<Colour> colours = new ArrayList<Colour>(Arrays.asList(Colour.RED, Colour.GREEN, Colour.YELLOW));
+      TrafficLightCell trafficLight = new TrafficLightCell(4, colours, Direction.south);
+      addTrafficLight(21, 9, trafficLight);
+    }
+    // check if starting position is allowed. 
+    // check if destination position is allowed. 
+    // if so, then create vehicle and add vehicle to cell at starting position 
+    if (isAllowedRow(21) && isAllowedCol(10)) {
+      // create new traffic light object 
+      // create list of colours 
+      List<Colour> colours = new ArrayList<Colour>(Arrays.asList(Colour.RED, Colour.GREEN, Colour.YELLOW));
+      TrafficLightCell trafficLight = new TrafficLightCell(3, colours, Direction.south);
+      addTrafficLight(21, 10, trafficLight);
+    }
+    // check if starting position is allowed. 
+    // check if destination position is allowed. 
+    // if so, then create vehicle and add vehicle to cell at starting position 
+    if (isAllowedRow(21) && isAllowedCol(11)) {
+      // create new traffic light object 
+      // create list of colours 
+      List<Colour> colours = new ArrayList<Colour>(Arrays.asList(Colour.RED, Colour.GREEN, Colour.YELLOW));
+      TrafficLightCell trafficLight = new TrafficLightCell(5, colours, Direction.south);
+      addTrafficLight(21, 11, trafficLight);
+    }
+    // check if starting position is allowed. 
+    // check if destination position is allowed. 
+    // if so, then create vehicle and add vehicle to cell at starting position 
+    if (isAllowedRow(22) && isAllowedCol(19)) {
+      // create new traffic light object 
+      // create list of colours 
+      List<Colour> colours = new ArrayList<Colour>(Arrays.asList(Colour.GREEN, Colour.YELLOW, Colour.RED));
+      TrafficLightCell trafficLight = new TrafficLightCell(5, colours, Direction.east);
+      addTrafficLight(22, 19, trafficLight);
+    }
+    // check if starting position is allowed. 
+    // check if destination position is allowed. 
+    // if so, then create vehicle and add vehicle to cell at starting position 
+    if (isAllowedRow(21) && isAllowedCol(20)) {
+      // create new traffic light object 
+      // create list of colours 
+      List<Colour> colours = new ArrayList<Colour>(Arrays.asList(Colour.RED, Colour.GREEN, Colour.YELLOW));
+      TrafficLightCell trafficLight = new TrafficLightCell(5, colours, Direction.south);
+      addTrafficLight(21, 20, trafficLight);
     }
   }
   public static void main(String[] args) {

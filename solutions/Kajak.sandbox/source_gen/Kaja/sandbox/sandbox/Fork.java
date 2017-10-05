@@ -21,11 +21,11 @@ public class Fork extends KajaFrame {
     // check if starting position is allowed. 
     // check if destination position is allowed. 
     // if so, then create vehicle and add vehicle to cell at starting position 
-    if (isAllowedRow(10) && isAllowedCol(5) && isAllowedRow(4) && isAllowedCol(12)) {
+    if (isAllowedRow(10) && isAllowedCol(5) && isAllowedRow(10) && isAllowedCol(29)) {
       // check if vehicle is drivable here 
       if (world[10][5].isDrivable(Direction.east)) {
         // create a new vehicle 
-        Vehicle vehicle = new Vehicle(new Position(10, 5), new Position(4, 12), Direction.east, Direction.east);
+        Vehicle vehicle = new Vehicle(new Position(10, 5), new Position(10, 29), Direction.east, Direction.east);
 
         addVehicle(10, 5, vehicle);
         // place vehcile in this starting position 
@@ -35,11 +35,11 @@ public class Fork extends KajaFrame {
     // check if starting position is allowed. 
     // check if destination position is allowed. 
     // if so, then create vehicle and add vehicle to cell at starting position 
-    if (isAllowedRow(10) && isAllowedCol(4) && isAllowedRow(20) && isAllowedCol(11)) {
+    if (isAllowedRow(10) && isAllowedCol(4) && isAllowedRow(2) && isAllowedCol(10)) {
       // check if vehicle is drivable here 
       if (world[10][4].isDrivable(Direction.east)) {
         // create a new vehicle 
-        Vehicle vehicle = new Vehicle(new Position(10, 4), new Position(20, 11), Direction.east, Direction.north);
+        Vehicle vehicle = new Vehicle(new Position(10, 4), new Position(2, 10), Direction.east, Direction.north);
 
         addVehicle(10, 4, vehicle);
         // place vehcile in this starting position 
@@ -49,11 +49,11 @@ public class Fork extends KajaFrame {
     // check if starting position is allowed. 
     // check if destination position is allowed. 
     // if so, then create vehicle and add vehicle to cell at starting position 
-    if (isAllowedRow(10) && isAllowedCol(3) && isAllowedRow(20) && isAllowedCol(11)) {
+    if (isAllowedRow(10) && isAllowedCol(3) && isAllowedRow(26) && isAllowedCol(10)) {
       // check if vehicle is drivable here 
       if (world[10][3].isDrivable(Direction.east)) {
         // create a new vehicle 
-        Vehicle vehicle = new Vehicle(new Position(10, 3), new Position(20, 11), Direction.east, Direction.south);
+        Vehicle vehicle = new Vehicle(new Position(10, 3), new Position(26, 10), Direction.east, Direction.south);
 
         addVehicle(10, 3, vehicle);
         // place vehcile in this starting position 
@@ -61,16 +61,16 @@ public class Fork extends KajaFrame {
       }
     }
     int steps = 0;
-    while (steps < 50) {
+    while (steps < 100) {
       if (steps % 10 == 0) {
         // check if starting position is allowed. 
         // check if destination position is allowed. 
         // if so, then create vehicle and add vehicle to cell at starting position 
-        if (isAllowedRow(10) && isAllowedCol(3) && isAllowedRow(20) && isAllowedCol(11)) {
+        if (isAllowedRow(10) && isAllowedCol(3) && isAllowedRow(26) && isAllowedCol(10)) {
           // check if vehicle is drivable here 
           if (world[10][3].isDrivable(Direction.east)) {
             // create a new vehicle 
-            Vehicle vehicle = new Vehicle(new Position(10, 3), new Position(20, 11), Direction.east, Direction.south);
+            Vehicle vehicle = new Vehicle(new Position(10, 3), new Position(26, 10), Direction.east, Direction.south);
 
             addVehicle(10, 3, vehicle);
             // place vehcile in this starting position 
@@ -80,11 +80,11 @@ public class Fork extends KajaFrame {
         // check if starting position is allowed. 
         // check if destination position is allowed. 
         // if so, then create vehicle and add vehicle to cell at starting position 
-        if (isAllowedRow(10) && isAllowedCol(4) && isAllowedRow(20) && isAllowedCol(11)) {
+        if (isAllowedRow(10) && isAllowedCol(4) && isAllowedRow(2) && isAllowedCol(10)) {
           // check if vehicle is drivable here 
           if (world[10][4].isDrivable(Direction.east)) {
             // create a new vehicle 
-            Vehicle vehicle = new Vehicle(new Position(10, 4), new Position(20, 11), Direction.east, Direction.north);
+            Vehicle vehicle = new Vehicle(new Position(10, 4), new Position(2, 10), Direction.east, Direction.north);
 
             addVehicle(10, 4, vehicle);
             // place vehcile in this starting position 
@@ -94,13 +94,55 @@ public class Fork extends KajaFrame {
         // check if starting position is allowed. 
         // check if destination position is allowed. 
         // if so, then create vehicle and add vehicle to cell at starting position 
-        if (isAllowedRow(10) && isAllowedCol(5) && isAllowedRow(4) && isAllowedCol(12)) {
+        if (isAllowedRow(10) && isAllowedCol(5) && isAllowedRow(10) && isAllowedCol(29)) {
           // check if vehicle is drivable here 
           if (world[10][5].isDrivable(Direction.east)) {
             // create a new vehicle 
-            Vehicle vehicle = new Vehicle(new Position(10, 5), new Position(4, 12), Direction.east, Direction.east);
+            Vehicle vehicle = new Vehicle(new Position(10, 5), new Position(10, 29), Direction.east, Direction.east);
 
             addVehicle(10, 5, vehicle);
+            // place vehcile in this starting position 
+
+          }
+        }
+        // check if starting position is allowed. 
+        // check if destination position is allowed. 
+        // if so, then create vehicle and add vehicle to cell at starting position 
+        if (isAllowedRow(10) && isAllowedCol(6) && isAllowedRow(22) && isAllowedCol(29)) {
+          // check if vehicle is drivable here 
+          if (world[10][6].isDrivable(Direction.east)) {
+            // create a new vehicle 
+            Vehicle vehicle = new Vehicle(new Position(10, 6), new Position(22, 29), Direction.east, Direction.south, Direction.east);
+
+            addVehicle(10, 6, vehicle);
+            // place vehcile in this starting position 
+
+          }
+        }
+        // check if starting position is allowed. 
+        // check if destination position is allowed. 
+        // if so, then create vehicle and add vehicle to cell at starting position 
+        if (isAllowedRow(10) && isAllowedCol(2) && isAllowedRow(22) && isAllowedCol(3)) {
+          // check if vehicle is drivable here 
+          if (world[10][2].isDrivable(Direction.east)) {
+            // create a new vehicle 
+            Vehicle vehicle = new Vehicle(new Position(10, 2), new Position(22, 3), Direction.east, Direction.south, Direction.west);
+
+            addVehicle(10, 2, vehicle);
+            // place vehcile in this starting position 
+
+          }
+        }
+        // check if starting position is allowed. 
+        // check if destination position is allowed. 
+        // if so, then create vehicle and add vehicle to cell at starting position 
+        if (isAllowedRow(10) && isAllowedCol(10) && isAllowedRow(22) && isAllowedCol(29)) {
+          // check if vehicle is drivable here 
+          if (world[10][10].isDrivable(Direction.east)) {
+            // create a new vehicle 
+            Vehicle vehicle = new Vehicle(new Position(10, 10), new Position(22, 29), Direction.east, Direction.east, Direction.south);
+
+            addVehicle(10, 10, vehicle);
             // place vehcile in this starting position 
 
           }
@@ -563,9 +605,9 @@ public class Fork extends KajaFrame {
 
       if (Orientation.horizontal == Orientation.vertical) {
         // first check if it is possible to create a road vertically 
-        if (isAllowedRow(33) && isAllowedCol(1)) {
+        if (isAllowedRow(40) && isAllowedCol(1)) {
           // addRoad(row, column, direction) iterating over the columns 
-          for (int i = 0; i < 23; i++) {
+          for (int i = 0; i < 30; i++) {
             addRoad(10 + i, 1, Direction.east);
           }
         } else {
@@ -573,9 +615,9 @@ public class Fork extends KajaFrame {
         }
       } else {
         // first check if it is possible to create a road horizontally 
-        if (isAllowedRow(10) && isAllowedCol(24)) {
+        if (isAllowedRow(10) && isAllowedCol(31)) {
           // addRoad(row, coloum, direction) iterating over the rows 
-          for (int i = 0; i < 23; i++) {
+          for (int i = 0; i < 30; i++) {
             addRoad(10, 1 + i, Direction.east);
           }
         } else {
@@ -613,14 +655,14 @@ public class Fork extends KajaFrame {
     } else {
       reportError("Attempted to build road outside of the environment!");
     }
-    if (isAllowedRow(9) && isAllowedCol(8)) {
+    if (isAllowedRow(9) && isAllowedCol(5)) {
 
       if (Orientation.horizontal == Orientation.vertical) {
         // first check if it is possible to create a road vertically 
-        if (isAllowedRow(12) && isAllowedCol(8)) {
+        if (isAllowedRow(15) && isAllowedCol(5)) {
           // addRoad(row, column, direction) iterating over the columns 
-          for (int i = 0; i < 3; i++) {
-            addRoad(9 + i, 8, Direction.east);
+          for (int i = 0; i < 6; i++) {
+            addRoad(9 + i, 5, Direction.east);
           }
         } else {
           reportError("Length exceeds the environment bounds. Vertical");
@@ -629,8 +671,8 @@ public class Fork extends KajaFrame {
         // first check if it is possible to create a road horizontally 
         if (isAllowedRow(9) && isAllowedCol(11)) {
           // addRoad(row, coloum, direction) iterating over the rows 
-          for (int i = 0; i < 3; i++) {
-            addRoad(9, 8 + i, Direction.east);
+          for (int i = 0; i < 6; i++) {
+            addRoad(9, 5 + i, Direction.east);
           }
         } else {
           reportError("Length exceeds the environment bounds. Horizontal");
@@ -640,14 +682,14 @@ public class Fork extends KajaFrame {
     } else {
       reportError("Attempted to build road outside of the environment!");
     }
-    if (isAllowedRow(11) && isAllowedCol(8)) {
+    if (isAllowedRow(11) && isAllowedCol(5)) {
 
       if (Orientation.horizontal == Orientation.vertical) {
         // first check if it is possible to create a road vertically 
-        if (isAllowedRow(14) && isAllowedCol(8)) {
+        if (isAllowedRow(17) && isAllowedCol(5)) {
           // addRoad(row, column, direction) iterating over the columns 
-          for (int i = 0; i < 3; i++) {
-            addRoad(11 + i, 8, Direction.east);
+          for (int i = 0; i < 6; i++) {
+            addRoad(11 + i, 5, Direction.east);
           }
         } else {
           reportError("Length exceeds the environment bounds. Vertical");
@@ -656,8 +698,8 @@ public class Fork extends KajaFrame {
         // first check if it is possible to create a road horizontally 
         if (isAllowedRow(11) && isAllowedCol(11)) {
           // addRoad(row, coloum, direction) iterating over the rows 
-          for (int i = 0; i < 3; i++) {
-            addRoad(11, 8 + i, Direction.east);
+          for (int i = 0; i < 6; i++) {
+            addRoad(11, 5 + i, Direction.east);
           }
         } else {
           reportError("Length exceeds the environment bounds. Horizontal");
@@ -671,9 +713,9 @@ public class Fork extends KajaFrame {
 
       if (Orientation.vertical == Orientation.vertical) {
         // first check if it is possible to create a road vertically 
-        if (isAllowedRow(21) && isAllowedCol(10)) {
+        if (isAllowedRow(28) && isAllowedCol(10)) {
           // addRoad(row, column, direction) iterating over the columns 
-          for (int i = 0; i < 10; i++) {
+          for (int i = 0; i < 17; i++) {
             addRoad(11 + i, 10, Direction.south);
           }
         } else {
@@ -681,10 +723,145 @@ public class Fork extends KajaFrame {
         }
       } else {
         // first check if it is possible to create a road horizontally 
-        if (isAllowedRow(11) && isAllowedCol(20)) {
+        if (isAllowedRow(11) && isAllowedCol(27)) {
           // addRoad(row, coloum, direction) iterating over the rows 
-          for (int i = 0; i < 10; i++) {
+          for (int i = 0; i < 17; i++) {
             addRoad(11, 10 + i, Direction.south);
+          }
+        } else {
+          reportError("Length exceeds the environment bounds. Horizontal");
+        }
+      }
+      minipause();
+    } else {
+      reportError("Attempted to build road outside of the environment!");
+    }
+    if (isAllowedRow(10) && isAllowedCol(20)) {
+
+      if (Orientation.vertical == Orientation.vertical) {
+        // first check if it is possible to create a road vertically 
+        if (isAllowedRow(23) && isAllowedCol(20)) {
+          // addRoad(row, column, direction) iterating over the columns 
+          for (int i = 0; i < 13; i++) {
+            addRoad(10 + i, 20, Direction.south);
+          }
+        } else {
+          reportError("Length exceeds the environment bounds. Vertical");
+        }
+      } else {
+        // first check if it is possible to create a road horizontally 
+        if (isAllowedRow(10) && isAllowedCol(33)) {
+          // addRoad(row, coloum, direction) iterating over the rows 
+          for (int i = 0; i < 13; i++) {
+            addRoad(10, 20 + i, Direction.south);
+          }
+        } else {
+          reportError("Length exceeds the environment bounds. Horizontal");
+        }
+      }
+      minipause();
+    } else {
+      reportError("Attempted to build road outside of the environment!");
+    }
+    if (isAllowedRow(19) && isAllowedCol(9)) {
+
+      if (Orientation.vertical == Orientation.vertical) {
+        // first check if it is possible to create a road vertically 
+        if (isAllowedRow(23) && isAllowedCol(9)) {
+          // addRoad(row, column, direction) iterating over the columns 
+          for (int i = 0; i < 4; i++) {
+            addRoad(19 + i, 9, Direction.south);
+          }
+        } else {
+          reportError("Length exceeds the environment bounds. Vertical");
+        }
+      } else {
+        // first check if it is possible to create a road horizontally 
+        if (isAllowedRow(19) && isAllowedCol(13)) {
+          // addRoad(row, coloum, direction) iterating over the rows 
+          for (int i = 0; i < 4; i++) {
+            addRoad(19, 9 + i, Direction.south);
+          }
+        } else {
+          reportError("Length exceeds the environment bounds. Horizontal");
+        }
+      }
+      minipause();
+    } else {
+      reportError("Attempted to build road outside of the environment!");
+    }
+    if (isAllowedRow(19) && isAllowedCol(11)) {
+
+      if (Orientation.vertical == Orientation.vertical) {
+        // first check if it is possible to create a road vertically 
+        if (isAllowedRow(23) && isAllowedCol(11)) {
+          // addRoad(row, column, direction) iterating over the columns 
+          for (int i = 0; i < 4; i++) {
+            addRoad(19 + i, 11, Direction.south);
+          }
+        } else {
+          reportError("Length exceeds the environment bounds. Vertical");
+        }
+      } else {
+        // first check if it is possible to create a road horizontally 
+        if (isAllowedRow(19) && isAllowedCol(15)) {
+          // addRoad(row, coloum, direction) iterating over the rows 
+          for (int i = 0; i < 4; i++) {
+            addRoad(19, 11 + i, Direction.south);
+          }
+        } else {
+          reportError("Length exceeds the environment bounds. Horizontal");
+        }
+      }
+      minipause();
+    } else {
+      reportError("Attempted to build road outside of the environment!");
+    }
+    if (isAllowedRow(22) && isAllowedCol(11)) {
+
+      if (Orientation.horizontal == Orientation.vertical) {
+        // first check if it is possible to create a road vertically 
+        if (isAllowedRow(42) && isAllowedCol(11)) {
+          // addRoad(row, column, direction) iterating over the columns 
+          for (int i = 0; i < 20; i++) {
+            addRoad(22 + i, 11, Direction.east);
+          }
+        } else {
+          reportError("Length exceeds the environment bounds. Vertical");
+        }
+      } else {
+        // first check if it is possible to create a road horizontally 
+        if (isAllowedRow(22) && isAllowedCol(31)) {
+          // addRoad(row, coloum, direction) iterating over the rows 
+          for (int i = 0; i < 20; i++) {
+            addRoad(22, 11 + i, Direction.east);
+          }
+        } else {
+          reportError("Length exceeds the environment bounds. Horizontal");
+        }
+      }
+      minipause();
+    } else {
+      reportError("Attempted to build road outside of the environment!");
+    }
+    if (isAllowedRow(22) && isAllowedCol(1)) {
+
+      if (Orientation.horizontal == Orientation.vertical) {
+        // first check if it is possible to create a road vertically 
+        if (isAllowedRow(31) && isAllowedCol(1)) {
+          // addRoad(row, column, direction) iterating over the columns 
+          for (int i = 0; i < 9; i++) {
+            addRoad(22 + i, 1, Direction.west);
+          }
+        } else {
+          reportError("Length exceeds the environment bounds. Vertical");
+        }
+      } else {
+        // first check if it is possible to create a road horizontally 
+        if (isAllowedRow(22) && isAllowedCol(10)) {
+          // addRoad(row, coloum, direction) iterating over the rows 
+          for (int i = 0; i < 9; i++) {
+            addRoad(22, 1 + i, Direction.west);
           }
         } else {
           reportError("Length exceeds the environment bounds. Horizontal");
@@ -723,6 +900,56 @@ public class Fork extends KajaFrame {
       List<Colour> colours = new ArrayList<Colour>(Arrays.asList(Colour.RED, Colour.GREEN, Colour.YELLOW));
       TrafficLightCell trafficLight = new TrafficLightCell(3, colours, Direction.east);
       addTrafficLight(11, 9, trafficLight);
+    }
+    // check if starting position is allowed. 
+    // check if destination position is allowed. 
+    // if so, then create vehicle and add vehicle to cell at starting position 
+    if (isAllowedRow(21) && isAllowedCol(9)) {
+      // create new traffic light object 
+      // create list of colours 
+      List<Colour> colours = new ArrayList<Colour>(Arrays.asList(Colour.RED, Colour.GREEN, Colour.YELLOW));
+      TrafficLightCell trafficLight = new TrafficLightCell(4, colours, Direction.south);
+      addTrafficLight(21, 9, trafficLight);
+    }
+    // check if starting position is allowed. 
+    // check if destination position is allowed. 
+    // if so, then create vehicle and add vehicle to cell at starting position 
+    if (isAllowedRow(21) && isAllowedCol(10)) {
+      // create new traffic light object 
+      // create list of colours 
+      List<Colour> colours = new ArrayList<Colour>(Arrays.asList(Colour.RED, Colour.GREEN, Colour.YELLOW));
+      TrafficLightCell trafficLight = new TrafficLightCell(3, colours, Direction.south);
+      addTrafficLight(21, 10, trafficLight);
+    }
+    // check if starting position is allowed. 
+    // check if destination position is allowed. 
+    // if so, then create vehicle and add vehicle to cell at starting position 
+    if (isAllowedRow(21) && isAllowedCol(11)) {
+      // create new traffic light object 
+      // create list of colours 
+      List<Colour> colours = new ArrayList<Colour>(Arrays.asList(Colour.RED, Colour.GREEN, Colour.YELLOW));
+      TrafficLightCell trafficLight = new TrafficLightCell(5, colours, Direction.south);
+      addTrafficLight(21, 11, trafficLight);
+    }
+    // check if starting position is allowed. 
+    // check if destination position is allowed. 
+    // if so, then create vehicle and add vehicle to cell at starting position 
+    if (isAllowedRow(22) && isAllowedCol(19)) {
+      // create new traffic light object 
+      // create list of colours 
+      List<Colour> colours = new ArrayList<Colour>(Arrays.asList(Colour.GREEN, Colour.YELLOW, Colour.RED));
+      TrafficLightCell trafficLight = new TrafficLightCell(5, colours, Direction.east);
+      addTrafficLight(22, 19, trafficLight);
+    }
+    // check if starting position is allowed. 
+    // check if destination position is allowed. 
+    // if so, then create vehicle and add vehicle to cell at starting position 
+    if (isAllowedRow(21) && isAllowedCol(20)) {
+      // create new traffic light object 
+      // create list of colours 
+      List<Colour> colours = new ArrayList<Colour>(Arrays.asList(Colour.RED, Colour.GREEN, Colour.YELLOW));
+      TrafficLightCell trafficLight = new TrafficLightCell(5, colours, Direction.south);
+      addTrafficLight(21, 20, trafficLight);
     }
   }
   public static void main(String[] args) {
