@@ -357,7 +357,7 @@
     </file>
   </root>
   <root nodeRef="r:f5e9b11f-5073-4786-8ed1-a9e42307c3f8(JavaKaja.runtime)/3308300503039473785">
-    <file name="KajaFrame.java">
+    <file name="MainFrame.java">
       <node id="3308300503039569051" at="22,0,23,0" concept="13" trace="HEIGHT" />
       <node id="3308300503039569057" at="23,0,24,0" concept="13" trace="WIDTH" />
       <node id="3308300503039569087" at="24,0,25,0" concept="13" trace="CELL_SIZE" />
@@ -524,7 +524,7 @@
       <node id="4394627182934890641" at="359,48,360,98" concept="3" />
       <node id="3308300503039604760" at="363,33,364,42" concept="16" />
       <node id="4868187393810852948" at="365,11,366,0" concept="12" />
-      <node id="3308300503039473787" at="40,0,42,0" concept="2" trace="KajaFrame#()V" />
+      <node id="3308300503039473787" at="40,0,42,0" concept="2" trace="MainFrame#()V" />
       <node id="6504511466437396038" at="291,10,293,5" concept="0" />
       <node id="3308300503039569042" at="73,0,76,0" concept="8" trace="run#()V" />
       <node id="3210697320273763026" at="84,0,87,0" concept="8" trace="trace#(Ljava/lang/String;)V" />
@@ -816,8 +816,8 @@
         <var name="i" id="3308300503039604580" />
       </scope>
       <scope id="3308300503039569986" at="321,0,371,0" />
-      <unit id="3308300503039604506" at="352,45,362,13" name="JavaKaja.runtime.KajaFrame$1" />
-      <unit id="3308300503039473785" at="21,0,372,0" name="JavaKaja.runtime.KajaFrame" />
+      <unit id="3308300503039604506" at="352,45,362,13" name="JavaKaja.runtime.MainFrame$1" />
+      <unit id="3308300503039473785" at="21,0,372,0" name="JavaKaja.runtime.MainFrame" />
     </file>
   </root>
   <root nodeRef="r:f5e9b11f-5073-4786-8ed1-a9e42307c3f8(JavaKaja.runtime)/3308300503039569134">

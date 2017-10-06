@@ -18,7 +18,7 @@
     <classNode dependClassName="java.lang.Override" />
     <classNode extendsClassName="JavaKaja.runtime.Cell" />
   </dependency>
-  <dependency className="JavaKaja.runtime.KajaFrame" file="KajaFrame.java">
+  <dependency className="JavaKaja.runtime.MainFrame" file="MainFrame.java">
     <classNode dependClassName="JavaKaja.runtime.Cell" />
     <classNode dependClassName="JavaKaja.runtime.Direction" />
     <classNode dependClassName="JavaKaja.runtime.Position" />

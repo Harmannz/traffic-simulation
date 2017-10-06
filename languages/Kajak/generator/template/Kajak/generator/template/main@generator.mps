@@ -560,7 +560,7 @@
       </node>
     </node>
     <node concept="3uibUv" id="2RDssu5UR45" role="1zkMxy">
-      <ref role="3uigEE" to="wd51:2RDssu5UvxT" resolve="KajaFrame" />
+      <ref role="3uigEE" to="wd51:2RDssu5UvxT" resolve="MainFrame" />
     </node>
     <node concept="3clFbW" id="2RDssu5UR3R" role="jymVt">
       <node concept="3cqZAl" id="2RDssu5UR3S" role="3clF45" />
@@ -759,7 +759,7 @@
       <property role="2bfB8j" value="true" />
       <node concept="3Tm1VV" id="2RDssu5UTCM" role="1B3o_S" />
       <node concept="3uibUv" id="2RDssu5UTCR" role="1zkMxy">
-        <ref role="3uigEE" to="wd51:2RDssu5UvxT" resolve="KajaFrame" />
+        <ref role="3uigEE" to="wd51:2RDssu5UvxT" resolve="MainFrame" />
       </node>
       <node concept="3clFbW" id="2RDssu5UTCN" role="jymVt">
         <node concept="3cqZAl" id="2RDssu5UTCO" role="3clF45" />
@@ -812,7 +812,7 @@
       <property role="2bfB8j" value="true" />
       <node concept="3Tm1VV" id="2RDssu5V9Yy" role="1B3o_S" />
       <node concept="3uibUv" id="2RDssu5V9YB" role="1zkMxy">
-        <ref role="3uigEE" to="wd51:2RDssu5UvxT" resolve="KajaFrame" />
+        <ref role="3uigEE" to="wd51:2RDssu5UvxT" resolve="MainFrame" />
       </node>
       <node concept="3clFbW" id="2RDssu5V9Yz" role="jymVt">
         <node concept="3cqZAl" id="2RDssu5V9Y$" role="3clF45" />
@@ -858,7 +858,7 @@
       <property role="2bfB8j" value="true" />
       <node concept="3Tm1VV" id="2RDssu5Va16" role="1B3o_S" />
       <node concept="3uibUv" id="2RDssu5Va1b" role="1zkMxy">
-        <ref role="3uigEE" to="wd51:2RDssu5UvxT" resolve="KajaFrame" />
+        <ref role="3uigEE" to="wd51:2RDssu5UvxT" resolve="MainFrame" />
       </node>
       <node concept="3clFbW" id="2RDssu5Va17" role="jymVt">
         <node concept="3cqZAl" id="2RDssu5Va18" role="3clF45" />
@@ -903,7 +903,7 @@
       <property role="2bfB8j" value="true" />
       <node concept="3Tm1VV" id="2RDssu5Va1t" role="1B3o_S" />
       <node concept="3uibUv" id="2RDssu5Va1y" role="1zkMxy">
-        <ref role="3uigEE" to="wd51:2RDssu5UvxT" resolve="KajaFrame" />
+        <ref role="3uigEE" to="wd51:2RDssu5UvxT" resolve="MainFrame" />
       </node>
       <node concept="3clFbW" id="2RDssu5Va1u" role="jymVt">
         <node concept="3cqZAl" id="2RDssu5Va1v" role="3clF45" />
@@ -1836,7 +1836,7 @@
       <property role="2bfB8j" value="true" />
       <node concept="3Tm1VV" id="5z_BEsjXUw7" role="1B3o_S" />
       <node concept="3uibUv" id="5z_BEsjXUwc" role="1zkMxy">
-        <ref role="3uigEE" to="wd51:2RDssu5UvxT" resolve="KajaFrame" />
+        <ref role="3uigEE" to="wd51:2RDssu5UvxT" resolve="MainFrame" />
       </node>
       <node concept="3clFbW" id="5z_BEsjXUw8" role="jymVt">
         <node concept="3cqZAl" id="5z_BEsjXUw9" role="3clF45" />
@@ -1866,7 +1866,7 @@
       <property role="2bfB8j" value="true" />
       <node concept="3Tm1VV" id="5z_BEsjY5WC" role="1B3o_S" />
       <node concept="3uibUv" id="5z_BEsjY5WH" role="1zkMxy">
-        <ref role="3uigEE" to="wd51:2RDssu5UvxT" resolve="KajaFrame" />
+        <ref role="3uigEE" to="wd51:2RDssu5UvxT" resolve="MainFrame" />
       </node>
       <node concept="3clFbW" id="5z_BEsjY5WD" role="jymVt">
         <node concept="3cqZAl" id="5z_BEsjY5WE" role="3clF45" />
@@ -2352,7 +2352,7 @@
       <property role="2bfB8j" value="true" />
       <node concept="3Tm1VV" id="2MeG3eCdPG3" role="1B3o_S" />
       <node concept="3uibUv" id="2MeG3eCdPG8" role="1zkMxy">
-        <ref role="3uigEE" to="wd51:2RDssu5UvxT" resolve="KajaFrame" />
+        <ref role="3uigEE" to="wd51:2RDssu5UvxT" resolve="MainFrame" />
       </node>
       <node concept="3clFbW" id="2MeG3eCdPG4" role="jymVt">
         <node concept="3cqZAl" id="2MeG3eCdPG5" role="3clF45" />

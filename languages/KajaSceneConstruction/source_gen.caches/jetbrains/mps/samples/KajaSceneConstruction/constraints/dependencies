@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <dependenciesRoot>
   <dependency className="jetbrains.mps.samples.KajaSceneConstruction.constraints.AbstractBuilderCommand_Constraints" file="AbstractBuilderCommand_Constraints.java">
-    <classNode dependClassName="JavaKaja.runtime.KajaFrame" />
+    <classNode dependClassName="JavaKaja.runtime.MainFrame" />
     <classNode dependClassName="java.lang.Override" />
     <classNode dependClassName="java.lang.String" />
     <classNode dependClassName="java.util.HashMap" />
@@ -29,7 +29,7 @@
   </dependency>
   <dependency className="jetbrains.mps.samples.KajaSceneConstruction.constraints.Road_Constraints" file="Road_Constraints.java">
     <classNode dependClassName="JavaKaja.runtime.Direction" />
-    <classNode dependClassName="JavaKaja.runtime.KajaFrame" />
+    <classNode dependClassName="JavaKaja.runtime.MainFrame" />
     <classNode dependClassName="JavaKaja.runtime.Orientation" />
     <classNode dependClassName="java.lang.Override" />
     <classNode dependClassName="java.lang.String" />

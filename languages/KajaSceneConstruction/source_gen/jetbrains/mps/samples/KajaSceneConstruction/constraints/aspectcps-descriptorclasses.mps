@@ -368,7 +368,7 @@
                                       <property role="3cmrfH" value="1" />
                                     </node>
                                     <node concept="10M0yZ" id="1h" role="3uHU7B">
-                                      <ref role="1PxDUh" to="wd51:2RDssu5UvxT" resolve="KajaFrame" />
+                                      <ref role="1PxDUh" to="wd51:2RDssu5UvxT" resolve="MainFrame" />
                                       <ref role="3cqZAo" to="wd51:2RDssu5UQMx" resolve="WIDTH" />
                                     </node>
                                   </node>
@@ -514,7 +514,7 @@
                                       <property role="3cmrfH" value="1" />
                                     </node>
                                     <node concept="10M0yZ" id="28" role="3uHU7B">
-                                      <ref role="1PxDUh" to="wd51:2RDssu5UvxT" resolve="KajaFrame" />
+                                      <ref role="1PxDUh" to="wd51:2RDssu5UvxT" resolve="MainFrame" />
                                       <ref role="3cqZAo" to="wd51:2RDssu5UQMr" resolve="HEIGHT" />
                                     </node>
                                   </node>
@@ -850,7 +850,7 @@
                                         <property role="3cmrfH" value="1" />
                                       </node>
                                       <node concept="10M0yZ" id="4f" role="3uHU7B">
-                                        <ref role="1PxDUh" to="wd51:2RDssu5UvxT" resolve="KajaFrame" />
+                                        <ref role="1PxDUh" to="wd51:2RDssu5UvxT" resolve="MainFrame" />
                                         <ref role="3cqZAo" to="wd51:2RDssu5UQMx" resolve="WIDTH" />
                                       </node>
                                     </node>
@@ -866,7 +866,7 @@
                                           <property role="3cmrfH" value="1" />
                                         </node>
                                         <node concept="10M0yZ" id="4m" role="3uHU7B">
-                                          <ref role="1PxDUh" to="wd51:2RDssu5UvxT" resolve="KajaFrame" />
+                                          <ref role="1PxDUh" to="wd51:2RDssu5UvxT" resolve="MainFrame" />
                                           <ref role="3cqZAo" to="wd51:2RDssu5UQMr" resolve="HEIGHT" />
                                         </node>
                                       </node>

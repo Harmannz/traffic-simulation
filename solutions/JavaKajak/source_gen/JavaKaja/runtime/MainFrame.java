@@ -18,7 +18,7 @@ import java.awt.Color;
 import javax.swing.SwingUtilities;
 import java.awt.Font;
 
-public abstract class KajaFrame {
+public abstract class MainFrame {
   public static final int HEIGHT = 30;
   public static final int WIDTH = 45;
   private static final int CELL_SIZE = 3;
@@ -37,7 +37,7 @@ public abstract class KajaFrame {
   private Icon karelIconSouth;
   private Icon karelIconWest;
   private boolean stopped = false;
-  public KajaFrame() {
+  public MainFrame() {
   }
   public final void initializeComponents() {
     try {

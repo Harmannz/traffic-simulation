@@ -284,7 +284,7 @@
     </language>
   </registry>
   <node concept="312cEu" id="2RDssu5UvxT">
-    <property role="TrG5h" value="KajaFrame" />
+    <property role="TrG5h" value="MainFrame" />
     <property role="1sVAO0" value="true" />
     <node concept="3Tm1VV" id="2RDssu5UvxU" role="1B3o_S" />
     <node concept="Wx3nA" id="2RDssu5UQMr" role="jymVt">

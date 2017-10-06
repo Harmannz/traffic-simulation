@@ -13,7 +13,7 @@ import jetbrains.mps.smodel.adapter.ids.MetaIdFactory;
 import org.jetbrains.mps.openapi.model.SNode;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
 import JavaKaja.runtime.Orientation;
-import JavaKaja.runtime.KajaFrame;
+import JavaKaja.runtime.MainFrame;
 import JavaKaja.runtime.Direction;
 
 public class Road_Constraints extends BaseConstraintsDescriptor {
@@ -34,9 +34,9 @@ public class Road_Constraints extends BaseConstraintsDescriptor {
         String propertyName = "length";
         if (SPropertyOperations.getString_def(node, MetaAdapterFactory.getProperty(0xb56912a3674f4530L, 0xb0cf55261b526a1fL, 0x5faacf6e150bf2bL, 0x5faacf6e150bf75L, "orientation"), null).equals(Orientation.horizontal.name())) {
           // We want the row + length to be less than maximum 
-          return (SPropertyOperations.getInteger(propertyValue)) + SPropertyOperations.getInteger(node, MetaAdapterFactory.getProperty(0xb56912a3674f4530L, 0xb0cf55261b526a1fL, 0x2c8eb033a834fe3fL, 0x2c8eb033a834fe41L, "col")) < KajaFrame.WIDTH - 1;
+          return (SPropertyOperations.getInteger(propertyValue)) + SPropertyOperations.getInteger(node, MetaAdapterFactory.getProperty(0xb56912a3674f4530L, 0xb0cf55261b526a1fL, 0x2c8eb033a834fe3fL, 0x2c8eb033a834fe41L, "col")) < MainFrame.WIDTH - 1;
         } else {
-          return (SPropertyOperations.getInteger(propertyValue)) + SPropertyOperations.getInteger(node, MetaAdapterFactory.getProperty(0xb56912a3674f4530L, 0xb0cf55261b526a1fL, 0x2c8eb033a834fe3fL, 0x2c8eb033a834fe40L, "row")) < KajaFrame.HEIGHT - 1;
+          return (SPropertyOperations.getInteger(propertyValue)) + SPropertyOperations.getInteger(node, MetaAdapterFactory.getProperty(0xb56912a3674f4530L, 0xb0cf55261b526a1fL, 0x2c8eb033a834fe3fL, 0x2c8eb033a834fe40L, "row")) < MainFrame.HEIGHT - 1;
         }
       }
     });
