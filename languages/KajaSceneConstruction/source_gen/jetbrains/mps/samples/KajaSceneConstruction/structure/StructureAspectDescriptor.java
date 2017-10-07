@@ -177,6 +177,8 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.super_("jetbrains.mps.samples.Kaja.structure.AbstractCommand", 0x49a08c51fe543ccL, 0xbd998b46d641d7f5L, 0x2d523c5e4cc4574aL);
     b.origin("r:ce42c9d0-9778-4b7f-ba63-609d51a475fd(jetbrains.mps.samples.KajaSceneConstruction.structure)/6504511466439668685");
     b.prop("steps", 0x5a44aab7629773ceL, "6504511466439668686");
+    b.prop("insertCounter", 0x75ec231331422bc6L, "8497205162279054278");
+    b.aggregate("vehicles", 0xd727c0e608f40ddL).target(0xb56912a3674f4530L, 0xb0cf55261b526a1fL, 0x5a44aab7623318d8L).optional(true).ordered(true).multiple(true).origin("968973271029465309").done();
     b.alias("Run for");
     return b.create();
   }
@@ -202,7 +204,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.prop("destinationCol", 0x5a44aab7623319aeL, "6504511466433092014");
     b.aggregate("directionQueue", 0x5a44aab7624eb3c5L).target(0x49a08c51fe543ccL, 0xbd998b46d641d7f5L, 0x2de971c785ed0d39L).optional(true).ordered(true).multiple(true).origin("6504511466434900933").done();
     b.aggregate("startingDirection", 0x5a44aab762ff42ebL).target(0x49a08c51fe543ccL, 0xbd998b46d641d7f5L, 0x2de971c785ed0d39L).optional(false).ordered(true).multiple(false).origin("6504511466446471915").done();
-    b.alias("add vehicle");
+    b.alias("add vehicle: ");
     return b.create();
   }
   private static ConceptDescriptor createDescriptorForYellow() {

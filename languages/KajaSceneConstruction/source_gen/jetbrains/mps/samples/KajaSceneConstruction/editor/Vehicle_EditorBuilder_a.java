@@ -68,6 +68,7 @@ import jetbrains.mps.nodeEditor.cellActions.CellAction_DeleteNode;
     editorCell.addEditorCell(createRefNode_aadus0_m0());
     editorCell.addEditorCell(createConstant_aadus0_n0());
     editorCell.addEditorCell(createRefNodeList_aadus0_o0());
+    editorCell.addEditorCell(createConstant_aadus0_p0());
     return editorCell;
   }
   private EditorCell createComponent_aadus0_a0() {
@@ -248,7 +249,7 @@ import jetbrains.mps.nodeEditor.cellActions.CellAction_DeleteNode;
     }
   }
   private EditorCell createConstant_aadus0_n0() {
-    EditorCell_Constant editorCell = new EditorCell_Constant(getEditorContext(), myNode, "Directions to take");
+    EditorCell_Constant editorCell = new EditorCell_Constant(getEditorContext(), myNode, "Path to take");
     editorCell.setCellId("Constant_aadus0_n0");
     Style style = new StyleImpl();
     style.set(StyleAttributes.INDENT_LAYOUT_INDENT, true);
@@ -327,5 +328,14 @@ import jetbrains.mps.nodeEditor.cellActions.CellAction_DeleteNode;
       editorCell.setAction(CellActionType.BACKSPACE, new CellAction_DeleteNode(prevNode, CellAction_DeleteNode.DeleteDirection.BACKWARD));
       return editorCell;
     }
+  }
+  private EditorCell createConstant_aadus0_p0() {
+    EditorCell_Constant editorCell = new EditorCell_Constant(getEditorContext(), myNode, "");
+    editorCell.setCellId("Constant_aadus0_p0");
+    Style style = new StyleImpl();
+    style.set(StyleAttributes.INDENT_LAYOUT_NEW_LINE, true);
+    editorCell.getStyle().putAll(style);
+    editorCell.setDefaultText("");
+    return editorCell;
   }
 }

@@ -11,12 +11,12 @@
     <classNode dependClassName="java.util.ArrayList" />
     <classNode dependClassName="java.util.Arrays" />
     <classNode dependClassName="java.util.List" />
-    <classNode extendsClassName="JavaKaja.runtime.KajaFrame" />
+    <classNode extendsClassName="JavaKaja.runtime.MainFrame" />
   </dependency>
   <dependency className="Kaja.sandbox.sandbox.Sample" file="Sample.java">
     <classNode dependClassName="JavaKaja.runtime.Direction" />
     <classNode dependClassName="java.lang.String" />
-    <classNode extendsClassName="JavaKaja.runtime.KajaFrame" />
+    <classNode extendsClassName="JavaKaja.runtime.MainFrame" />
   </dependency>
   <dependency className="Kaja.sandbox.sandbox.Test" file="Test.java">
     <classNode dependClassName="JavaKaja.runtime.Colour" />
@@ -29,7 +29,7 @@
     <classNode dependClassName="java.util.ArrayList" />
     <classNode dependClassName="java.util.Arrays" />
     <classNode dependClassName="java.util.List" />
-    <classNode extendsClassName="JavaKaja.runtime.KajaFrame" />
+    <classNode extendsClassName="JavaKaja.runtime.MainFrame" />
   </dependency>
 </dependenciesRoot>
 

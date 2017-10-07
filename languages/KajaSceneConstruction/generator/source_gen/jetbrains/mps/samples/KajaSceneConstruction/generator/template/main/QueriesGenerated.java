@@ -137,6 +137,9 @@ public class QueriesGenerated {
   public static Object propertyMacro_GetPropertyValue_6504511466437689050(final PropertyMacroContext _context) {
     return SPropertyOperations.getInteger(_context.getNode(), MetaAdapterFactory.getProperty(0xb56912a3674f4530L, 0xb0cf55261b526a1fL, 0x5a44aab7623318d8L, 0x5a44aab7623319aaL, "destinationRow"));
   }
+  public static Object propertyMacro_GetPropertyValue_8497205162280211406(final PropertyMacroContext _context) {
+    return SPropertyOperations.getInteger(_context.getNode(), MetaAdapterFactory.getProperty(0xb56912a3674f4530L, 0xb0cf55261b526a1fL, 0x5a44aab7629773cdL, 0x75ec231331422bc6L, "insertCounter"));
+  }
   public static Object propertyMacro_GetPropertyValue_6504511466441384481(final PropertyMacroContext _context) {
     return SPropertyOperations.getInteger(_context.getNode(), MetaAdapterFactory.getProperty(0xb56912a3674f4530L, 0xb0cf55261b526a1fL, 0x5a44aab7629773cdL, 0x5a44aab7629773ceL, "steps"));
   }
@@ -163,6 +166,9 @@ public class QueriesGenerated {
   }
   public static Iterable<SNode> sourceNodesQuery_6339684431789732969(final SourceSubstituteMacroNodesContext _context) {
     return SLinkOperations.getChildren(_context.getNode(), MetaAdapterFactory.getContainmentLink(0xb56912a3674f4530L, 0xb0cf55261b526a1fL, 0x5a44aab7623318d8L, 0x5a44aab7624eb3c5L, "directionQueue"));
+  }
+  public static Iterable<SNode> sourceNodesQuery_968973271029792601(final SourceSubstituteMacroNodesContext _context) {
+    return SLinkOperations.getChildren(_context.getNode(), MetaAdapterFactory.getContainmentLink(0xb56912a3674f4530L, 0xb0cf55261b526a1fL, 0x5a44aab7629773cdL, 0xd727c0e608f40ddL, "vehicles"));
   }
   public static Iterable<SNode> sourceNodesQuery_797149731965579112(final SourceSubstituteMacroNodesContext _context) {
     return SLinkOperations.getChildren(_context.getNode(), MetaAdapterFactory.getContainmentLink(0xb56912a3674f4530L, 0xb0cf55261b526a1fL, 0x5faacf6e150bf7eL, 0xb100b752e59501aL, "lightOrder"));

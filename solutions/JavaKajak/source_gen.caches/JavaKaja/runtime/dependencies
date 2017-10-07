@@ -18,7 +18,7 @@
     <classNode dependClassName="java.lang.Override" />
     <classNode extendsClassName="JavaKaja.runtime.Cell" />
   </dependency>
-  <dependency className="JavaKaja.runtime.KajaFrame" file="KajaFrame.java">
+  <dependency className="JavaKaja.runtime.MainFrame" file="MainFrame.java">
     <classNode dependClassName="JavaKaja.runtime.Cell" />
     <classNode dependClassName="JavaKaja.runtime.Direction" />
     <classNode dependClassName="JavaKaja.runtime.Position" />
@@ -29,7 +29,6 @@
     <classNode dependClassName="JavaKaja.runtime.WallCell" />
     <classNode dependClassName="java.awt.BorderLayout" />
     <classNode dependClassName="java.awt.Color" />
-    <classNode dependClassName="java.awt.Dimension" />
     <classNode dependClassName="java.awt.Font" />
     <classNode dependClassName="java.awt.GridLayout" />
     <classNode dependClassName="java.lang.ClassLoader" />

@@ -17,7 +17,7 @@
       <unit at="10,0,56,0" name="jetbrains.mps.samples.KajaSceneConstruction.structure.LanguageConceptSwitch" />
     </file>
     <file name="StructureAspectDescriptor.java">
-      <unit at="14,0,217,0" name="jetbrains.mps.samples.KajaSceneConstruction.structure.StructureAspectDescriptor" />
+      <unit at="14,0,219,0" name="jetbrains.mps.samples.KajaSceneConstruction.structure.StructureAspectDescriptor" />
     </file>
   </root>
   <root nodeRef="r:ce42c9d0-9778-4b7f-ba63-609d51a475fd(jetbrains.mps.samples.KajaSceneConstruction.structure)/430846890709543620">
