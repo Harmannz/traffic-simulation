@@ -250,10 +250,19 @@ public class Template_reduce_Steps extends TemplateDeclarationBase {
               {
                 final SNode tnode27 = environment.createOutputNode(myConcepts[14]);
                 try {
-                  SNodeAccessUtil.setProperty(tnode27, myProperties[2], "Completed Simulation");
+                  SNodeAccessUtil.setProperty(tnode27, myProperties[2], "Completed Simulation.");
                 } finally {
                 }
                 tnode26.addChild(myAggregationLinks[12], tnode27);
+                // TODO validate child 
+              }
+              {
+                final SNode tnode28 = environment.createOutputNode(myConcepts[9]);
+                try {
+                  environment.resolveInTemplateLater(tnode28, myAssociationLinks[0], templateNode_yok9ix_c0a0a1a3a1a1a1a3a2a4, "tpl/r:262b93f0-fe86-497c-93c5-efd684d05bc6/6504511466441377598", "steps", context15);
+                } finally {
+                }
+                tnode26.addChild(myAggregationLinks[12], tnode28);
                 // TODO validate child 
               }
             } finally {
@@ -267,21 +276,21 @@ public class Template_reduce_Steps extends TemplateDeclarationBase {
         // TODO validate child 
       }
       {
-        final SNode tnode28 = environment.createOutputNode(myConcepts[10]);
+        final SNode tnode29 = environment.createOutputNode(myConcepts[10]);
         try {
           TemplateContext context16 = context1.subContext();
           {
-            final SNode tnode29 = environment.createOutputNode(myConcepts[11]);
+            final SNode tnode30 = environment.createOutputNode(myConcepts[11]);
             try {
-              tnode29.setReference(myAssociationLinks[1], SReference.create(myAssociationLinks[1], tnode29, PersistenceFacade.getInstance().createModelReference("r:f5e9b11f-5073-4786-8ed1-a9e42307c3f8(JavaKaja.runtime)"), PersistenceFacade.getInstance().createNodeId("3210697320273683513")));
+              tnode30.setReference(myAssociationLinks[1], SReference.create(myAssociationLinks[1], tnode30, PersistenceFacade.getInstance().createModelReference("r:f5e9b11f-5073-4786-8ed1-a9e42307c3f8(JavaKaja.runtime)"), PersistenceFacade.getInstance().createNodeId("3210697320273683513")));
             } finally {
             }
-            tnode28.addChild(myAggregationLinks[8], tnode29);
+            tnode29.addChild(myAggregationLinks[8], tnode30);
             // TODO validate child 
           }
         } finally {
         }
-        tnode1.addChild(myAggregationLinks[3], tnode28);
+        tnode1.addChild(myAggregationLinks[3], tnode29);
         // TODO validate child 
       }
     } finally {
@@ -359,4 +368,5 @@ public class Template_reduce_Steps extends TemplateDeclarationBase {
   private static SNodePointer templateNode_yok9ix_c0a0a1a1a1a1a1a3a1a1a1a2a2a4 = new SNodePointer("r:262b93f0-fe86-497c-93c5-efd684d05bc6(jetbrains.mps.samples.KajaSceneConstruction.generator.template.main@generator)", "8319658564158341131");
   private static SNodePointer propertyMacro_yok9ix_c0a0c0a0b0b0b0c0b0c0c0e = new SNodePointer("r:262b93f0-fe86-497c-93c5-efd684d05bc6(jetbrains.mps.samples.KajaSceneConstruction.generator.template.main@generator)", "6504511466441384480");
   private static SNodePointer templateNode_yok9ix_c0a0a1a2a1a2a1a2a2a4 = new SNodePointer("r:262b93f0-fe86-497c-93c5-efd684d05bc6(jetbrains.mps.samples.KajaSceneConstruction.generator.template.main@generator)", "6504511466441377806");
+  private static SNodePointer templateNode_yok9ix_c0a0a1a3a1a1a1a3a2a4 = new SNodePointer("r:262b93f0-fe86-497c-93c5-efd684d05bc6(jetbrains.mps.samples.KajaSceneConstruction.generator.template.main@generator)", "4014322683622244388");
 }

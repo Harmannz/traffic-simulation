@@ -480,6 +480,18 @@
         </node>
       </node>
     </node>
+    <node concept="2tJIrI" id="3uPJjp31kbk" role="jymVt" />
+    <node concept="312cEg" id="3uPJjp31vbc" role="jymVt">
+      <property role="34CwA1" value="false" />
+      <property role="eg7rD" value="false" />
+      <property role="TrG5h" value="reachedDestination" />
+      <property role="3TUv4t" value="false" />
+      <node concept="3Tm6S6" id="3uPJjp31r_3" role="1B3o_S" />
+      <node concept="10Oyi0" id="3uPJjp31vac" role="1tU5fm" />
+      <node concept="3cmrfG" id="3uPJjp31vzl" role="33vP2m">
+        <property role="3cmrfH" value="0" />
+      </node>
+    </node>
     <node concept="2tJIrI" id="1J3Do7d8iNA" role="jymVt" />
     <node concept="312cEg" id="2MeG3eCdA_z" role="jymVt">
       <property role="TrG5h" value="frame" />
@@ -995,6 +1007,92 @@
       <node concept="3cqZAl" id="2MeG3eCdPFj" role="3clF45" />
       <node concept="3Tm1VV" id="2MeG3eCdPFk" role="1B3o_S" />
       <node concept="3clFbS" id="2MeG3eCdPFl" role="3clF47">
+        <node concept="3clFbF" id="3uPJjp33VCh" role="3cqZAp">
+          <node concept="37vLTI" id="3uPJjp33Wlu" role="3clFbG">
+            <node concept="3cpWs3" id="3uPJjp33Yk6" role="37vLTx">
+              <node concept="37vLTw" id="3uPJjp33YxI" role="3uHU7w">
+                <ref role="3cqZAo" node="3uPJjp31vbc" resolve="reachedDestination" />
+              </node>
+              <node concept="3cpWs3" id="3uPJjp33WVt" role="3uHU7B">
+                <node concept="37vLTw" id="3uPJjp33WDH" role="3uHU7B">
+                  <ref role="3cqZAo" node="2MeG3eCdPFu" resolve="msg" />
+                </node>
+                <node concept="Xl_RD" id="3uPJjp33XRC" role="3uHU7w">
+                  <property role="Xl_RC" value="\n" />
+                </node>
+              </node>
+            </node>
+            <node concept="37vLTw" id="3uPJjp33VCf" role="37vLTJ">
+              <ref role="3cqZAo" node="2MeG3eCdPFu" resolve="msg" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbJ" id="3uPJjp33Zaf" role="3cqZAp">
+          <node concept="3clFbS" id="3uPJjp33Zah" role="3clFbx">
+            <node concept="3clFbF" id="3uPJjp341n7" role="3cqZAp">
+              <node concept="37vLTI" id="3uPJjp341$I" role="3clFbG">
+                <node concept="3cpWs3" id="3uPJjp36hIg" role="37vLTx">
+                  <node concept="Xl_RD" id="3uPJjp36hS3" role="3uHU7w">
+                    <property role="Xl_RC" value=" steps." />
+                  </node>
+                  <node concept="3cpWs3" id="3uPJjp36gLh" role="3uHU7B">
+                    <node concept="3cpWs3" id="3uPJjp341RC" role="3uHU7B">
+                      <node concept="37vLTw" id="3uPJjp341DU" role="3uHU7B">
+                        <ref role="3cqZAo" node="2MeG3eCdPFu" resolve="msg" />
+                      </node>
+                      <node concept="Xl_RD" id="3uPJjp341VH" role="3uHU7w">
+                        <property role="Xl_RC" value=" vehicle has reached its destination after " />
+                      </node>
+                    </node>
+                    <node concept="37vLTw" id="3uPJjp36h2V" role="3uHU7w">
+                      <ref role="3cqZAo" node="3uPJjp36cum" resolve="steps" />
+                    </node>
+                  </node>
+                </node>
+                <node concept="37vLTw" id="3uPJjp341n5" role="37vLTJ">
+                  <ref role="3cqZAo" node="2MeG3eCdPFu" resolve="msg" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="3clFbC" id="3uPJjp340Xx" role="3clFbw">
+            <node concept="3cmrfG" id="3uPJjp3411E" role="3uHU7w">
+              <property role="3cmrfH" value="1" />
+            </node>
+            <node concept="37vLTw" id="3uPJjp33Z$8" role="3uHU7B">
+              <ref role="3cqZAo" node="3uPJjp31vbc" resolve="reachedDestination" />
+            </node>
+          </node>
+          <node concept="9aQIb" id="3uPJjp343aF" role="9aQIa">
+            <node concept="3clFbS" id="3uPJjp343aG" role="9aQI4">
+              <node concept="3clFbF" id="3uPJjp343vW" role="3cqZAp">
+                <node concept="37vLTI" id="3uPJjp343Hz" role="3clFbG">
+                  <node concept="3cpWs3" id="3uPJjp36jS$" role="37vLTx">
+                    <node concept="Xl_RD" id="3uPJjp36k2n" role="3uHU7w">
+                      <property role="Xl_RC" value=" steps." />
+                    </node>
+                    <node concept="3cpWs3" id="3uPJjp36iZB" role="3uHU7B">
+                      <node concept="3cpWs3" id="3uPJjp3444B" role="3uHU7B">
+                        <node concept="37vLTw" id="3uPJjp343QT" role="3uHU7B">
+                          <ref role="3cqZAo" node="2MeG3eCdPFu" resolve="msg" />
+                        </node>
+                        <node concept="Xl_RD" id="3uPJjp3448K" role="3uHU7w">
+                          <property role="Xl_RC" value=" vehicles have reached their destination after " />
+                        </node>
+                      </node>
+                      <node concept="37vLTw" id="3uPJjp36jdf" role="3uHU7w">
+                        <ref role="3cqZAo" node="3uPJjp36cum" resolve="steps" />
+                      </node>
+                    </node>
+                  </node>
+                  <node concept="37vLTw" id="3uPJjp343vV" role="37vLTJ">
+                    <ref role="3cqZAo" node="2MeG3eCdPFu" resolve="msg" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
         <node concept="3clFbF" id="2MeG3eCdPFm" role="3cqZAp">
           <node concept="2YIFZM" id="2MeG3eCdPFn" role="3clFbG">
             <ref role="1Pybhc" to="dxuu:~JOptionPane" resolve="JOptionPane" />
@@ -1002,7 +1100,7 @@
             <node concept="37vLTw" id="2BHiRxeu_8s" role="37wK5m">
               <ref role="3cqZAo" node="2RDssu5UNzQ" resolve="canvas" />
             </node>
-            <node concept="37vLTw" id="2BHiRxglmZu" role="37wK5m">
+            <node concept="37vLTw" id="3uPJjp33Vc0" role="37wK5m">
               <ref role="3cqZAo" node="2MeG3eCdPFu" resolve="msg" />
             </node>
             <node concept="Xl_RD" id="2MeG3eCdPFq" role="37wK5m">
@@ -1018,6 +1116,10 @@
       <node concept="37vLTG" id="2MeG3eCdPFu" role="3clF46">
         <property role="TrG5h" value="msg" />
         <node concept="17QB3L" id="2MeG3eCdPFv" role="1tU5fm" />
+      </node>
+      <node concept="37vLTG" id="3uPJjp36cum" role="3clF46">
+        <property role="TrG5h" value="steps" />
+        <node concept="10Oyi0" id="3uPJjp36cwc" role="1tU5fm" />
       </node>
     </node>
     <node concept="2tJIrI" id="1J3Do7d5E3T" role="jymVt" />
@@ -1600,6 +1702,13 @@
                 </node>
                 <node concept="liA8E" id="2pVJ_Yvxkf7" role="2OqNvi">
                   <ref role="37wK5l" node="2RDssu5UQPw" resolve="unsetVehicle" />
+                </node>
+              </node>
+            </node>
+            <node concept="3clFbF" id="3uPJjp31zae" role="3cqZAp">
+              <node concept="3uNrnE" id="3uPJjp31$r1" role="3clFbG">
+                <node concept="37vLTw" id="3uPJjp31$r3" role="2$L3a6">
+                  <ref role="3cqZAo" node="3uPJjp31vbc" resolve="reachedDestination" />
                 </node>
               </node>
             </node>

@@ -151,7 +151,7 @@ public class Fork extends MainFrame {
       tick();
       steps++;
     }
-    trace("Completed Simulation");
+    trace("Completed Simulation.", steps);
     stop();
   }
   public void buildRoads_from_library_TestRoad_routine() {
