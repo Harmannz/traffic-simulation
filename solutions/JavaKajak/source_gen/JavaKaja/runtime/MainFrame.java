@@ -31,6 +31,8 @@ public abstract class MainFrame {
   private List<Vehicle> vehicles = new ArrayList<Vehicle>();
   private List<TrafficLightCell> trafficLights = new ArrayList<TrafficLightCell>();
 
+  private int reachedDestination = 0;
+
   private final JFrame frame = new JFrame("Traffic Simulator");
   private Icon karelIconNorth;
   private Icon karelIconEast;
@@ -81,7 +83,13 @@ public abstract class MainFrame {
     stop();
   }
 
-  public void trace(String msg) {
+  public void trace(String msg, int steps) {
+    msg = msg + "\n" + reachedDestination;
+    if (reachedDestination == 1) {
+      msg = msg + " vehicle has reached its destination after " + steps + " steps.";
+    } else {
+      msg = msg + " vehicles have reached their destination after " + steps + " steps.";
+    }
     JOptionPane.showMessageDialog(canvas, msg, "Trace", JOptionPane.INFORMATION_MESSAGE);
   }
 
@@ -152,6 +160,7 @@ public abstract class MainFrame {
     Cell currentCell = getCurrentCell(vehicle.getCurrentPosition());
     if (vehicle.reachedDestination()) {
       currentCell.unsetVehicle();
+      reachedDestination++;
       return;
     }
 

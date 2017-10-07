@@ -1919,7 +1919,10 @@
             <node concept="1rXfSq" id="5D4EFtyPOv9" role="3clFbG">
               <ref role="37wK5l" to="wd51:2MeG3eCdPFi" resolve="trace" />
               <node concept="Xl_RD" id="5D4EFtyPOOG" role="37wK5m">
-                <property role="Xl_RC" value="Completed Simulation" />
+                <property role="Xl_RC" value="Completed Simulation." />
+              </node>
+              <node concept="37vLTw" id="3uPJjp36c0$" role="37wK5m">
+                <ref role="3cqZAo" node="5D4EFtyGosY" resolve="steps" />
               </node>
             </node>
           </node>
