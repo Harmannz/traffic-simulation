@@ -1,5 +1,9 @@
-Robot Kaja
+Traffic Simulation
 ==========
 
-MPS sample robot language. Allows users to program scripts for a virtual robot to let him walk around a rectangular space, pick or drop items and avoid walls.
-Consider watching [an introductory MPS screen-cast](http://tv.jetbrains.net/videocontent/your-first-date-with-jetbrains-mps) to see the language in action.
+This repository contains MPS project that defines a custom DSL for creating roads, vehicles and traffic lights for simulating traffic. The solution can then be run using a Java GUI application.
+
+Authors:
+Harman Singh: Harmannz
+Neel Patel: Clark710
+Miten Chauhan: mcking49
